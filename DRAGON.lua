@@ -1079,7 +1079,7 @@ end
 
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/exalex200/EX/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/exalex200/ZX/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 𖠪 تم تحديث السورس \n 𖠪 لديك اخر اصدار لسورس الخواجه\n 𖠪 الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
@@ -2388,7 +2388,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/exalex200/EX/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/exalex200/ZX/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 𖠪 تم تحديث السورس \n 𖠪 لديك اخر اصدار لسورس اليكس\n 𖠪 الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
@@ -12277,7 +12277,7 @@ local Teext =[[
 𖠪شنو رئيك بهاي بالرد
 𖠪تحب هذا
 ⩹━━━━━━ ELkhawajah ━━━━━━⩺
-[𖠪 𝒔𝒐𝒖𝒓𝒄𝒆 𝒃𝒂𝒌𝒂𝒓𖠪 ](t.me/BARLO0Obot)
+[𖠪 𝕊𝕆𝕌ℝℂ𝔼 𝔼𝕃𝕂ℍ𝔸𝕎𝔸𝕁𝔸ℍ𖠪 ](t.me/BARLO0Obot)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
