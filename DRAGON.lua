@@ -2389,7 +2389,7 @@ return false
 end
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/exalex200/ZX/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' 𖠪 تم تحديث السورس \n 𖠪 لديك اخر اصدار لسورس اليكس\n 𖠪 الاصدار » { v 1.5}')
+send(msg.chat_id_, msg.id_,' 𖠪 تم تحديث السورس \n 𖠪 لديك اخر اصدار لسورس الخواجه\n 𖠪 الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
 
@@ -11668,7 +11668,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '𝕊𝕆??ℝℂ𝔼 𝔼𝕃𝕂ℍ𝔸𝕎𝔸𝕁𝔸ℍ ', url="t.me/BARLO0Obot"},
+{text = '𝕊????ℝℂ𝔼 𝔼𝕃𝕂ℍ𝔸𝕎𝔸𝕁𝔸ℍ ', url="t.me/BARLO0Obot"},
 {text = 'مبرمج السورس', url="t.me/PS_PO"},
 },
 }
