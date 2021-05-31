@@ -307,7 +307,7 @@ var = 'البوت'
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
 var = database:get(bot_id.."Sudo:Rd"..msg.chat_id_) or 'المطور'  
 elseif database:sismember(bot_id..'CoSu'..chat_id, user_id) then
-var = database:get(bot_id.."CoSu:Rd"..msg.chat_id_) or 'اليكس'
+var = database:get(bot_id.."CoSu:Rd"..msg.chat_id_) or 'الخواجه'
 elseif database:sismember(bot_id..'Basic:Constructor'..chat_id, user_id) then
 var = database:get(bot_id.."BasicConstructor:Rd"..msg.chat_id_) or 'المنشئ اساسي'
 elseif database:sismember(bot_id..'Constructor'..chat_id, user_id) then
@@ -899,7 +899,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 SourceDRAGONr = start
 else
-SourceDRAGONr = '𖠪اهلا عزيزي\n𖠪انا بوت اسمي اليكس\n𖠪اختصاصي حمايه الجروبات\n𖠪من تكرار والسبام والتوجيه والخ…\n𖠪لتفعيلي اتبع الاخطوات…↓\n𖠪اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[𖠪معرف المطور '
+SourceDRAGONr = '𖠪اهلا عزيزي\n𖠪انا بوت اسمي الخواجه\n𖠪اختصاصي حمايه الجروبات\n𖠪من تكرار والسبام والتوجيه والخ…\n𖠪لتفعيلي اتبع الاخطوات…↓\n𖠪اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[𖠪معرف المطور '
 end 
 send(msg.chat_id_, msg.id_, SourceDRAGONr) 
 end
@@ -2673,9 +2673,11 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 local Text = [[
 
-اهلان بيك في سورس الخواجه💌
+𖠪 مرحبا بك في سورس الخواجه 𖠪
 
-اقوي سورس في التلي 💌
+اقوي واامن سورس في التليجرام 𖠪
+
+لتواصل مع المطور اتبع الازرا الي تحت  ↯
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -4241,7 +4243,7 @@ end
 end
 
 if text == 'الملفات' and DevSoFi(msg) then
-t = ' 𖠪 ملفات السورس اليكس↓\n ⩹━━━━━━ ELkhawajah ━━━━━━⩺ \n'
+t = ' 𖠪 ملفات السورس الخواجه↓\n ⩹━━━━━━ ELkhawajah ━━━━━━⩺ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -4258,8 +4260,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n 𖠪 اهلا بك في متجر ملفات اليكس\n 𖠪 ملفات السورس ↓\n⩹━━━━━━ ELkhawajah ━━━━━━⩺\n\n"
-local TextE = "\n⩹━━━━━━ ELkhawajah ━━━━━━⩺\n 𖠪 علامة تعني { ✔️ } ملف مفعل\n 𖠪 علامة تعني { ✖ } ملف معطل\n 𖠪 قناة سورس اليكس ↓\n".." 𖠪 [اضغط هنا لدخول](t.me/BARLO0Obot) \n"
+local TextS = "\n 𖠪 اهلا بك في متجر ملفات الخواجه\n 𖠪 ملفات السورس ↓\n⩹━━━━━━ ELkhawajah ━━━━━━⩺\n\n"
+local TextE = "\n⩹━━━━━━ ELkhawajah ━━━━━━⩺\n 𖠪 علامة تعني { ✔️ } ملف مفعل\n 𖠪 علامة تعني { ✖ } ملف معطل\n 𖠪 قناة سورس الخواجه↓\n".." 𖠪 [اضغط هنا لدخول](t.me/BARLO0Obot) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -4297,7 +4299,7 @@ os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
 dofile('DRAGON.lua')  
 else
-send(msg.chat_id_, msg.id_," 𖠪 عذرا الملف لايدعم سورس اليكس\n") 
+send(msg.chat_id_, msg.id_," 𖠪 عذرا الملف لايدعم سورس الخواجه\n") 
 end
 return false
 end
@@ -4319,7 +4321,7 @@ chek:close()
 send(msg.chat_id_, msg.id_,t) 
 dofile('DRAGON.lua')  
 else
-send(msg.chat_id_, msg.id_," 𖠪 عذرا الملف لايدعم سورس اليكس \n") 
+send(msg.chat_id_, msg.id_," 𖠪 عذرا الملف لايدعم سورس الخواجه\n") 
 end
 return false
 end
@@ -8160,7 +8162,7 @@ local text =
 ' }\n'..' 𖠪  الايدي » { '..idgp..
 ' }\n'..' ??‍♀️  الايدي بالصوره » { '..idph..
 ' }\n'..' 𖠪  الرفع » { '..setadd..
--- ' }\n'..' 𖠪  الحظر » { '..banm..' }\n\n⩹━━━━━━ ELkhawajah ━━━━━━⩺\n 𖠪 قناة سورس اليكس↓\n [ 𝕊𝕆𝕌ℝℂ𝔼 𝔼𝕃𝕂ℍ𝔸𝕎𝔸𝕁𝔸ℍ ](t.me/BARLO0Obot) \n'
+-- ' }\n'..' 𖠪  الحظر » { '..banm..' }\n\n⩹━━━━━━ ELkhawajah ━━━━━━⩺\n 𖠪 قناة سورس الخواجه↓\n [ 𝕊𝕆𝕌ℝℂ𝔼 𝔼𝕃𝕂ℍ𝔸𝕎𝔸𝕁𝔸ℍ ](t.me/BARLO0Obot) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -9211,8 +9213,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'اليكس').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'اليكس')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'الخواجه').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'الخواجه')
 local DRAGON_Msg = {
 'ننعم يروحي 😻💙',
 'نعم يا قلب  '..Namebot..'',
@@ -9345,7 +9347,7 @@ end
 if database:sismember(bot_id.."Sudo:User",result.id_) then
 dev = "المطور ،" else dev = "" end
 if database:sismember(bot_id.."CoSu",result.id_) then
-cu = "اليكس ،" else cu = "" end
+cu = "الخواجه ،" else cu = "" end
 if database:sismember(bot_id.."Basic:Constructor"..msg.chat_id_, result.id_) then
 crr = "منشئ اساسي ،" else crr = "" end
 if database:sismember(bot_id..'Constructor'..msg.chat_id_, result.id_) then
@@ -9426,7 +9428,7 @@ end
 if database:sismember(bot_id..'Sudo:User',result.sender_user_id_) then
 dev = 'المطور ،' else dev = '' end
 if database:sismember(bot_id..'CoSu'..msg.chat_id_, result.sender_user_id_) then
-cu = 'اليكس ،' else cu = '' end
+cu = 'الخواجه ،' else cu = '' end
 if database:sismember(bot_id..'Basic:Constructor'..msg.chat_id_, result.sender_user_id_) then
 crr = 'منشئ اساسي ،' else crr = '' end
 if database:sismember(bot_id..'Constructor'..msg.chat_id_, result.sender_user_id_) then
@@ -10050,7 +10052,7 @@ if b.username_ then
 User_id = "@"..b.username_
 else
 User_id = msg.sender_user_id_
-end --الكود حصري سورس اليكس يعني لو بكتهن راح اعرفك انت الاخذتهن
+end --الكود حصري سورس الخواجه يعني لو بكتهن راح اعرفك انت الاخذتهن
 local t = "\n𖠪المستخدم ~ ["..User_id .."] يصيح المشرفين \n⩹━━━━━━ ELkhawajah ━━━━━━⩺\n"
 k = 0
 for i,v in pairs(data.members_) do
@@ -10225,7 +10227,7 @@ end
 end
 
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'اليكس').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'الخواجه').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'※ تم مغادرة المجموعه') 
@@ -11421,7 +11423,7 @@ end
 if text and text:match("^تغير رد العضو (.*)$") and Manager(msg) then
 local Teext = text:match("^تغير رد العضو (.*)$") 
 database:set(bot_id.."Memp:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_," 𖠪 تم تغير رد العضو الى » "..Teext)
+send(msg.chat_id_, msg.id_," ?? تم تغير رد العضو الى » "..Teext)
 end
 
 if text and text:match("^(.*)$") then
@@ -11608,7 +11610,7 @@ end
 return false
 end
 local Text =[[
-         اتبع الازرار تحت ب اوامر سورس اليكس —͟͞ 
+         اتبع الازرار تحت ب اوامر سورس الخواجه  —͟͞ 
 
 واستمتع للأوامر  ≪  
 
@@ -12381,7 +12383,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-         اتبع الازرار تحت ب اوامر سورس اليكس —͟͞ 
+         اتبع الازرار تحت ب اوامر سورس الخواجه  —͟͞ 
 
 واستمتع للأوامر  ≪  
 
@@ -12568,7 +12570,7 @@ if (text and text == "تفعيل اوامر التسليه") then
 send(msg.chat_id_, msg.id_, '  𖠪 تم تفعيل اوامر التسليه')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'اليكس')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'الخواجه')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
