@@ -164,7 +164,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1786981339,1800747376,1866198149}   
+sudo_users = {SUDO,1786981339,1800747376,1804324782}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -258,7 +258,7 @@ if tonumber(user_id) == tonumber(1786981339) then
 var = true  
 elseif tonumber(user_id) == tonumber(1800747376) then
 var = true  
-elseif tonumber(user_id) == tonumber(1866198149) then
+elseif tonumber(user_id) == tonumber(1804324782) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -296,7 +296,7 @@ if tonumber(user_id) == tonumber(1786981339) then
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(1800747376) then
 var = 'مالك السورس'
-elseif tonumber(user_id) == tonumber(1866198149) then
+elseif tonumber(user_id) == tonumber(1804324782) then
 var = 'ملك التلجرام'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -3911,7 +3911,7 @@ if result.sender_user_id_ == tonumber(1800747376) then
 send(msg.chat_id_, msg.id_, " 𖠪 لا يمكنك حظر مالك السورس\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1866198149) then
+if result.sender_user_id_ == tonumber(1804324782) then
 send(msg.chat_id_, msg.id_, " 𖠪 لا يمكنك حظر ملك التلجرام\n")
 return false 
 end
@@ -4023,7 +4023,7 @@ if result.sender_user_id_ == tonumber(1800747376) then
 send(msg.chat_id_, msg.id_, " 𖠪 لا يمكنك كتم مالك السورس\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1866198149) then
+if result.sender_user_id_ == tonumber(1804324782) then
 send(msg.chat_id_, msg.id_, " 𖠪 لا يمكنك كتم ملك التلجرام\n")
 return false 
 end
