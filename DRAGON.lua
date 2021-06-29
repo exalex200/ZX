@@ -959,7 +959,7 @@ keyboard = start
 else
 keyboard = {
 	
-	{'مادو'},
+	
 	
 	
 {'ضحكني','استوري'},
