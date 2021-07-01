@@ -9745,7 +9745,8 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
 'اسمي  '..Namebot..' يوتكه🙈🍑',
 }
-
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = '   ⁽'..result.first_name_..'₎  ',url="t.me/"..result.username_}},}
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
 local function getpro(extra, result, success)
 if result.photos_[0] then
