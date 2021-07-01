@@ -145,7 +145,7 @@ print([[
                        
 
 > CH › @ELkhawajah1
-~> DEVELOPER › @MA_DO_O 
+~> DEVELOPER › @A_199K 
 ]])
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -302,7 +302,9 @@ function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1001132193) then  
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(1800747376) then
-var = 'مطور السورس'
+var = 'مالك السورس'
+elseif tonumber(user_id) == tonumber(1603665501) then
+var = 'ملكه التليجرام'
 elseif tonumber(user_id) == tonumber(1819050592) then
 var = 'هكر التليجرام'
 elseif tonumber(user_id) == tonumber(SUDO) then
@@ -1184,7 +1186,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/MA_DO_O"},
+{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/A_199K"},
 },
 {
 {text = '۞ بوت تواصل السورس ۞', url = "https://t.me/TWLANGBOT"},
@@ -1203,7 +1205,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/MA_DO_O"},
+{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/A_199K"},
 },
 {
 {text = '۞ بوت تواصل السورس ۞', url = "https://t.me/TWLANGBOT"},
@@ -1221,7 +1223,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/MA_DO_O"},
+{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/A_199K"},
 },
 {
 {text = '۞ قنات سورس متميزه  ۞ ', url = "https://t.me/ELkhawajah1"}
@@ -2785,10 +2787,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞ مبرمج ومطور السورس  ۞ ', url = "https://t.me/MA_DO_O"},
-},
-{
-{text = '۞ بوت تواصل السورس ۞', url = "https://t.me/TWLANGBOT"},
+{text = '۞ مبرمج ومطور السورس  ۞ ', url = "https://t.me/A_199K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2819,7 +2818,7 @@ ght = math.random(2,22);
 local Text ='تم اختيار فديو استوري  لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '⌯  هكر التليجرام  ⌯',url="t.me/MA_DO_O"}},  
+{{text = '⌯  هكر التليجرام  ⌯',url="t.me/A_199K"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/koko12300/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2829,16 +2828,42 @@ end
 
 
 
-if text == 'مادو' or text == 'MADOO' then  
+if text == 'اليكس' or text == 'ALEX' then  
 local Text = [[  
 ⌯ كـارف للكل⌯
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = '⌯  هكر التليجرام  ⌯',url="t.me/MA_DO_O"}},  
+{{text = '⌯  هكر التليجرام  ⌯',url="t.me/A_199K"}},  
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MA_DO_O&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_199K&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+
+if text == 'حسناء' or text == 'HASNA' then  
+local Text = [[  
+قموره التلي 
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = 'مللكه التليجرام' ,url="t.me/HASNAA828"}},  
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/HASNAA828&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+
+if text == 'خواجه' or text == 'خوخه' then  
+local Text = [[ 
+مالك السورس 
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = 'خواجه بيه يقمر' ,url="t.me/ELkhawajah"}},  
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ELkhawajah&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -2853,14 +2878,11 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/MA_DO_O"},
-},
-{
-{text = '۞ بوت تواصل السورس ۞', url = "https://t.me/TWLANGBOT"},
+{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/A_199K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MA_DO_O&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_199K&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
