@@ -2828,14 +2828,14 @@ end
 
 if text == 'اليكس' or text == 'ALEX' then  
 local Text = [[  
-⌯ كـارف للكل⌯
+صاحب تيم الغدارين ❤️
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = '⌯  هكر التليجرام  ⌯',url="t.me/A_199K"}},  
+{{text = '⌯  هكر التليجرام  ⌯',url="t.me/ALEX_GHADIR"}},  
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_199K&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ALEX_GHADIR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
