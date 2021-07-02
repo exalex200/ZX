@@ -2798,7 +2798,7 @@ if text == 'سورس' or text == ' السورس' then
 local Text = [[  
 ╭────────╮
 
-    [⌯ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧  ⌯](t.me/ELkhawajah1)
+ [⌯ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧 ⌯](t.me/ELkhawajah1)
              
 ╰────────╯
 ]]  
@@ -2826,8 +2826,6 @@ end
 
 
 
-
-
 if text == 'اليكس' or text == 'ALEX' then  
 local Text = [[  
 ⌯ كـارف للكل⌯
@@ -2838,6 +2836,21 @@ keyboard.inline_keyboard = {
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_199K&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+
+
+
+if text == 'غدار' or text == 'الغدارين' then  
+local Text = [[  
+اكبر تيم في التلي يقلبمك ❤️ 
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = 'اقوي تيم يحلته روم نام ',url="t.me/FAMILY_GADAREN"}},  
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/FAMILY_GADAREN&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -9745,8 +9758,7 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
 'اسمي  '..Namebot..' يوتكه🙈🍑',
 }
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = '   ⁽'..result.first_name_..'₎  ',url="t.me/"..result.username_}},}
+
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
 local function getpro(extra, result, success)
 if result.photos_[0] then
@@ -11623,7 +11635,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n- ??𝐒𝐄??𝐍𝐀𝐌𝐄 ⌯  '..username..'\n ⌯- 𝐌𝐒𝐆𝐒  '..Msguser..'\n ⌯ - 𝐒𝐓𝐀𝐓𝐒  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ⌯ - 𝐘𝐎𝐔𝐑.𝐈𝐃 '..msg.sender_user_id_..'\n- 𝐂𝐇 ⌯ @ELkhawajah1\n')
 else
-send(msg.chat_id_, msg.id_, '\n ⌯ الصوره ~⪼ ليس لديك صور في حسابك'..'[\n- 𝐔𝐒𝐄𝐑𝐍??𝐌𝐄 ⌯  '..username..'\n ⌯- 𝐌𝐒𝐆𝐒  '..Msguser..'\n ⌯ - ??𝐎𝐔𝐑.𝐈𝐃 '..msg.sender_user_id_..'\n- 𝐂𝐇 ⌯ @ELkhawajah1\n')
+send(msg.chat_id_, msg.id_, '\n ⌯ الصوره ~⪼ ليس لديك صور في حسابك'..'[\n- 𝐔𝐒𝐄𝐑𝐍??𝐌𝐄 ⌯  '..username..'\n ⌯- 𝐌𝐒𝐆𝐒  '..Msguser..'\n ⌯ - ??𝐎??𝐑.𝐈𝐃 '..msg.sender_user_id_..'\n- 𝐂𝐇 ⌯ @ELkhawajah1\n')
 end 
 end
 end
