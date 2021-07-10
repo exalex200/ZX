@@ -11384,32 +11384,6 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, l
 end
 
 
-if text == "بوت" or text == 'البوت' then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'نايت')
-local DRAGON_Msg = {
-'اسمي  '..Namebot..' يا قلبي 🤤💚',
-'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري🌚🌹',
-'اسمي  '..Namebot..' يا قمر 🐭🤍',
-'اسمي  '..Namebot..' يامزه 🥺❤️',
-'اسمي  '..Namebot..' يعم 😒',
-'مقولت اسمي '..Namebot..' في اي 🙄',
-'اسمي الكيوت '..Namebot..' 🌝💘',
-'اسمي  '..Namebot..' ياحياتي🧸♥️',
-'اسمي  '..Namebot..' يوتكه🙈🍑',
-}
-
-Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
-local function getpro(extra, result, success)
-if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,Namebot, msg.id_, msg.id_, "md")
-else
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md')
-end
-end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)
-end
-
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 if database:get(bot_id..'Bc:Bots') and not DevSoFi(msg) then 
 send(msg.chat_id_, msg.id_,' ⚚ الاذاعه معطله من قبل المطور الاساسي')
@@ -12084,63 +12058,18 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Ccckkc/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end
+
 if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(3,23); 
 local Text ='تم اختيار المقطع الصوتي لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'ᶜʰ ᵛᶦᵈᵉᵒ', url="t.me/comxnxp"}}, 
 {{text = '00:00', url="t.me/SONIGHT9"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Vibowu/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "كلمني" then
-rpl = {"ها هلاو","انطق","كول"};
-sender = rpl[math.random(#rpl)]
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.sender_user_id_ .. '&text=' .. URL.escape(sender))
-end
-if text == 'حصل' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '00:00', url="t.me/SONIGHT9"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'كسمهم' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '00:00', url="t.me/SONIGHT9"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'انا جيت' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '00:00', url="t.me/SONIGHT9"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/comxnxp/20&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'طرطر' then
-local Text = [[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '00:00', url="t.me/SONIGHT9"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+
 if text and text:match("^وضع لقب (.*)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
 local timsh = text:match("^وضع لقب (.*)$")
 function start_function(extra, result, success)
@@ -12468,6 +12397,10 @@ send(msg.chat_id_, msg.id_,'※ تم مغادرة المجموعه')
 database:srem(bot_id..'Chek:Groups',msg.chat_id_)  
 end
 return false  
+end
+if text == 'بوت' then
+Namebot = (database:get(bot_id..'Name:Bot') or 'نايت')
+send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
 if Sudo(msg) then 
@@ -13545,7 +13478,7 @@ if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」     ↝💘\n¦• 𝙼𝚂𝙶𝚂↬  「'..Msguser..'」     ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」     ↝💘\n¦• 𝙸𝙳↬   「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬  「@SONIGHT9」     ↝💘\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي 「'..Name..'」 \n¦• 𝚄𝚂𝙴𝚁 ↬  「'..Name..'」    ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」    ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬   「@SONIGHT9」 ↝🇧??\n')
+send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي 「'..Name..'」 \n¦• 𝚄𝚂𝙴𝚁 ↬  「'..Name..'」    ↝??\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」    ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬   「@SONIGHT9」 ↝🇧??\n')
 else
 send(msg.chat_id_, msg.id_, '\n ⚚ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ 「'..username..'」\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」\n¦• 𝒄𝒉↬  「@SONIGHT9」\n')
 end 
@@ -13764,7 +13697,7 @@ local List = {
 🇯🇵 - 𝄬 msgs . #msgs  𓃠
 ]],
 [[
-𓄼🇪🇭 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
+𓄼🇪🇭 𝑼??𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
 𓄼🇪🇭 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇭 𝒊𝒅 : #id ‌‌‏⚚
 𓄼🇪🇭 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
@@ -14208,7 +14141,7 @@ local List = {
 ]],
 [[
 𝐘𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
-𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
+𝐔𝐬??𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
 𝗖𝗛☤🇪🇬 - 「@SONIGHT9」 ⚚.
@@ -16361,7 +16294,7 @@ local Teext =[[
 ⚚━━━━━⚚𝙉𝙄𝙂𝙃𝙏⚚━━━━━⚚
  ⚚رفع + تنزيل ← قلبي
  ⚚تاك لقلبي
-⚚━━━━━⚚𝙉𝙄𝙂𝙃𝙏⚚━━━━━⚚
+⚚━━━━━⚚𝙉??𝙂𝙃𝙏⚚━━━━━⚚
  ⚚رفع + تنزيل ← بقره
  ⚚تاك للبقرات
 ⚚━━━━━⚚𝙉𝙄𝙂𝙃𝙏⚚━━━━━⚚
