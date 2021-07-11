@@ -143,7 +143,7 @@ print([[
 / _ / | _ / ____ / ___ / _ / | _ |  
                        
 
-> CH › 「@BARLO0O0O」
+> CH › 「@Q280K」
 ~> DEVELOPER › @Q250K 
 ]])
 sudos = dofile("./som.lua") 
@@ -496,7 +496,7 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "BARLO0O0O")
+local UserName = (data.username_ or "Q280K")
 local NameUser = " ⛧  مـن قبـل  ↚ ["..data.first_name_.."](T.me/"..UserName..")"
 local NameUserr = " ⛧ اسم المستخدم  ↚ ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "reply" then
@@ -878,7 +878,7 @@ end
 if Chat_Type == 'UserBot' then
 if not DevSoFi(msg) then
 if text == '/start' or text == 'العوده✨'  then  
-local bl = '●انت الان العضو في البوت \n● سورس نايت\n ●يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/BARLO0O0O)'
+local bl = '●انت الان العضو في البوت \n● سورس نايت\n ●يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/Q280K)'
 local keyboard = {
 {'اليكس'},
 {'قـسم الالـعـاب'},
@@ -934,7 +934,7 @@ end
 return false
 end
 if DevSoFi(msg) then
-local bl = '●انت الان المطور الاساسي في البوت \n● سورس نايت\n ●يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/BARLO0O0O)'
+local bl = '●انت الان المطور الاساسي في البوت \n● سورس نايت\n ●يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/Q280K)'
 local keyboard = {
 {'ضع اسم للبوت','معلومات الكيبورد'},
 {'المطور','الاحصائيات'},
@@ -1218,7 +1218,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -1270,30 +1270,30 @@ send(msg.chat_id_, msg.id_,' ⛧ اصدار سورس نايت{ S:12✓}')
 end
 if text == '• ━━━━━━❪الركن الاخير❫━━━━━━ •' and DevSoFi(msg) then
 local Text = [[ 
-[قناه سورس نايت ادخل وتابع الجديد](t.me/BARLO0O0O)
+[قناه سورس نايت ادخل وتابع الجديد](t.me/Q280K)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/BARLO0O0O"}}, 
+{{text = '00:00', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '• ━━━━━━❪الاقسام❫━━━━━━ •' and DevSoFi(msg) then
 local Text = [[ 
-[قناه سورس نايت ادخل وتابع الجديد](t.me/BARLO0O0O)
+[قناه سورس نايت ادخل وتابع الجديد](t.me/Q280K)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/BARLO0O0O"}}, 
+{{text = '00:00', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'معلومات الكيبورد' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-[CH](t.me/BARLO0O0O)مرحبا بك مطوري سأشرح لك كل شئ في لوحه الاوامر بالتفصيل
+[CH](t.me/Q280K)مرحبا بك مطوري سأشرح لك كل شئ في لوحه الاوامر بالتفصيل
 1• الاحصائيات { لعرض عدد المجموعات، والمشتركين في البوت
  2• تفعيل التواصل{ لتفعيل التواصل عبر البوت خاص بك} 
  3• تعطيل التواصل{ لتعطيل التواصل عبر البوت خاص بك } 
@@ -1315,7 +1315,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'قناه السورس', url="t.me/BARLO0O0O"}}, 
+{{text = 'قناه السورس', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1352,10 +1352,10 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/BARLO0O0O"}}, 
+{{text = '00:00', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "ضع اسم للبوت" and DevSoFi(msg) then  
@@ -1930,7 +1930,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 if data.username_ ~= false then
 send(msg.chat_id_,0," ⛧ الـعـضو  : {["..data.first_name_.."](T.ME/"..data.username_..")}\n ⛧ ["..DRAGON_Msg.."] \n")
 else
-send(msg.chat_id_,0," ⛧ الـعـضو  : {["..data.first_name_.."](T.ME/BARLO0O0O)}\n ⛧ ["..DRAGON_Msg.."] \n")
+send(msg.chat_id_,0," ⛧ الـعـضو  : {["..data.first_name_.."](T.ME/Q280K)}\n ⛧ ["..DRAGON_Msg.."] \n")
 end
 end,nil)   
 DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
@@ -2386,7 +2386,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0, " ⛧ عذرا  ↚ {[@"..data.username_.."]}\n ⛧ عذرا تم منع الملصق \n" ) 
 else
-send(msg.chat_id_,0, " ⛧ عذرا  ↚ {["..data.first_name_.."](T.ME/BARLO0O0O)}\n ⛧ عذرا تم منع الملصق \n" ) 
+send(msg.chat_id_,0, " ⛧ عذرا  ↚ {["..data.first_name_.."](T.ME/Q280K)}\n ⛧ عذرا تم منع الملصق \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2406,7 +2406,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," ⛧ عذرا  ↚ {[@"..data.username_.."]}\n ⛧ عذرا تم منع الصوره \n" ) 
 else
-send(msg.chat_id_,0," ⛧ عذرا  ↚ {["..data.first_name_.."](T.ME/BARLO0O0O)}\n ⛧ عذرا تم منع الصوره \n") 
+send(msg.chat_id_,0," ⛧ عذرا  ↚ {["..data.first_name_.."](T.ME/Q280K)}\n ⛧ عذرا تم منع الصوره \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2423,7 +2423,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," ⛧ عذرا  ↚ {[@"..data.username_.."]}\n ⛧ عذرا تم منع المتحركه \n") 
 else
-send(msg.chat_id_,0," ⛧ عذرا  ↚ {["..data.first_name_.."](T.ME/BARLO0O0O)}\n ⛧ عذرا تم منع المتحركه \n" ) 
+send(msg.chat_id_,0," ⛧ عذرا  ↚ {["..data.first_name_.."](T.ME/Q280K)}\n ⛧ عذرا تم منع المتحركه \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2803,7 +2803,7 @@ if (tonumber(mrsofi_nnn2) == tonumber(mrsofi_nnn) or tonumber(mrsofi_nnn2) > ton
 database:sadd(bot_id..'Muted:User'..msg.chat_id_, msg.sender_user_id_)
 else 
 database:incrby(bot_id.."DRAGON:nump22"..msg.chat_id_..msg.sender_user_id_,1)
-send(msg.chat_id_, msg.id_, " ⛧ عزيزي >>["..mrsofi2.username_.."](https://t.me/"..(mrsofi2.username_ or "BARLO0O0O")..")\n ⛧ عليك وضع التوحيد ⪼ {"..database:get(bot_id.."DRAGON:teh"..msg.chat_id_).."} بجانب اسمك\n ⛧ عدد المحاولات المتبقيه {"..(tonumber(mrsofi_nnn) - tonumber(mrsofi_nnn2)).."}")
+send(msg.chat_id_, msg.id_, " ⛧ عزيزي >>["..mrsofi2.username_.."](https://t.me/"..(mrsofi2.username_ or "Q280K")..")\n ⛧ عليك وضع التوحيد ⪼ {"..database:get(bot_id.."DRAGON:teh"..msg.chat_id_).."} بجانب اسمك\n ⛧ عدد المحاولات المتبقيه {"..(tonumber(mrsofi_nnn) - tonumber(mrsofi_nnn2)).."}")
 end
 end
 end
@@ -2922,19 +2922,19 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 local Text = [[
-[⍟ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙽𝙸𝙶𝙷𝚃 ](t.me/BARLO0O0O) 
+[⍟ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙽𝙸𝙶𝙷𝚃 ](t.me/Q280K) 
 
-[⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝙾𝙽 𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝙴𝙻𝙴 ](t.me/BARLO0O0O)
+[⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝙾𝙽 𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝙴𝙻𝙴 ](t.me/Q280K)
 
-[⍟ 𝙵𝙾𝙻𝙻𝙾𝚆 𝚃𝙷𝙴 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝙱𝙴𝙻𝙾𝚆 ](t.me/BARLO0O0O)
+[⍟ 𝙵𝙾𝙻𝙻𝙾𝚆 𝚃𝙷𝙴 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝙱𝙴𝙻𝙾𝚆 ](t.me/Q280K)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text ='𝗗𝗘𝗩 𝗔𝗟𝗘𝗫 ⛧', url="t.me/Q250K"}},
-{{text = '00:00', url="t.me/BARLO0O0O"}},
+{{text = '00:00', url="t.me/Q280K"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'اليكس' or text == 'alex' or text == 'alex' then
@@ -2965,7 +2965,7 @@ keyboard.inline_keyboard = {
 {{text = 'بوت قران 🏳️',url="t.me/quran_lbot"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and DevSoFi(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -3728,14 +3728,14 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, 
 end
 if text == 'قناة السورس' then
 local Text = [[ 
-[قناه سورس نايت ادخل وتابع الجديد](t.me/BARLO0O0O)
+[قناه سورس نايت ادخل وتابع الجديد](t.me/Q280K)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/BARLO0O0O"}}, 
+{{text = '00:00', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧' then
 local Text = [[ 
@@ -3746,10 +3746,10 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/BARLO0O0O"}}, 
+{{text = '00:00', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'العاب نايت' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
@@ -3784,10 +3784,10 @@ keyboard.inline_keyboard = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '00:00', url="t.me/BARLO0O0O"}},
+{{text = '00:00', url="t.me/Q280K"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BARLO0O0O/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q280K/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -3913,7 +3913,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4851,7 +4851,7 @@ database:sadd(bot_id..'GBan:User', result.sender_user_id_)
 chat_kick(result.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
 function(arg,data) 
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status  = '\n ⛧ تم حظرو عام من الجروبات '
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4897,7 +4897,7 @@ if result.id_ == tonumber(1001132193) then
 send(msg.chat_id_, msg.id_, " ?? لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-usertext = '\n ⛧ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'Q280K')..')'
 status  = '\n ⛧ تم حظرو عام من الجروبات '
 texts = usertext..status
 database:sadd(bot_id..'GBan:User', result.id_)
@@ -4944,7 +4944,7 @@ end
 database:sadd(bot_id..'GBan:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status  = '\n ⛧ تم حظرو عام من الجروبات '
 send(msg.chat_id_, msg.id_, usertext..status)
 else
@@ -4989,7 +4989,7 @@ end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
 function(arg,data) 
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status  = '\n ⛧ تم كتمه عام من الجروبات'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -5035,7 +5035,7 @@ if result.id_ == tonumber(1001132193) then
 send(msg.chat_id_, msg.id_, " ⛧ لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
-usertext = '\n ⛧ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'Q280K')..')'
 status  = '\n ⛧ تم كتمه عام من الجروبات'
 texts = usertext..status
 database:sadd(bot_id..'Gmute:User', result.id_)
@@ -5082,7 +5082,7 @@ end
 database:sadd(bot_id..'Gmute:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status  = '\n ⛧ تم كتمه عام من الجروبات'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
@@ -5104,7 +5104,7 @@ return false
 end
 function start_function(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status  = '\n ⛧ تم الغاء (الحظر-الكتم) عام من الجروبات'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -5127,7 +5127,7 @@ return false
 end
 function start_function(extra, result, success)
 if result.id_ then
-usertext = '\n ⛧ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'Q280K')..')'
 status  = '\n ⛧ تم الغاء (الحظر-الكتم) عام من الجروبات'
 texts = usertext..status
 database:srem(bot_id..'GBan:User', result.id_)
@@ -5155,7 +5155,7 @@ database:srem(bot_id..'GBan:User', userid)
 database:srem(bot_id..'Gmute:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status  = '\n ⛧ تم الغاء (الحظر-الكتم) عام من الجروبات'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
@@ -5277,7 +5277,7 @@ local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
 local TextS = "\n ⛧ اهلا بك في متجر ملفات نايت\n ⛧ ملفات السورس ↓\n◤━───━??𝗼𝗼𝗼𝗻━───━◥\n\n"
-local TextE = "\n⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧\n ⛧ علامة تعني { ✔️ } ملف مفعل\n ⛧ علامة تعني { ✖ } ملف معطل\n ⛧ قناة سورس نايت↓\n".." ⛧ [اضغط هنا لدخول](t.me/BARLO0O0O) \n"
+local TextE = "\n⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧\n ⛧ علامة تعني { ✔️ } ملف مفعل\n ⛧ علامة تعني { ✖ } ملف معطل\n ⛧ قناة سورس نايت↓\n".." ⛧ [اضغط هنا لدخول](t.me/Q280K) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -7480,7 +7480,7 @@ send(msg.chat_id_, msg.id_, ' ⛧ تم مسح جميع المتوحدين')
 end
 if text == ("تاك للمتوحدين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
-t = "\n ⛧ قائمة متوحدين الجروب \n𖠕━┅┅┄⟞❲[??🅞🅞🅽](t.me/BARLO0O0O)❳⟝┄┉┉━𖠕\n"
+t = "\n ⛧ قائمة متوحدين الجروب \n𖠕━┅┅┄⟞❲[??🅞🅞🅽](t.me/Q280K)❳⟝┄┉┉━𖠕\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7549,7 +7549,7 @@ send(msg.chat_id_, msg.id_, ' ⛧ تم مسح جميع الزوجات')
 end
 if text == ("تاك للزوجات") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n ⛧ قائمه زوجات الجروب \n ⛧═───═❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳═───═??\n"
+t = "\n ⛧ قائمه زوجات الجروب \n ⛧═───═❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳═───═??\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8547,7 +8547,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 local statuss = '\n ⛧ تم رفع رقاصه في الجروب\n ⛧ مبقتش شريفه لا اله الي الله'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -8569,7 +8569,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status = '\n ⛧ تم تنزيل رقاصه من الجروب\n ⛧ بقت شريفه لا اله الي الله'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -8616,7 +8616,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Jred:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 local statuss = '\n ⛧ تم رفع الـعـضو  علي زبك بنجاح\n ⛧ تفضل ابدا نيك'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -8638,7 +8638,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Jred:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'BARLO0O0O')..')'
+usertext = '\n ⛧ الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'Q280K')..')'
 status = '\n ⛧ تم تنزيل الـعـضو  من زبك\n ⛧ هيفضل متناك بردو'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -10294,7 +10294,7 @@ kickme = '✘'
 end
 NUM_MSG_MAX = database:hget(bot_id.."flooding:settings:"..msg.chat_id_,"floodmax") or 0
 local text = 
-'\n❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳'..
+'\n❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳'..
 '\n⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧'..
 '\n ⛧ اعدادات الجروب كتالي √↓'..
 '\nء⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧'..
@@ -10343,7 +10343,7 @@ local text =
 ' }\n'..' ⛧  الايدي  ↚ { '..idgp..
 ' }\n'..' ⛧  الايدي بالصوره  ↚ { '..idph..
 ' }\n'..' ⛧  الرفع  ↚ { '..setadd..
-' }\n'..' ⛧  الحظر  ↚ { '..banm..' }\n\n ⛧═───═❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳═───═ ⛧\n ⛧ قناة سورس نايت↓\n [ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳](t.me/BARLO0O0O) \n'
+' }\n'..' ⛧  الحظر  ↚ { '..banm..' }\n\n ⛧═───═❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳═───═ ⛧\n ⛧ قناة سورس نايت↓\n [ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳](t.me/Q280K) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -10456,7 +10456,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧\nاضغط علي الاسم ليتم نسخه\n⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧ٴ\n ⛧ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ ⛧ ')
+send(msg.chat_id_, msg.id_, t..'⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧\nاضغط علي الاسم ليتم نسخه\n⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧ٴ\n ⛧ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ ⛧ ')
 end
 if text == "ضع رابط" or text == 'وضع رابط' then
 if msg.reply_to_message_id_ == 0  and Mod(msg) then  
@@ -11455,13 +11455,6 @@ local DRAGON_Msg = {
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
 local function getpro(extra, result, success)
 if result.photos_[0] then
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'اضف البوت لمجموعتك', url = "https://t.me/"..data.username_.."?startgroup=new"},
-},
-}
-local msg_id = msg.id_/2097152/0.5
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,Namebot, msg.id_, msg.id_, "md")
 else
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md')
@@ -12139,7 +12132,7 @@ local Text ='تم اختيار المقطع الصوتي لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ᶜʰ ᵛᶦᵈᵉᵒ', url="t.me/comxnxp"}}, 
-{{text = '00:00', url="t.me/BARLO0O0O"}}, 
+{{text = '00:00', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Ccckkc/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12151,7 +12144,7 @@ ght = math.random(3,23);
 local Text ='تم اختيار المقطع الصوتي لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/BARLO0O0O"}}, 
+{{text = '00:00', url="t.me/Q280K"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Vibowu/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12691,7 +12684,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نت مطوري تاج راسي 😊](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[نت مطوري تاج راسي 😊](t.me/Q280K)')
 return false
 end
 
@@ -12701,7 +12694,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت مطوري الثاني حته مني 😍💚](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انت مطوري الثاني حته مني 😍💚](t.me/Q280K)')
 return false
 end
 
@@ -12711,7 +12704,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت المطور بس الصغنن 🌝💘](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انت المطور بس الصغنن 🌝💘](t.me/Q280K)')
 return false
 end
 
@@ -12721,7 +12714,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نت المالك هن يعني حاجه فوق فوف راسي 😂♥](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[نت المالك هن يعني حاجه فوق فوف راسي 😂♥](t.me/Q280K)')
 return false
 end
 
@@ -12731,7 +12724,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه😹🤦‍♂️](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه😹🤦‍♂️](t.me/Q280K)')
 return false
 end
 
@@ -12741,7 +12734,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](t.me/Q280K)')
 return false
 end
 
@@ -12751,7 +12744,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ انت المدير يعني الروم تحت سيطرتك😹](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[ انت المدير يعني الروم تحت سيطرتك😹](t.me/Q280K)')
 return false
 end
 
@@ -12761,7 +12754,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ](t.me/Q280K)')
 return false
 end
 
@@ -12771,7 +12764,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ انت مميز ابن ناس 😊 ](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[ انت مميز ابن ناس 😊 ](t.me/Q280K)')
 return false
 end
 
@@ -12781,7 +12774,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت مجرد عضو زليل حقير ملوش لزمه 😂](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انت مجرد عضو زليل حقير ملوش لزمه 😂](t.me/Q280K)')
 return false
 end
 
@@ -12816,7 +12809,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/Q280K)')
 return false
 end
 
@@ -12826,7 +12819,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/Q280K)')
 return false
 end
 
@@ -12839,7 +12832,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي..🥺💜](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي..🥺💜](t.me/Q280K)')
 return false
 end
 end
@@ -12854,7 +12847,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام..💛🙂](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام..💛🙂](t.me/Q280K)')
 return false
 end
 end
@@ -12884,7 +12877,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك..🌚♥️](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك..🌚♥️](t.me/Q280K)')
 return false
 end
 end
@@ -12910,7 +12903,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..♥️🦋](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..♥️🦋](t.me/Q280K)')
 return false
 end
 
@@ -12923,7 +12916,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا عايز مح انا كمان 🥺💛](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انا عايز مح انا كمان 🥺💛](t.me/Q280K)')
 return false
 end
 end
@@ -12938,7 +12931,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف...🥺💔](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف...🥺💔](t.me/Q280K)')
 return false
 end
 end
@@ -12953,7 +12946,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب..😥](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب..😥](t.me/Q280K)')
 return false
 end
 end
@@ -12967,7 +12960,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ونجيب اشخاص ...😂😜](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[ونجيب اشخاص ...😂😜](t.me/Q280K)')
 return false
 end
 end
@@ -12982,7 +12975,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بـعشـقق .🥰❤️](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[بـعشـقق .🥰❤️](t.me/Q280K)')
 return false
 end
 end
@@ -12997,7 +12990,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف...🥺💔](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف...🥺💔](t.me/Q280K)')
 return false
 end
 end
@@ -13011,7 +13004,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وعليكم السلام ..🖤🌚](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[وعليكم السلام ..🖤🌚](t.me/Q280K)')
 return false
 end
 end
@@ -13025,7 +13018,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خخخ امال ..😹](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[خخخ امال ..😹](t.me/Q280K)')
 return false
 end
 end
@@ -13039,7 +13032,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[قامد قموده ..🌝♥️](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[قامد قموده ..🌝♥️](t.me/Q280K)')
 return false
 end
 end
@@ -13053,7 +13046,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا اجمد ..🌚💕](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انا اجمد ..🌚💕](t.me/Q280K)')
 return false
 end
 end
@@ -13067,7 +13060,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا اجمد ..??💕](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[انا اجمد ..??💕](t.me/Q280K)')
 return false
 end
 end
@@ -13081,7 +13074,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش هروح ..😹👻](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[مش هروح ..😹👻](t.me/Q280K)')
 return false
 end
 end
@@ -13095,7 +13088,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش بدودو ..😹👻](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[مش بدودو ..😹👻](t.me/Q280K)')
 return false
 end
 end
@@ -13109,7 +13102,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[الود كبر وبقي عندو بنت ..😻💥](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[الود كبر وبقي عندو بنت ..😻💥](t.me/Q280K)')
 return false
 end
 end
@@ -13123,7 +13116,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عندو كام سنه ..😹💥](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[عندو كام سنه ..😹💥](t.me/Q280K)')
 return false
 end
 end
@@ -13137,7 +13130,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..🌚💕](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..🌚💕](t.me/Q280K)')
 return false
 end
 end
@@ -13151,7 +13144,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..🌚💕](t.me/BARLO0O0O)')
+send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..🌚💕](t.me/Q280K)')
 return false
 end
 end
@@ -13558,12 +13551,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」     ↝💘\n¦• 𝙼𝚂𝙶𝚂↬  「'..Msguser..'」     ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」     ↝💘\n¦• 𝙸𝙳↬   「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬  「@BARLO0O0O」     ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」     ↝💘\n¦• 𝙼𝚂𝙶𝚂↬  「'..Msguser..'」     ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」     ↝💘\n¦• 𝙸𝙳↬   「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬  「@Q280K」     ↝💘\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي 「'..Name..'」 \n¦• 𝚄𝚂𝙴𝚁 ↬  「'..Name..'」    ↝??\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」    ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬   「@BARLO0O0O」 ↝🇧??\n')
+send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي 「'..Name..'」 \n¦• 𝚄𝚂𝙴𝚁 ↬  「'..Name..'」    ↝??\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」    ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬   「@Q280K」 ↝🇧??\n')
 else
-send(msg.chat_id_, msg.id_, '\n ⛧ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ 「'..username..'」\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」\n¦• 𝒄𝒉↬  「@BARLO0O0O」\n')
+send(msg.chat_id_, msg.id_, '\n ⛧ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ 「'..username..'」\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」\n¦• 𝒄𝒉↬  「@Q280K」\n')
 end 
 end
 end
@@ -13581,7 +13574,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」   ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」   ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」   ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」   ↝💘\n¦• 𝒄𝒉↬ 「@BARLO0O0O」   ↝💘\n')
+send(msg.chat_id_, msg.id_,'[\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」   ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」   ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」   ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」   ↝💘\n¦• 𝒄𝒉↬ 「@Q280K」   ↝💘\n')
 end
 end
 
@@ -13676,12 +13669,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」     ↝💘\n¦• 𝙼𝚂𝙶𝚂↬  「'..Msguser..'」     ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」     ↝💘\n¦• 𝙸𝙳↬   「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬  「@BARLO0O0O」     ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」     ↝💘\n¦• 𝙼𝚂𝙶𝚂↬  「'..Msguser..'」     ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」     ↝💘\n¦• 𝙸𝙳↬   「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬  「@Q280K」     ↝💘\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」    ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」    ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬   「@BARLO0O0O」    ↝💘\n')
+send(msg.chat_id_, msg.id_,'[\n ¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」    ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」    ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」    ↝💘\n¦• 𝒄𝒉↬   「@Q280K」    ↝💘\n')
 else
-send(msg.chat_id_, msg.id_, '\n ⛧ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ 「'..username..'」\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」\n¦• 𝒄𝒉↬  「@BARLO0O0O」\n')
+send(msg.chat_id_, msg.id_, '\n ⛧ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ 「'..username..'」\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」\n¦• 𝒄𝒉↬  「@Q280K」\n')
 end 
 end
 end
@@ -13699,7 +13692,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」   ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」   ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」   ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」   ↝💘\n¦• 𝒄𝒉↬ 「@BARLO0O0O」   ↝💘\n')
+send(msg.chat_id_, msg.id_,'[\n¦• 𝚄𝚂𝙴𝚁 ↬  「'..username..'」   ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ 「'..Msguser..'」   ↝💘\n¦• 𝚁𝙰𝙽𝙺↬ 「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」   ↝💘\n¦• 𝙸𝙳↬  「'..msg.sender_user_id_..'」   ↝💘\n¦• 𝒄𝒉↬ 「@Q280K」   ↝💘\n')
 end
 end
 
@@ -13816,7 +13809,7 @@ local List = {
 𖤍 |↶ #username    ꙰🇪🇬.
 𖤍 |↶ #msgs    ꙰🇪🇬.
 𖤍 |↶ #stast    ꙰🇪🇬.
-𖤍 |↶ 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𖤍 |↶ 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -13825,7 +13818,7 @@ local List = {
  𝗦𝗧𝗔 ⟿ #stast  « 
  𝗜𝗗  ⟿ #id  « 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
@@ -13833,21 +13826,21 @@ local List = {
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
-🇪🇬𝗖𝗛 - 「@BARLO0O0O」 💞.
+🇪🇬𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
  𝚄𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
  𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
- 𝗖𝗛 - 「@BARLO0O0O」 ??.
+ 𝗖𝗛 - 「@Q280K」 ??.
 ]],
 [[
 𓅓➪:ᗰᔕᘜᔕ : #msgs - ❦ .
 ??➪ : Iᗪ : #id - ❦ . 
 𓅓➪ : ᔕTᗩᔕT : #stast - ❦ . 
 𓅓➪ : ᑌᔕᖇᗴᑎᗩᗰᗴ : #username _ ❦ .
-𓅓➪ : 𝗖𝗛 - 「@BARLO0O0O」 💞.
+𓅓➪ : 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 - ايديڪ  ⁞ #id 💘 ٬
@@ -13855,14 +13848,14 @@ local List = {
 - رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
 - رتبتڪ الحلوه ⁞ #stast  💘٬
 - سحڪاتڪ الفول ⁞ #edit 💘 ٬
-- 𝗖𝗛 - 「@BARLO0O0O」 💞.
+- 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞?? †: #id 𓀀 .
-𓁷 - 𝗖𝗛 - 「@BARLO0O0O」 💞.
+𓁷 - 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
@@ -13870,7 +13863,7 @@ local List = {
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
-𖡋 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𖡋 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
@@ -13878,7 +13871,7 @@ local List = {
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
-𖤂 ~ 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𖤂 ~ 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ••• ••• ••• ••• ••• ••• ••• 
@@ -13887,14 +13880,14 @@ local List = {
  ࿕ ¦• 𝙂𝙈𝘼𝙎  ⟿ #stast ༆
  ࿕ ¦• 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
 ••• ••• ••• ••• ••• ••• •••
- ࿕ ¦• 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+ ࿕ ¦• 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+► 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 -›   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
@@ -13902,14 +13895,14 @@ local List = {
 -›   𝙸𝙳 . #id 🇪🇬 ꙰ 
 -›   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
 -›   𝙼𝚂𝙶𝚂 . #msgs 🇪🇬 ꙰
--›   ??𝗛 - 「@BARLO0O0O」 🇪🇬 ꙰.
+-›   ??𝗛 - 「@Q280K」 🇪🇬 ꙰.
 ]],
 [[
 - UsEr🇪🇬 ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  「@BARLO0O0O」 💞.
+- 𝗖𝗛 🇪🇬 ꙰  「@Q280K」 💞.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -13918,14 +13911,14 @@ local List = {
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+🇪🇬 - 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
-- 𓏬 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+- 𓏬 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
@@ -13933,28 +13926,28 @@ local List = {
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
 ᯓ 𝟔𝟔𝟔𖡋 #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
-ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
  ⛧•𝐮𝐬𝐞𝐫 : #username 𖣬  
  ⛧•𝐦𝐬𝐠  : #msgs 𖣬 
  ⛧•𝐬𝐭𝐚 : #stast 𖣬 
  ⛧•𝐢𝐝  : #id 𖣬
- ⛧•𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+ ⛧•𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
 - ᴍѕɢѕ ➣ #msgs .
 - ѕᴛᴀᴛѕ ➣ #stast .
 - ʏᴏᴜʀ ɪᴅ ➣ #id  .
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+- 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 - ᴜѕʀ: #username ঌ.
 - ᴍѕɢ: #msgs  ঌ.
 - ѕᴛᴀ: #stast  ঌ.
 - ɪᴅ: #id ঌ.
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+- 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 - 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
@@ -13962,14 +13955,14 @@ local List = {
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+- 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+⌔➺: 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -13978,28 +13971,28 @@ local List = {
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+🇪🇬 ꙰  - 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
 🌯 ¦✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
 🌯 ¦✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
-🌯 ¦ 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+🌯 ¦ 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ¦• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇪??.
 ¦• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇪🇬.
 ¦• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇪🇬.
 ¦• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇪🇬.
-¦• 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+¦• 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝒖??𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝐢𝐝 𓂅 #id 𓍯➸💞.
-➞: 𝗖𝗛 - 「@BARLO0O0O」 💞.
+➞: 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ➼ : 𝐼𝐷 𖠀 #id . ♡
@@ -14007,14 +14000,14 @@ local List = {
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 𖠀 #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
-➼ : 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+➼ : 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ▽ ¦❀• USER ➭ ⁞ #username .
 ▽ ¦❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
 ▽ ¦❀• STAT ➬ ⁞ #stast  .
 ▽ ¦❀• 𝙸𝙳  ➬ ⁞ #id  .
-▽ ¦❀• 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+▽ ¦❀• 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 • ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
@@ -14022,14 +14015,14 @@ local List = {
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
 • ❉ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆  ⁞ .
-• ❉ 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+• ❉ 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 |USERNAME #username 𓃚
 | YOUR -ID - #id 𓃚
 | STAS-#stast 𓃚
  | MSAG - #msgs 𓃚
- | 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+ | 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 𝟔𝟔𝟔 𖡋 #username • 𖣰💞
@@ -14037,14 +14030,14 @@ local List = {
 𝟔𝟔𝟔 𖡋 #id • 𖣰💞
 𝟔𝟔𝟔 ?? #game • 𖣰💞
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
-𝟔𝟔𝟔 𖡋 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𝟔𝟔𝟔 𖡋 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+⌔➺: 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
  ⛧ - 𝓾𝓼𝓮𝓻 ➪ #username ⛧.
@@ -14052,42 +14045,42 @@ local List = {
  ⛧ - 𝓲𝓭 ➪ #id ⸙ ⛧.
  ⛧ - 𝓰𝓶𝓪𝓼 ➪ #gmas ⸙ ⛧.
  ⛧ - 𝓶𝓼𝓰𝓼 ➪ #msgs ⛧.
- ⛧ - 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+ ⛧ - 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 - 𝄬 username . #username ➪🇪🇬
  - 𝄬 stast . #stast ➪🇪??
  - 𝄬 id . #id ➪🇪🇬
  - 𝄬 msgs . #msgs ➪🇪🇬
- - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+ - 𝄬 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢𝐝 𓂅 #id 𓍯➥♡.
-◣: 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+◣: 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ↣• USE ➤ #username  ↝🍬.
 ↣• MSG ➤  #msgs  ↝🍬.
 ↣• STA ➤  #stast  ↝🍬.
 ↣• iD ➤ #id  ↝🍬.
-↣• 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+↣• 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ➫✿: S #stast 𓍯➟♡.
 ➫✿: U𓂅 #username 𓍯➟♡.
 ➫✿: M𓂅 #msgs 𓍯➟♡.
 ➫✿:  I  #id ➟♡.
-➫✿: 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+➫✿: 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ✶- 𝒔𝒕𝒂𓂅 #stast 𓍯↝❃ .
 ✶- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯↝❃.
 ✶- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯↝❃.
 ✶- 𝐢𝐝 𓂅 #id 𓍯↝❃.
-✶- 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+✶- 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 • 🖤 | 𝑼𝑬𝑺 :  #username
@@ -14098,14 +14091,14 @@ local List = {
 
 • 🖤 | 𝑴𝑺𝑮 : #msgs
 
-• 🖤 | 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+• 🖤 | 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 • USE 𖦹 #username 
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• 𝗖𝗛 - 「@BARLO0O0O」 💞.
+• 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
@@ -14115,7 +14108,7 @@ local List = {
 - ᴇᴅɪᴛ ᴍsɢ ➣ #edit .
 - ᴅᴇᴛᴀɪʟs ➣ #auto . 
 -  ɢᴀᴍᴇ ➣ #game .
-- 𝗖𝗛 - 「@BARLO0O0O」 💞.
+- 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 : #username
@@ -14124,7 +14117,7 @@ local List = {
 ⚕𝙄𝘿 : #id
 ⚕𝙅𝙀𝙒𝙀𝙇𝙎 : #game
 ⚕𝘿𝙀𝙑 : #ridha
-⚕𝗖𝗛 - 「@BARLO0O0O」 💞.
+⚕𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 • 🦄 | 𝑼𝑬𝑺 : #username ‌‌‏⛧
@@ -14132,7 +14125,7 @@ local List = {
 • 🦄 | 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 | 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 : ⁞
-• 🦄 | 𝗖𝗛 - 「@BARLO0O0O」 💞.
+• 🦄 | 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 • △ | 𝑼𝑬𝑺 : #username ‌‌‏⛧
@@ -14140,7 +14133,7 @@ local List = {
 • ⊠ | 𝑰𝑫 : #id ‌‌‏♕
 • ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
 • ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
-• ❏ | 𝗖𝗛 - 「@BARLO0O0O」 💞.
+• ❏ | 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ┇iD ➺ #id 💘
@@ -14148,7 +14141,7 @@ local List = {
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
 ┇EdIT ➺ #edit  💒
-┇𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+┇𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ★
@@ -14156,7 +14149,7 @@ local List = {
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
-• 🖤 | 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+• 🖤 | 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ┄─━━ ⛧━━─┄
@@ -14167,14 +14160,14 @@ local List = {
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ ⛧━━─┄
-✰ 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+✰ 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
 𓄼 ѕᴛᴀ : #stast ☥
 𓄼 ɪᴅ : #id ‌‌‏⛧
 𓄼 ᴍѕɢ : #msgs 𓆊
-𓄼 𝗖𝗛 - 「@BARLO0O0O」 💞.
+𓄼 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 • ﮼ايديك  #id 🌻 ٬
@@ -14182,7 +14175,7 @@ local List = {
 • ﮼مسجاتك ➺ #msgs 🌻 ٬
 •  ﮼رتبتك➺ #stast 🌻 ٬
 • ﮼تعديلك ➺ #edit 🌻 ٬
-• ﮼ تعين ➺ 「@BARLO0O0O」 💞.
+• ﮼ تعين ➺ 「@Q280K」 💞.
 ]],
 [[
 ‎⿻┊Yor iD 𖠄 #id ٫
@@ -14190,7 +14183,7 @@ local List = {
 ‌‎⿻┊MsGs 𖠄 #msgs ٫
 ‌‎⿻┊StAtS 𖠄 #stast ٫
 ‌‎⿻┊‌‎EdiT 𖠄 #edit ٫
-‌‎⿻┊‌‎𝗖𝗛 - 「@BARLO0O0O」 💞.
+‌‎⿻┊‌‎𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ⌾ | 𝐢𝐝  𓃠 #id .
@@ -14198,7 +14191,7 @@ local List = {
 ⌾ | 𝐦𝐬𝐠 𓃠 #msgs .
 ⌾ | 𝐬??𝐚 𓃠 #stast .
 ⌾ | 𝒆𝒅𝒊𝒕 𓃠 #edit .
-⌾ | 𝗖𝗛 - 「@BARLO0O0O」 💞.
+⌾ | 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ♡ : 𝐼𝐷 𖠀 #id .
@@ -14206,49 +14199,49 @@ local List = {
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
 ♡ : 𝑆𝑇𝐴𝑇𝑆 𖠀 #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
-♡ : 𝗖𝗛 - 「@BARLO0O0O」 💞.
+♡ : 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 •ᑌᔕᗴᖇ- #username 
 •ᔕTᗩ- #stast 
 •ᗰᔕ- #msgs 
 •Iᗪ- #id
-•𝗖𝗛 - 「@BARLO0O0O」 💞.
+•𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 • USE ➤ #username  .
 • MSG ➤  #msgs  .
 • STA ➤  #stast  .
 • iD ➤ #id  .
-• 𝗖𝗛 - 「@BARLO0O0O」 💞.
+• 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 𝐘𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬??𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪🇬 - 「@BARLO0O0O」 ⛧.
+𝗖𝗛☤🇪🇬 - 「@Q280K」 ⛧.
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
-⭐️𝗖𝗛 - 「@BARLO0O0O」 💞.
+⭐️𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 • 🇪🇬 - 𝚄𝚂𝙴𝚁 « #username  🍭
 • 🇪🇬 - 𝙸𝙳 « #id  🍭
 • 🇪🇬 - 𝙼𝚂𝙶𝚂 « #msgs  🍭
 • 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃 « #stast  🍭
-• 🇪🇬 - 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+• 🇪🇬 - 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 • USE ➤  #username .
 • MSG ➤  #msgs .
 • STA ➤  #stast .
 • iD ➤ #id .
-• 𝗖𝗛 - 「@BARLO0O0O」 💞.
+• 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
@@ -14256,7 +14249,7 @@ local List = {
 🇪?? - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+🇪🇬 - 𝄬 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 𓄼🇪🇬 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
@@ -14264,14 +14257,14 @@ local List = {
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⛧
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⛧
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
-𓄼🇪🇬 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𓄼🇪🇬 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 Usᴇʀ Nᴀᴍᴇ ~ #username 
 Yᴏᴜʀ ɪᴅ ~ #id 
 Sᴛᴀsᴛ ~ #stast 
 Msᴀɢ ~ #msgs
-𝗖𝗛 - 「@BARLO0O0O」 💞.
+𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
@@ -14279,7 +14272,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
-- 🇪🇬 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+- 🇪🇬 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  𓃠
@@ -14287,7 +14280,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - ?? id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪?? - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 💞.
+🇪?? - 𝄬 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 金 - 𝓾𝓼𝓮𝓻𝓷𝓪𝓶𝓮 . #username ⸙ 
@@ -14295,28 +14288,28 @@ Msᴀɢ ~ #msgs
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
-金 - 𝗖𝗛 - 「@BARLO0O0O」 💞.
+金 - 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ➜𝗨𝗦??𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
-➜𝗖𝗛 - 「@BARLO0O0O」 💞.
+➜𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ⌔┇Msgs : #msgs.
 ⌔┇ID : #id.
 ⌔┇Stast : #stast.
 ⌔┇UserName : #username.
-⌔┇𝗖𝗛 - 「@BARLO0O0O」 💞.
+⌔┇𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
 𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
-𓂅 𝗖𝗛 - 「@BARLO0O0O」 💞.
+𓂅 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 - 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
@@ -14324,7 +14317,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝐢𝐝 . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
-- 🇪🇬 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+- 🇪🇬 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
@@ -14332,7 +14325,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦𝗚𝗦 . #msgs 🇪🇬 ꙰
-ᯓ 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+ᯓ 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
@@ -14340,14 +14333,14 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
-.𖣂 𝗖𝗛 - 「@BARLO0O0O」 💞.
+.𖣂 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ➥• USE 𖦹 #username - 🇪🇬.
 ➥• MSG 𖥳 #msgs  - 🇪🇬.
 ➥• STA 𖦹 #stast - 🇪🇬.
 ➥• iD 𖥳 #id - 🇪🇬.
-➥• 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+➥• 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 👳🏼‍♂ - 𝄬 username . #username . 🇪🇬
@@ -14355,14 +14348,14 @@ Msᴀɢ ~ #msgs
 👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
-👳🏼‍♂ - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+👳🏼‍♂ - 𝄬 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
 ➭- 𝐢𝐝 𓂅 #id 𓍯. 💕
-➭- 𝗖𝗛 - 「@BARLO0O0O」 💞.
+➭- 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
@@ -14370,7 +14363,7 @@ Msᴀɢ ~ #msgs
 𓄼 ɪᴅ : #id ‌‌‏⛧
 𓄼 ᴍѕɢ : #msgs 𓆊 
 𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
-𓄼 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𓄼 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
@@ -14379,7 +14372,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
-𝐓𝐓• 𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𝐓𝐓• 𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 𝟓 𝟔 𖡻 #username  ࿇🦄
@@ -14387,7 +14380,7 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
-𝟓 𝟔 𖡻 𝗖𝗛 - 「@BARLO0O0O」 💞.
+𝟓 𝟔 𖡻 𝗖𝗛 - 「@Q280K」 💞.
 ]],
 [[
 ༻┉𖦹┉┉𖦹┉┉𖦹┉┉𖦹┉༺
@@ -14397,7 +14390,7 @@ Msᴀɢ ~ #msgs
 • |𝗠𝗦𝗚  ⁞ #edit
 • |𝗔𝗨𝗧𝗢 ⁞ #auto
 —————————————
-𝗖𝗛 - 「@BARLO0O0O」 ⛧.
+𝗖𝗛 - 「@Q280K」 ⛧.
 ]],
 [[
 ┄─━━𖦹━━─┄
@@ -14408,14 +14401,14 @@ Msᴀɢ ~ #msgs
 𖣰𖡻 𖡋𝗔𝗨𝗧𝗢• #auto •𓀎
 𖣰𖡻 𖡋𝗘𝗗𝗜𝗧• #edit • 𓀎
 ┄─━━𖦹━━─┄
-𝗖𝗛 - 「@BARLO0O0O」  𖦹 .
+𝗖𝗛 - 「@Q280K」  𖦹 .
 ]],
 [[
 𖤍 |↶ #id    ꙰🇪🇬.
 𖤍 |↶ #username    ꙰🇪🇬.
 𖤍 |↶ #msgs    ꙰🇪🇬.
 𖤍 |↶ #stast    ꙰🇪🇬.
-𖤍 |↶ 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𖤍 |↶ 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -14424,7 +14417,7 @@ Msᴀɢ ~ #msgs
  𝗦𝗧𝗔 ⟿ #stast  « 
  𝗜𝗗  ⟿ #id  « 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
@@ -14432,21 +14425,21 @@ Msᴀɢ ~ #msgs
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
-🇪🇬𝗖𝗛 - 「@BARLO0O0O」 ⛧
+🇪🇬𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
  𝚄𝚂𝙴?? 𓄹𓄼 #username
  𝙸𝙳  𓄹𓄼 #id 
  𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
- 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𓅓➪:ᗰᔕᘜᔕ : #msgs - ❦ .
 𓅓➪ : Iᗪ : #id - ❦ . 
 𓅓➪ : ᔕTᗩᔕT : #stast - ❦ . 
 𓅓➪ : ᑌᔕᖇᗴᑎᗩᗰᗴ : #username _ ❦ .
-𓅓➪ : 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𓅓➪ : 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - ايديڪ  ⁞ #id 💘 ٬
@@ -14454,14 +14447,14 @@ Msᴀɢ ~ #msgs
 - رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
 - رتبتڪ الحلوه ⁞ #stast  💘٬
 - سحڪاتڪ الفول ⁞ #edit 💘 ٬
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞𝙙 †: #id 𓀀 .
-𓁷 - 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𓁷 - 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
@@ -14469,7 +14462,7 @@ Msᴀɢ ~ #msgs
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
-𖡋 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𖡋 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
@@ -14477,7 +14470,7 @@ Msᴀɢ ~ #msgs
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖?? #edit 𖤐
-𖤂 ~ 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𖤂 ~ 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 -›   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
@@ -14485,7 +14478,7 @@ Msᴀɢ ~ #msgs
 -›   𝙸𝙳 . #id 🇪🇬 ꙰ 
 -›   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
 -›   𝙼??𝙶𝚂 . #msgs 🇪🇬 ꙰
--›   𝗖𝗛 - 「@BARLO0O0O」 🇪🇬 ꙰.
+-›   𝗖𝗛 - 「@Q280K」 🇪🇬 ꙰.
 ]],
 [[
 ••• ••• ••• ••• ••• ••• ••• 
@@ -14494,21 +14487,21 @@ Msᴀɢ ~ #msgs
  ࿕ ¦• 𝙂𝙈𝘼𝙎  ⟿ #stast ༆
  ࿕ ¦• 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
 ••• ••• ••• ••• ••• ••• •••
- ࿕ ¦• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ ࿕ ¦• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜?? #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+► 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - UsEr🇪🇬 ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  「@BARLO0O0O」 ⛧
+- 𝗖𝗛 🇪🇬 ꙰  「@Q280K」 ⛧
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -14517,14 +14510,14 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+🇪🇬 - 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
-- 𓏬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 𓏬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
@@ -14532,28 +14525,28 @@ Msᴀɢ ~ #msgs
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
 ᯓ 𝟔𝟔𝟔𖡋 #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
-ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
  ⛧•𝐮𝐬𝐞𝐫 : #username 𖣬  
  ⛧•𝐦𝐬𝐠  : #msgs 𖣬 
  ⛧•𝐬𝐭𝐚 : #stast 𖣬 
  ⛧•𝐢𝐝  : #id 𖣬
- ⛧•𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ ⛧•𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
 - ᴍѕɢѕ ➣ #msgs .
 - ѕᴛᴀᴛѕ ➣ #stast .
 - ʏᴏᴜʀ ɪᴅ ➣ #id  .
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - ᴜѕʀ: #username ঌ.
 - ᴍѕɢ: #msgs  ঌ.
 - ѕᴛᴀ: #stast  ঌ.
 - ɪᴅ: #id ঌ.
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
@@ -14561,14 +14554,14 @@ Msᴀɢ ~ #msgs
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
 🌯 ¦✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
 🌯 ¦✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
-🌯 ¦ 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+🌯 ¦ 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -14577,28 +14570,28 @@ Msᴀɢ ~ #msgs
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+🇪🇬 ꙰  - 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+⌔➺: 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ¦• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇪🇬.
 ¦• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇪🇬.
 ¦• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇪🇬.
 ¦• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇪🇬.
-¦• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+¦• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: ??𝒅 𓂅 #id 𓍯➸💞.
-➞: 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+➞: 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ➼ : 𝐼𝐷 𖠀 #id . ♡
@@ -14606,14 +14599,14 @@ Msᴀɢ ~ #msgs
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 𖠀 #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
-➼ : 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+➼ : 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ▽ ¦❀• USER ➭ ⁞ #username .
 ▽ ¦❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
 ▽ ¦❀• STAT ➬ ⁞ #stast  .
 ▽ ¦❀• 𝙸𝙳  ➬ ⁞ #id  .
-▽ ¦❀• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+▽ ¦❀• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
@@ -14621,14 +14614,14 @@ Msᴀɢ ~ #msgs
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
 • ❉ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆  ⁞ .
-• ❉ 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• ❉ 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 |USERNAME #username 𓃚
 | YOUR -ID - #id 𓃚
 | STAS-#stast 𓃚
  | MSAG - #msgs 𓃚
- | 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ | 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𝟔𝟔𝟔 𖡋 #username • 𖣰💞
@@ -14636,14 +14629,14 @@ Msᴀɢ ~ #msgs
 𝟔??𝟔 𖡋 #id • 𖣰💞
 𝟔𝟔𝟔 𖡋 #game • 𖣰💞
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
-𝟔𝟔𝟔 𖡋 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𝟔𝟔𝟔 𖡋 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+⌔➺: 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
  ⛧ - 𝓾𝓼𝓮𝓻 ➪ #username ⛧.
@@ -14651,42 +14644,42 @@ Msᴀɢ ~ #msgs
  ⛧ - 𝓲𝓭 ➪ #id ⸙ ⛧.
  ⛧ - 𝓰𝓶𝓪𝓼 ➪ #gmas ⸙ ⛧.
  ⛧ - 𝓶𝓼𝓰𝓼 ➪ #msgs ⛧.
- ⛧ - 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ ⛧ - 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢𝐝 𓂅 #id 𓍯➥♡.
-◣: 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+◣: 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - 𝄬 username . #username ➪🇪🇬
  - 𝄬 stast . #stast ➪🇪🇬
  - 𝄬 id . #id ➪🇪🇬
  - 𝄬 msgs . #msgs ➪🇪🇬
- - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ - 𝄬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ↣• USE ➤ #username  ↝🍬.
 ↣• MSG ➤  #msgs  ↝🍬.
 ↣• STA ➤  #stast  ↝🍬.
 ↣• iD ➤ #id  ↝🍬.
-↣• 𝗖𝗛 - 「@BARLO0O0O」 🍬
+↣• 𝗖𝗛 - 「@Q280K」 🍬
 ]],
 [[
 ➫✿: S #stast 𓍯➟♡.
 ➫✿: U𓂅 #username 𓍯➟♡.
 ➫✿: M𓂅 #msgs 𓍯➟♡.
 ➫✿:  I  #id ➟♡.
-➫✿: 𝗖?? - 「@BARLO0O0O」 ♡.
+➫✿: 𝗖?? - 「@Q280K」 ♡.
 ]],
 [[
 ✶- 𝒔𝒕𝒂𓂅 #stast 𓍯↝❃ .
 ✶- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯↝❃.
 ✶- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯↝❃.
 ✶- 𝐢𝐝 𓂅 #id 𓍯↝❃.
-✶- 𝗖𝗛 - 「@BARLO0O0O」 ↝❃.
+✶- 𝗖𝗛 - 「@Q280K」 ↝❃.
 ]],
 [[
 • 🖤 | 𝑼𝑬𝑺 :  #username
@@ -14697,14 +14690,14 @@ Msᴀɢ ~ #msgs
 
 • 🖤 | 𝑴𝑺𝑮 : #msgs
 
-• 🖤 | 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• 🖤 | 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • USE 𖦹 #username 
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 🌨↓Use ⇨ #username 🌨
@@ -14721,7 +14714,7 @@ Msᴀɢ ~ #msgs
 - ᴇᴅɪᴛ ᴍsɢ ➣ #edit .
 - ᴅᴇᴛᴀɪʟs ➣ #auto . 
 -  ɢᴀᴍᴇ ➣ #game .
-- 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍??𝘼𝙈𝙀 : #username
@@ -14730,7 +14723,7 @@ Msᴀɢ ~ #msgs
 ⚕𝙄𝘿 : #id
 ⚕??𝙀𝙒𝙀𝙇𝙎 : #game
 ⚕𝘿𝙀𝙑 : #ridha
-⚕𝗖𝗛 - 「@BARLO0O0O」 ⛧
+⚕𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • 🦄 | 𝑼𝑬𝑺 : #username ‌‌‏⛧
@@ -14738,7 +14731,7 @@ Msᴀɢ ~ #msgs
 • 🦄 | 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 | 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 : ⁞
-• 🦄 | 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• 🦄 | 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • △ | 𝑼𝑬𝑺 : #username ‌‌‏⛧
@@ -14746,7 +14739,7 @@ Msᴀɢ ~ #msgs
 • ⊠ | 𝑰𝑫 : #id ‌‌‏♕
 • ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
 • ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
-• ❏ | 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• ❏ | 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ┇iD ➺ #id 💘
@@ -14754,21 +14747,21 @@ Msᴀɢ ~ #msgs
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
 ┇EdIT ➺ #edit  💒
-┇𝗖𝗛 - 「@BARLO0O0O」 ⛧
+┇𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⛧
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
-• 🖤 | 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• 🖤 | 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
 𓄼 ѕᴛᴀ : #stast ☥
 𓄼 ɪᴅ : #id ‌‌‏⛧
 𓄼 ᴍѕɢ : #msgs 𓆊
-𓄼 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𓄼 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ‎⿻┊Yor iD 𖠄 #id ٫
@@ -14776,7 +14769,7 @@ Msᴀɢ ~ #msgs
 ‌‎⿻┊MsGs 𖠄 #msgs ٫
 ‌‎⿻┊StAtS 𖠄 #stast ٫
 ‌‎⿻┊‌‎EdiT 𖠄 #edit ٫
-‌‎⿻┊‌‎𝗖𝗛 - 「@BARLO0O0O」 ⛧
+‌‎⿻┊‌‎𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • ﮼ايديك  #id 🌻 ٬
@@ -14784,7 +14777,7 @@ Msᴀɢ ~ #msgs
 • ﮼مسجاتك ➺ #msgs 🌻 ٬
 •  ﮼رتبتك➺ #stast 🌻 ٬
 • ﮼تعديلك ➺ #edit 🌻 ٬
-•  تعين ➺ 「@BARLO0O0O」 ⛧
+•  تعين ➺ 「@Q280K」 ⛧
 ]],
 [[
 ┄─━━ ⛧━━─┄
@@ -14795,7 +14788,7 @@ Msᴀɢ ~ #msgs
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ ⛧━━─┄
-✰ 𝗖?? - 「@BARLO0O0O」 ⛧
+✰ 𝗖?? - 「@Q280K」 ⛧
 ]],
 [[
 ⌾ | 𝐢𝐝  𓃠 #id .
@@ -14803,7 +14796,7 @@ Msᴀɢ ~ #msgs
 ⌾ | 𝐦𝐬𝐠 𓃠 #msgs .
 ⌾ | 𝐬𝐭𝐚 𓃠 #stast .
 ⌾ | 𝒆𝒅𝒊𝒕 𓃠 #edit .
-⌾ | 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+⌾ | 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ♡ : 𝐼𝐷 𖠀 #id .
@@ -14811,49 +14804,49 @@ Msᴀɢ ~ #msgs
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
 ♡ : 𝑆𝑇𝐴𝑇𝑆 𖠀 #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
-♡ : 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+♡ : 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 •ᑌᔕᗴᖇ- #username 
 •ᔕTᗩ- #stast 
 •ᗰᔕ- #msgs 
 •Iᗪ- #id
-•𝗖𝗛 - 「@BARLO0O0O」 ⛧
+•𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • USE ➤ #username  .
 • MSG ➤  #msgs  .
 • STA ➤  #stast  .
 • iD ➤ #id  .
-• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𝐘??𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪🇬 - 「@BARLO0O0O」 ⛧
+𝗖𝗛☤🇪🇬 - 「@Q280K」 ⛧
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
-⭐️𝗖𝗛 - 「@BARLO0O0O」 ⛧
+⭐️𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • 🇪🇬 - 𝚄𝚂𝙴𝚁 « #username  🍭
 • 🇪🇬 - 𝙸𝙳 « #id  🍭
 • 🇪🇬 - 𝙼𝚂𝙶𝚂 « #msgs  🍭
 • 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃 « #stast  🍭
-• 🇪🇬 - 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• 🇪🇬 - 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 • USE ➤  #username .
 • MSG ➤  #msgs .
 • STA ➤  #stast .
 • iD ➤ #id .
-• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
@@ -14861,14 +14854,14 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+🇪🇬 - 𝄬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ➜𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
-➜𝗖𝗛 - 「@BARLO0O0O」 ⛧
+➜𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
@@ -14876,21 +14869,21 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
-- 🇪🇬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 🇪🇬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ⌔┇Msgs : #msgs.
 ⌔┇ID : #id.
 ⌔┇Stast : #stast.
 ⌔┇UserName : #username.
-⌔┇𝗖𝗛 - 「@BARLO0O0O」 ⛧
+⌔┇𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
 𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎????𝒆𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
-𓂅 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𓂅 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𓄼🇪🇬 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
@@ -14898,21 +14891,21 @@ Msᴀɢ ~ #msgs
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⛧
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⛧
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
-𓄼🇪🇬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𓄼🇪🇬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 Usᴇʀ Nᴀᴍᴇ ~ #username 
 Yᴏᴜʀ ɪᴅ ~ #id 
 Sᴛᴀsᴛ ~ #stast 
 Msᴀɢ ~ #msgs
-𝗖?? - 「@BARLO0O0O」 ⛧
+𝗖?? - 「@Q280K」 ⛧
 ]],
 [[
 ➥• USE 𖦹 #username - 🇪??.
 ➥• MSG 𖥳 #msgs  - 🇪🇬.
 ➥• STA 𖦹 #stast - 🇪??.
 ➥• iD 𖥳 #id - 🇪🇬.
-➥• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+➥• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  ??
@@ -14920,7 +14913,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+🇪🇬 - 𝄬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
@@ -14928,7 +14921,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
-.𖣂 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+.𖣂 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 金 - 𝓾𝓼𝓮𝓻??𝓪𝓶𝓮 . #username ⸙ 
@@ -14936,7 +14929,7 @@ Msᴀɢ ~ #msgs
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
-金 - 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+金 - 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 - 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
@@ -14944,7 +14937,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝐢𝐝 . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
-- 🇪🇬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+- 🇪🇬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
@@ -14952,7 +14945,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦𝗚𝗦 . #msgs ??🇬 ꙰
-ᯓ 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+ᯓ 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 👳🏼‍♂ - 𝄬 username . #username . 🇪🇬
@@ -14960,14 +14953,14 @@ Msᴀɢ ~ #msgs
 👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
-👳🏼‍♂ - 𝄬 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+👳🏼‍♂ - 𝄬 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
 ➭- 𝐢𝐝 𓂅 #id 𓍯. 💕
-➭- 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+➭- 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
@@ -14975,7 +14968,7 @@ Msᴀɢ ~ #msgs
 𓄼 ɪᴅ : #id ‌‌‏⛧
 𓄼 ᴍѕɢ : #msgs 𓆊 
 𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
-𓄼 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𓄼 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
@@ -14984,14 +14977,14 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
-𝐓𝐓• 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𝐓𝐓• 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ↑↓𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 ➱ #username ⛧  
 ↑↓𝙄𝘿 ➱ #id
 ↑↓𝙍𝘼𝙉𝙆 ➱  #stast ⛧  
 ↑↓𝙈𝘼𝙎𝙂 ➱ #msgs ⛧  
-↑↓𝗖𝗛 ➯  「@BARLO0O0O」 ⛧  
+↑↓𝗖𝗛 ➯  「@Q280K」 ⛧  
 ]],
 [[
 𝟓 𝟔 𖡻 #username  ࿇🦄
@@ -14999,28 +14992,28 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
-𝟓 𝟔 𖡻 𝗖𝗛 - 「@BARLO0O0O」 ⛧
+𝟓 𝟔 𖡻 𝗖𝗛 - 「@Q280K」 ⛧
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗶𝗗 - 「@BARLO0O0O」 ☆
+► 𝗶𝗗 - 「@Q280K」 ☆
 ]],
 [[
 - UsEr🇺🇸 ꙰ #username
 - StA🇺🇸 ꙰   #msgs
 - MsGs🇺🇸 ꙰ #stast
 - ID🇺🇸 ꙰  #id
-- 𝗶𝗗 🇺🇸 ꙰  「@BARLO0O0O」 ☆
+- 𝗶𝗗 🇺🇸 ꙰  「@Q280K」 ☆
 ]],
 [[
 ¦• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇵🇷.
 ¦• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇵🇷.
 ¦• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇵🇷.
 ¦• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇵🇷.
-¦• 𝗶𝗗 - 「@BARLO0O0O」 ☆
+¦• 𝗶𝗗 - 「@Q280K」 ☆
 ]],
 [[
 - 🦋 UsErNaMe . #username 𖠲
@@ -15028,7 +15021,7 @@ Msᴀɢ ~ #msgs
 - 🦋 Id . #id 𖠲
 - 🦋 GaMeS . #game 𖠲
 - 🦋 MsGs . #msgs 𖠲
-- 🦋 𝗖𝗛 - 「@BARLO0O0O」 ☆
+- 🦋 𝗖𝗛 - 「@Q280K」 ☆
 ]]}
 local Text_Rand = List[math.random(#List)]
 database:set(bot_id.."KLISH:ID"..msg.chat_id_,Text_Rand)
@@ -15539,7 +15532,7 @@ local Text =[[
  اختر الامر الذي تريدها .↑↓
 ده من الازرار بلاسفل . ↓
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15553,7 +15546,7 @@ keyboard.inline_keyboard = {
 {text = 'ااوامر اصحاب الرتب ⇊', callback_data="/help2"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -15567,7 +15560,7 @@ local Text = [[
  اختر العبه الذي تريدها .↑↓
 ده من الازرار بلاسفل . ↓
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
- ❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15581,7 +15574,7 @@ keyboard.inline_keyboard = {
 {text = 'الاوامر🎡', callback_data="/help90"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -15600,7 +15593,7 @@ keyboard.inline_keyboard = {
 {text = 'اوامر الاعضاء', callback_data="/change-names"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -15986,7 +15979,7 @@ local Teext =[[
  ⛧الجهات
  ⛧الاشعارات
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16058,7 +16051,7 @@ local Teext =[[
  ⛧ المنشئين ⇔  مسح المنشئين
  ⛧  ❲ + ❳ جميع ماسبق
  ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16118,7 +16111,7 @@ local Teext =[[
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
  ⛧الاوامر المضافه ( لعرض الاوامر المضافه ) 
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16214,7 +16207,7 @@ local Teext =[[
  ⛧الساعه
  ⛧التاريخ
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16303,7 +16296,7 @@ local Teext =[[
  ⛧تفعيل/تعطيل المغادره
  ⛧مسح الجروبات
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16343,7 +16336,7 @@ local Teext =[[
  ⛧   بتحب دي ⇔ بتحب ده
  ⛧  بوت الحذف⇔رابط الحذف
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16412,7 +16405,7 @@ local Teext =[[
  ⛧تنزيل ←من زبي 
  ⛧تاك للمتناكين
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16437,7 +16430,7 @@ local Teext =[[
  اختر الامر الذي تريدها .↑↓
 ده من الازرار بلاسفل . ↓
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16451,7 +16444,7 @@ keyboard.inline_keyboard = {
 {text = 'ااوامر اصحاب الرتب ⇊', callback_data="/help2"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16520,7 +16513,7 @@ local Teext =[[
  ⛧ تفعيل/تعطيل المغادره
  ⛧ مسح الجروبات
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
-➫ .[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)
+➫ .[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16550,15 +16543,15 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'تويت', url="https://t.me/BARLO0O0O/149"},{text = 'كتبات',url="https://t.me/BARLO0O0O/155"}},   
-{{text = 'انصحني', url="https://t.me/BARLO0O0O/151"},{text = 'لو خيروك', url="https://t.me/BARLO0O0O/152"}}, 
-{{text = 'الصراحه', url="https://t.me/BARLO0O0O/161"},{text = 'حروف', url="https://t.me/BARLO0O0O/153"}}, 
-{{text = 'رزله', url="https://t.me/BARLO0O0O/156"},{text = 'رد عليه يابوت', url="https://t.me/BARLO0O0O/160"}}, 
-{{text = 'بتكره دا', url="https://t.me/BARLO0O0O/157"},{text = 'نكته', url="https://t.me/BARLO0O0O/154"}}, 
-{{text = 'غنيلي', url="https://t.me/BARLO0O0O/158"}},
-{{text = 'نسبه جمالي', url="https://t.me/BARLO0O0O/188"},{text = 'اليتيوب', url="https://t.me/BARLO0O0O/194"}},
+{{text = 'تويت', url="https://t.me/Q280K/149"},{text = 'كتبات',url="https://t.me/Q280K/155"}},   
+{{text = 'انصحني', url="https://t.me/Q280K/151"},{text = 'لو خيروك', url="https://t.me/Q280K/152"}}, 
+{{text = 'الصراحه', url="https://t.me/Q280K/161"},{text = 'حروف', url="https://t.me/Q280K/153"}}, 
+{{text = 'رزله', url="https://t.me/Q280K/156"},{text = 'رد عليه يابوت', url="https://t.me/Q280K/160"}}, 
+{{text = 'بتكره دا', url="https://t.me/Q280K/157"},{text = 'نكته', url="https://t.me/Q280K/154"}}, 
+{{text = 'غنيلي', url="https://t.me/Q280K/158"}},
+{{text = 'نسبه جمالي', url="https://t.me/Q280K/188"},{text = 'اليتيوب', url="https://t.me/Q280K/194"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/help7"}},
-{{text = '00:00', url="t.me/BARLO0O0O"}},
+{{text = '00:00', url="t.me/Q280K"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -16573,7 +16566,7 @@ local Teext =[[
  اختر الامر الذي تريدها .↑↓
 ده من الازرار بلاسفل . ↓
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
- ❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16590,7 +16583,7 @@ keyboard.inline_keyboard = {
 {text = '◗القائمه الرائسيه◖', callback_data="/add"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16603,15 +16596,15 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'لعبه البات', url="https://t.me/BARLO0O0O/138"},{text = 'لعبه الرياضيات',url="https://t.me/BARLO0O0O/139"}},   
-{{text = 'لعبه المختلف', url="https://t.me/BARLO0O0O/148"},{text = 'لعبه السمايلات', url="https://t.me/BARLO0O0O/141"}}, 
-{{text = 'لعبه التخمين', url="https://t.me/BARLO0O0O/143"},{text = 'لعبه العكس', url="https://t.me/BARLO0O0O/144"}}, 
-{{text = 'لعبه الاسرع', url="https://t.me/BARLO0O0O/145"},{text = 'لعبه الانكليزي', url="https://t.me/BARLO0O0O/146"}}, 
-{{text = 'لعبه حزوره', url="https://t.me/BARLO0O0O/142"},{text = 'لعبه المعاني', url="https://t.me/BARLO0O0O/147"}}, 
-{{text = 'لعبه الامثله', url="https://t.me/BARLO0O0O/140"},{text = 'عقاب', url="https://t.me/BARLO0O0O/198"}},
-{{text = 'مريم', url="https://t.me/BARLO0O0O/209"}},
+{{text = 'لعبه البات', url="https://t.me/Q280K/138"},{text = 'لعبه الرياضيات',url="https://t.me/Q280K/139"}},   
+{{text = 'لعبه المختلف', url="https://t.me/Q280K/148"},{text = 'لعبه السمايلات', url="https://t.me/Q280K/141"}}, 
+{{text = 'لعبه التخمين', url="https://t.me/Q280K/143"},{text = 'لعبه العكس', url="https://t.me/Q280K/144"}}, 
+{{text = 'لعبه الاسرع', url="https://t.me/Q280K/145"},{text = 'لعبه الانكليزي', url="https://t.me/Q280K/146"}}, 
+{{text = 'لعبه حزوره', url="https://t.me/Q280K/142"},{text = 'لعبه المعاني', url="https://t.me/Q280K/147"}}, 
+{{text = 'لعبه الامثله', url="https://t.me/Q280K/140"},{text = 'عقاب', url="https://t.me/Q280K/198"}},
+{{text = 'مريم', url="https://t.me/Q280K/209"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '00:00', url="t.me/BARLO0O0O"}},
+{{text = '00:00', url="t.me/Q280K"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -16648,7 +16641,7 @@ keyboard.inline_keyboard = {
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '00:00', url="t.me/BARLO0O0O"}},
+{{text = '00:00', url="t.me/Q280K"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -16677,7 +16670,7 @@ local Teext =[[
  ⛧   بتحب دي ⇔ بتحب ده
  ⛧  بوت الحذف⇔رابط الحذف
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
- ❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16685,7 +16678,7 @@ keyboard.inline_keyboard = {
 {text = '◗القائمه الرائسيه◖', callback_data="/change-id"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16703,7 +16696,7 @@ keyboard.inline_keyboard = {
 {text = 'اوامر الاعضاء', callback_data="/change-names"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -16715,15 +16708,15 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'تويت', url="https://t.me/BARLO0O0O/149"},{text = 'كتبات',url="https://t.me/BARLO0O0O/155"}},   
-{{text = 'انصحني', url="https://t.me/BARLO0O0O/151"},{text = 'لو خيروك', url="https://t.me/BARLO0O0O/152"}}, 
-{{text = 'الصراحه', url="https://t.me/BARLO0O0O/161"},{text = 'حروف', url="https://t.me/BARLO0O0O/153"}}, 
-{{text = 'رزله', url="https://t.me/BARLO0O0O/156"},{text = 'رد عليه يابوت', url="https://t.me/BARLO0O0O/160"}}, 
-{{text = 'بتكره دا', url="https://t.me/BARLO0O0O/157"},{text = 'نكته', url="https://t.me/BARLO0O0O/154"}}, 
-{{text = 'غنيلي', url="https://t.me/BARLO0O0O/158"}},
-{{text = 'نسبه جمالي', url="https://t.me/BARLO0O0O/188"},{text = 'اليتيوب', url="https://t.me/BARLO0O0O/194"}},
+{{text = 'تويت', url="https://t.me/Q280K/149"},{text = 'كتبات',url="https://t.me/Q280K/155"}},   
+{{text = 'انصحني', url="https://t.me/Q280K/151"},{text = 'لو خيروك', url="https://t.me/Q280K/152"}}, 
+{{text = 'الصراحه', url="https://t.me/Q280K/161"},{text = 'حروف', url="https://t.me/Q280K/153"}}, 
+{{text = 'رزله', url="https://t.me/Q280K/156"},{text = 'رد عليه يابوت', url="https://t.me/Q280K/160"}}, 
+{{text = 'بتكره دا', url="https://t.me/Q280K/157"},{text = 'نكته', url="https://t.me/Q280K/154"}}, 
+{{text = 'غنيلي', url="https://t.me/Q280K/158"}},
+{{text = 'نسبه جمالي', url="https://t.me/Q280K/188"},{text = 'اليتيوب', url="https://t.me/Q280K/194"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '00:00', url="t.me/BARLO0O0O"}},
+{{text = '00:00', url="t.me/Q280K"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -16734,7 +16727,7 @@ local Teext =[[
  اختر العبه الذي تريدها .↑↓
 ده من الازرار بلاسفل . ↓
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
- ❲[𝙉𝙄𝙂𝙃𝙏](t.me/BARLO0O0O)❳ 
+ ❲[𝙉𝙄𝙂𝙃𝙏](t.me/Q280K)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16748,7 +16741,7 @@ keyboard.inline_keyboard = {
 {text = 'الاوامر🎡', callback_data="/help90"},
 },
 {
-{text = '00:00', url="t.me/BARLO0O0O"},
+{text = '00:00', url="t.me/Q280K"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -17153,7 +17146,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,
 if data.username_ ~= false then
 send(msg.chat_id_,0," ⛧ الـعـضو  : {["..data.first_name_.."](T.ME/"..data.username_..")}\n ⛧ ["..DRAGONAbot.."] \n") 
 else
-send(msg.chat_id_,0," ⛧ الـعـضو  : {["..data.first_name_.."](T.ME/BARLO0O0O)}\n ⛧ ["..DRAGONAbot.."] \n") 
+send(msg.chat_id_,0," ⛧ الـعـضو  : {["..data.first_name_.."](T.ME/Q280K)}\n ⛧ ["..DRAGONAbot.."] \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
