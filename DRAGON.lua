@@ -11455,6 +11455,13 @@ local DRAGON_Msg = {
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
 local function getpro(extra, result, success)
 if result.photos_[0] then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'اضف البوت لمجموعتك', url = "https://t.me/"..data.username_.."?startgroup=new"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,Namebot, msg.id_, msg.id_, "md")
 else
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md')
