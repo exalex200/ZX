@@ -1270,6 +1270,33 @@ end
 
 
 
+if text == "/start" or text == "start" then
+local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_SUDO)
+else
+tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
+local function taha(extra, taha, success)
+if taha.photos_[0] then
+local Name = '〈 انا اقوي بوت حمايه جروبات ضيفني في جروبك يا قمر 💗🖇️’ 〉 -  \n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
+},
+{
+{text = '00:00', url="t.me/WAQ19"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+else
+sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
+ end end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, limit_ = 1 }, taha, nil)
+end,nil)
+end
+end
 
 
 
@@ -2991,24 +3018,24 @@ end
 
 
 
-
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+local msg_id = msg.id_/2097152/0.5
 local Text = [[
+
 [⍟ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙽𝙸𝙶𝙷𝚃 ](t.me/WAQ19) 
 
 [⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝙾𝙽 𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝙴𝙻𝙴 ](t.me/WAQ19)
 
 [⍟ 𝙵𝙾𝙻𝙻𝙾𝚆 𝚃𝙷𝙴 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝙱𝙴𝙻𝙾𝚆 ](t.me/WAQ19)
+
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text ='𝗗𝗘𝗩 𝗔𝗟𝗘𝗫 ⛧', url="t.me/Q250K"}},
-{{text = '00:00', url="t.me/WAQ19"}},
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250K"},
+{{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/WAQ19"}},
 }
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/WAQ19/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-
 
 
 
@@ -3026,7 +3053,7 @@ keyboard.inline_keyboard = {
 {{text =' 𝗗𝗘𝗩 𝗔𝗟𝗘𝗫',url="t.me/Q250K"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q250K/11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -15254,7 +15281,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
-⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
+⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ??
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
 ⭐️𝗖𝗛 - 「@WAQ19」 ⛧
@@ -16768,7 +16795,7 @@ return false
 end
 local Teext =[[
  ⛧مرحب بيك في اوامر للمطورين ⛧
-اوامر المطورين ♆
+اوامر ين ♆
 ❲المطرو❳  ♆
 ⛧━━━━━⛧𝙉𝙄𝙂𝙃𝙏⛧━━━━━⛧
  ⛧تفعيل ← تعطيل 
