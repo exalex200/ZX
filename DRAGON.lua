@@ -1278,7 +1278,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '〈 انا اقوي بوت حمايه جروبات ضيفني في جروبك يا قمر 💗🖇️’ 〉 - \n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = '〈 انا انا اقوي بوت حمايه جروبات ممكن تشوفو ضضفني في جروبك واذهب ل المطور الي تحت عشان تخد منو مطور واستمتع ب احسن بوت علي سورس نايت اعظم سورس في التلي 🌚💘 - \n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -3018,22 +3018,21 @@ end
 
 
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-local msg_id = msg.id_/2097152/0.5
-local Text = [[
+if text == 'سورس' or text == ' السورس' then  
+local Text = [[  
 ◍ ᴛʜᴇ ʙᴇѕᴛ ᴇɢ ʟụᴀ ѕᴏụʀᴄᴇ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ
 🌖
 ◍ ᴘᴍ ᴍᴇ ᴛᴏ ᴍᴀᴋᴇ ʏᴏụʀ ᴏᴡɴ ᴏɴᴇ 🐾
 ...
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
 {{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250K"},
 {{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/WAQ19"}},
-}
-https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&vidio=https://t.me/WAQ19/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/13&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
 
 
 
