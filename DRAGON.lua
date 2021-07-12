@@ -3014,25 +3014,28 @@ end,nil)
 end
 
 
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == '"' then
+local Text =[[
+╭────────╮
 
+ [☭ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧 ☭](t.me/ELkhawajah1)
+             
+╰────────╯
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
 
-
-
-if text == 'سورس' or text == ' السورس' then  
-local Text = [[  
-◍ ᴛʜᴇ ʙᴇѕᴛ ᴇɢ ʟụᴀ ѕᴏụʀᴄᴇ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ
-🌖
-◍ ᴘᴍ ᴍᴇ ᴛᴏ ᴍᴀᴋᴇ ʏᴏụʀ ᴏᴡɴ ᴏɴᴇ 🐾
-...
-]]  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250K"},
-{{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/WAQ19"}},
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/13&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+{
+{text = ' 𝗗𝗘𝗩 𝗦𝗢𝗨𝗥𝗖𝗘 ⚚', url = "https://t.me/Q250K"},
+},
+{
+{text = '𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧⚚ ', url = "https://t.me/WAQ19"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/15&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+
 
 
 
@@ -14371,9 +14374,9 @@ local List = {
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
 ᯓ 𝟔𝟔𝟔𖡋 #stast  •✟
-ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
+ᯓ 𝟔𝟔𝟔?? #id  • ✟
 ᯓ 𝟔𝟔𝟔𖡋 #msgs  •✟ 
-ᯓ 𝟔𝟔𝟔𖡋 #game •✟
+ᯓ 𝟔??𝟔𖡋 #game •✟
 ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - 「@WAQ19」 ⛧.
 ]],
 [[
@@ -14819,7 +14822,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐔𝐬𝐞??𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
-𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
+𝐓??• 𝗘𝗗𝗜𝗧 𖠰 #edit .
 𝐓𝐓• 𝗖𝗛 - 「@WAQ19」 ⛧.
 ]],
 [[
