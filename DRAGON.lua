@@ -1278,7 +1278,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '〈 انا اقوي بوت حمايه جروبات ضيفني في جروبك يا قمر 💗🖇️’ 〉 -  \n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = '〈 انا اقوي بوت حمايه جروبات ضيفني في جروبك يا قمر 💗🖇️’ 〉 - \n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14827,7 +14827,7 @@ Msᴀɢ ~ #msgs
 [[
 𝟓 𝟔 𖡻 #username  ࿇🦄
 𝟓 𝟔 𖡻 #msgs  ࿇🦄
-𝟓 𝟔 𖡻 #auto  ࿇🦄
+?? 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
 𝟓 𝟔 𖡻 𝗖𝗛 - 「@WAQ19」 💞.
@@ -15287,7 +15287,7 @@ Msᴀɢ ~ #msgs
 [[
 • 🇪🇬 - 𝚄𝚂𝙴𝚁 « #username  🍭
 • 🇪🇬 - 𝙸𝙳 « #id  🍭
-• 🇪🇬 - 𝙼𝚂𝙶𝚂 « #msgs  🍭
+• ??🇬 - 𝙼𝚂𝙶𝚂 « #msgs  🍭
 • 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃 « #stast  🍭
 • 🇪🇬 - 𝗖𝗛 - 「@WAQ19」 ⛧
 ]],
@@ -16192,7 +16192,7 @@ end
 
 
 
-if text == "تفعيل اليكس"  then
+if text == "تفعيل مريم"  then
 if Constructor(msg) then  
 database:set(bot_id.."my_maryam:status"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_," ⛧تـم تـفعـيل اليكس") 
@@ -16200,13 +16200,13 @@ return false
 end
 end
 
-if text == "تعطيل اليكس"  then
+if text == "تعطيل مريم"  then
 if Constructor(msg) then  
 database:del(bot_id.."my_maryam:status"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_," ⛧ تـم تـعـطـيل اليكس") 
 return false end
 end
-if text == "اليكس" then
+if text == "مريم" then
 local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_," ⛧اليكس  معطله") 
