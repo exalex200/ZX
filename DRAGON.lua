@@ -3018,21 +3018,20 @@ end
 
 
 
-if text == 'سورس' or text == ' السورس' then  
-local Text = [[  
-╭────────╮
-
- [☭ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧 ☭](t.me/WAQ19)
-             
-╰────────╯
-]]  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text = '☭ 𝗗𝗘𝗩 𝗦𝗢𝗨𝗥𝗖𝗘 ☭',url="t.me/Q250K"}},  
-{{text = '☭ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧 ☭',url="t.me/WAQ19"}},  
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/13&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+local msg_id = msg.id_/2097152/0.5
+local Text = [[
+◍ ᴛʜᴇ ʙᴇѕᴛ ᴇɢ ʟụᴀ ѕᴏụʀᴄᴇ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ
+🌖
+◍ ᴘᴍ ᴍᴇ ᴛᴏ ᴍᴀᴋᴇ ʏᴏụʀ ᴏᴡɴ ᴏɴᴇ 🐾
+...
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250K"},
+{{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/WAQ19"}},
+}
+https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&vidio=https://t.me/WAQ19/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
