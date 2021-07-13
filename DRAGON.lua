@@ -170,7 +170,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/exalex200/vvvvvv/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/exalex200/ZX/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -183,7 +183,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1360140225,1896382059,944353237,1713816440,1524355424}   
+sudo_users = {SUDO,1001132193,1819050592,1800747376}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -1162,7 +1162,7 @@ end
 
 if text == 'تحديث السورس ' and sudo2(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/exalex200/EX/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/exalex200/ZX/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'◉ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -2446,11 +2446,11 @@ end,nil)
 end
 if text == 'تفعيل' and not Sudo(msg) and not database:get(bot_id..'Free:Bots') then
 if AddChannel(msg.sender_user_id_) == false then
-local A_V_I_R_A_1 = database:get(bot_id..'text:ch:user')
-if A_V_I_R_A_1 then
-send(msg.chat_id_, msg.id_,'['..A_V_I_R_A_1..']')
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ◉ لا تستطيع استخدام البوت \n  ?? يرجى الاشتراك بالقناه اولا \n  ◉ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☭ لا تستطيع استخدام البوت \n  ☭ يرجى الاشتراك بالقناه اولا \n  ☭ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
