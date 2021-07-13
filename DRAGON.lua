@@ -146,20 +146,23 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
+         
+                               Alex
+                     AA                 AA
+                AAA                        AAeAA
+          AAAxAAA                      AAAxAAA
+        AAAAAAA     xxxxxxxxxx      AAAAAAA
+    AlAAAlAxAAA                     AAeAAAAAA
 
-
-A L E X 
-      
-                          
-> CH ↯ ↝@B_TRR↜
-~> DEVELOPER ↯ {text = @Q250K
+> CH › 「@WAQ19」
+~> DEVELOPER › @Q250K 
 ]])
-sudos = dofile("./kkkklInfo.lua") 
+sudos = dofile("./aaaaaaInfo.lua")
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
 token = sudos.token 
---- start functions ⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚
+--- start functions ↓
 --------------------------------------------------------------------------------------------------------------
 io.popen("mkdir File_Bot") 
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
@@ -315,7 +318,7 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1880200618) then  
-var = 'المبرمج مانو'
+var = 'اليكس الهكر....💙'
 elseif tonumber(user_id) == tonumber(1234556666666666) then
 var = 'المطور اوس اوس'
 elseif tonumber(user_id) == tonumber(12312312313133) then
@@ -900,6 +903,7 @@ send(msg.chat_id_, msg.id_," ◉ تمت الاذاعه الى *~ "..#list.." ~* 
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
+
 ------ ALEXـــــــ
 if Chat_Type == 'UserBot' then
 if not DevSoFi(msg) then
@@ -1369,6 +1373,8 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
+
 if text == "توكن البوت" and SudoBot(msg) or text == 'جلب التوكن' and SudoBot(msg) then 
 if not DevSoFi(msg) then
 send(msg.chat_id_, msg.id_,'هذا الامر خاص بمطور البوت')
@@ -14223,7 +14229,7 @@ local List = {
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
-🇪🇬≪💎≫ #stast  •メ
+🇪??≪💎≫ #stast  •メ
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
