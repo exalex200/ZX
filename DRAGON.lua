@@ -124,7 +124,6 @@ file:close()
 end 
 local load_redis = function()  
 local f = io.open("./aaaaaaInfo.lua", "r")  
-local f = io.open("./som.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -877,11 +876,7 @@ send(msg.chat_id_, msg.id_," ⛧ تمت الاذاعه الى *~ "..#list.." ~* 
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
-
-
-------by-alex--
-
-
+---------  ALEX ــــــــــــــــ
 if Chat_Type == 'UserBot' then
 if text == '/start' or text == 'العوده' then  
 if AddChannel(msg.sender_user_id_) == false then
@@ -1009,8 +1004,6 @@ local keyboard = {
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 end
-
-
 if not sudo2(msg) and not database:sismember(bot_id..'Ban:User_Bot',msg.sender_user_id_) and not database:get(bot_id..'Tuasl:Bots') then
 send(msg.sender_user_id_, msg.id_,'◉ تـم ارسـال رسالـتك للمـطور')
 tdcli_function ({ID = "ForwardMessages", chat_id_ = SUDO,    from_chat_id_ = msg.sender_user_id_,    message_ids_ = {[0] = msg.id_},    disable_notification_ = 1,    from_background_ = 1 },function(arg,data) 
@@ -1024,9 +1017,6 @@ end
 end,nil) 
 end,nil)
 end
-
-
-
 if DevSoFi(msg) and msg.reply_to_message_id_ ~= 0  then    
 tdcli_function({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)},function(extra, result, success) 
 if result.forward_info_.sender_user_id_ then     
@@ -1307,34 +1297,42 @@ end
 
 
 
-if text == '• ━━━━━━❪الركن الاخير❫━━━━━━ •' and DevSoFi(msg) then
+
+if text == 'مميزات'  or text == 'المميزات' then
 local Text = [[ 
-[قناه سورس نايت ادخل وتابع الجديد](t.me/WAQ19)
-]] 
+ ─────── ◉ ───────
+◉ لستخدام المميزات اتبع مايلي ..↑↓
+ ─────── ◉ ───────
+◉ قران ← لعرض الميزه
+◉ اذكار ← لعرض الميزه
+◉ الصلاوات ← لعرض الميزه
+◉ متحركه ← لعرض الميزه
+◉ غنيلي ← لعرض الميزه
+◉ استوري ← لعرض الميزه
+◉ تصميم ← لعرض الميزه
+◉ حساب العمر ← لعرض الميزه
+◉ حساب الوزن ← لعرض الميزه
+◉ نسبه الحب ← لعرض الميزه
+◉ نسبه الغباء ← لعرض الميزه
+◉ جمالي ← لعرض الميزه
+◉ افلام ← لعرض الميزه
+◉ اغاني ← لعرض الميزه
+◉ روايات ← لعرض الميزه
+◉ ثيم ← لعرض الميزه
+◉ همسه ← لعرض الميزه
+◉ معني + اسمك ← لعرض الميزه
+◉ خلفيات ← لعرض الميزه
+╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
+]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/WAQ19"}}, 
+{{text = '  اضف البوت الي مجموعتك 𖠕 ',url="t.me/"..dofile("./aaaaaaInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/D_V1_D/69&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
-
-
-
-
-if text == '• ━━━━━━❪الاقسام❫━━━━━━ •' and DevSoFi(msg) then
-local Text = [[ 
-[قناه سورس نايت ادخل وتابع الجديد](t.me/WAQ19)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '00:00', url="t.me/WAQ19"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WAQ19/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 
 
 
@@ -2993,7 +2991,7 @@ keyboard.inline_keyboard = {
 {text = ' 𝗗𝗘𝗩 𝗦𝗢𝗨𝗥𝗖𝗘 ⚚', url = "https://t.me/Q250K"},
 },
 {
-{text = '??𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧⚚ ', url = "https://t.me/WAQ19"}
+{text = '??𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛??⚚ ', url = "https://t.me/WAQ19"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14297,7 +14295,7 @@ local List = {
 - 𝗖𝗛 - 「@WAQ19」 💞.
 ]],
 [[
-𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
+𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username ?? .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞?? †: #id 𓀀 .
@@ -15196,7 +15194,7 @@ Msᴀɢ ~ #msgs
 ┇𝗖𝗛 - 「@WAQ19」 ⛧
 ]],
 [[
-• 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⛧
+• ?? | 𝑼𝑬𝑺 : #username ‌‌‏⛧
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
