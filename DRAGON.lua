@@ -170,7 +170,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/exalex200/vvvvvv/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -1162,7 +1162,7 @@ end
 
 if text == 'تحديث السورس ' and sudo2(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/exalex200/EX/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'◉ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -1784,7 +1784,7 @@ send(msg.chat_id_, msg.id_,'['..t..']')
 end,nil) 
 end 
 end
------------------------------------------------¹𝐀𝐕𝐈𝐑𝐀¹---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 if msg.content_.photo_ then  
 if database:get(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_) then 
 if msg.content_.photo_.sizes_[3] then  
@@ -1807,7 +1807,7 @@ end, nil)
 database:del(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_) 
 end   
 end
------------------------------------------------¹𝐀𝐕𝐈𝐑𝐀¹---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 if database:get(bot_id.."Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
 if text == 'الغاء' then 
 send(msg.chat_id_, msg.id_," ◉ تم الغاء وضع الوصف")
@@ -1819,7 +1819,7 @@ https.request('https://api.telegram.org/bot'..token..'/setChatDescription?chat_i
 send(msg.chat_id_, msg.id_,' ◉ تم تغيير وصف الجروب')
 return false  
 end 
------------------------------------------------¹𝐀𝐕𝐈𝐑𝐀¹---------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 if database:get(bot_id.."Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
 if text == 'الغاء' then 
 send(msg.chat_id_, msg.id_," ◉ تم الغاء حفظ الترحيب")
@@ -2319,24 +2319,8 @@ end
 end
 end
 
-------------------------------------------------------------------------
-function regexv(data)
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+----------------------------------------
 
-    data = string.gsub(data, '[^'..b..'=]', '')
-    return (data:gsub('.', function(x)
-        if (x == '=') then return '' end
-        local r,f='',(b:find(x)-1)
-        for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end
-        return r;
-    end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
-        if (#x ~= 8) then return '' end
-        local c=0
-        for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end
-        return string.char(c)
-    end))
-end
-------------------------------------------------------------------------
 if msg.content_.ID == 'MessagePhoto' and not Manager(msg) then 
 local filter = database:smembers(bot_id.."filterphoto"..msg.chat_id_)
 for k,v in pairs(filter) do
@@ -2373,11 +2357,11 @@ end
 
 if text == 'تفعيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-local A_V_I_R_A_1 = database:get(bot_id..'text:ch:user')
-if A_V_I_R_A_1 then
-send(msg.chat_id_, msg.id_,'['..A_V_I_R_A_1..']')
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ◉ لا تستطيع استخدام البوت \n  ◉ يرجى الاشتراك بالقناه اولا \n  ◉ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☭ لا تستطيع استخدام البوت \n  ☭ يرجى الاشتراك بالقناه اولا \n  ☭ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2423,11 +2407,11 @@ end,nil)
 end
 if text == 'تعطيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
-local A_V_I_R_A_1 = database:get(bot_id..'text:ch:user')
-if A_V_I_R_A_1 then
-send(msg.chat_id_, msg.id_,'['..A_V_I_R_A_1..']')
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ◉ لا تستطيع استخدام البوت \n  ◉ يرجى الاشتراك بالقناه اولا \n  ◉ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☭ لا تستطيع استخدام البوت \n  ☭ يرجى الاشتراك بالقناه اولا \n  ☭ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2524,35 +2508,33 @@ end,nil)
 end,nil) 
 end,nil)
 end
-if text and text:match("^ضع عدد الاعضاء (%d+)$") and sudo2(msg) then
+if text and text:match("^ضع عدد الاعضاء (%d+)$") and DevSoFi(msg) then
 local Num = text:match("ضع عدد الاعضاء (%d+)$") 
 if AddChannel(msg.sender_user_id_) == false then
-local A_V_I_R_A_1 = database:get(bot_id..'text:ch:user')
-if A_V_I_R_A_1 then
-send(msg.chat_id_, msg.id_,'['..A_V_I_R_A_1..']')
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ◉ لا تستطيع استخدام البوت \n  ◉ يرجى الاشتراك بالقناه اولا \n  ◉ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☭ لا تستطيع استخدام البوت \n  ☭ يرجى الاشتراك بالقناه اولا \n  ☭ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 database:set(bot_id..'Num:Add:Bot',Num) 
-send(msg.chat_id_, msg.id_,' ◉ تم تعيين عدد الاعضاء سيتم تفعيل الجروبات التي اعضائها اكثر من  >> {'..Num..'} عضو')
+send(msg.chat_id_, msg.id_,' ☭ تم تعيين عدد الاعضاء سيتم تفعيل الجروبات التي اعضائها اكثر من  >> {'..Num..'} عضو')
 end
-if text == 'تحديث السورس' and sudo2(msg) then 
+if text == 'تحديث السورس' and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-local A_V_I_R_A_1 = database:get(bot_id..'text:ch:user')
-if A_V_I_R_A_1 then
-send(msg.chat_id_, msg.id_,'['..A_V_I_R_A_1..']')
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ◉ لا تستطيع استخدام البوت \n  ◉ يرجى الاشتراك بالقناه اولا \n  ◉ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☭ لا تستطيع استخدام البوت \n  ☭ يرجى الاشتراك بالقناه اولا \n  ☭ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/library')
-os.execute('wget https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot')
-send(msg.chat_id_, msg.id_,' ◉ تم تحديث السورس')
+os.execute('wget https://raw.githubusercontent.com/exalex200/ZX/main/DRAGON.lua')
+send(msg.chat_id_, msg.id_,' ☭ تم تحديث السورس \n ☭ لديك اخر اصدار لسورس نايت\n ☭ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
 
@@ -4585,7 +4567,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if sudo2(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/devid100/vvvvvv/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/exalex200/vvvvvv/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -4623,7 +4605,7 @@ t = " ◉ الملف ← "..file.."\n ◉ تم تعطيل ملف \n"
 else
 t = " ◉ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/exalex200/vvvvvv/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -4643,7 +4625,7 @@ t = " ◉ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ◉ الملف ← "..file.."\n ◉ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/devid100/vvvvvv/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/exalex200/vvvvvv/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
