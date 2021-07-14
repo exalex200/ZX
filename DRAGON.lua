@@ -982,10 +982,8 @@ local keyboard = {
 { 'جلب المشتركين  ', 'جلب المطورين ' },
 
 
-{' جلب الاساسين' },
 
-
-{'جلب النسخه'},
+{'جلب النسخه الاحتياطيه'},
 
 
 
@@ -1412,7 +1410,7 @@ database:setex(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_i
 send(msg.chat_id_, msg.id_," ◉ ارسل لي التوجيه الان")
 return false
 end 
-if text == 'جلب النسخه' and DevSoFi(msg) then 
+if text == 'جلب النسخه الاحتياطيه' and DevSoFi(msg) then 
 GetFile_Bot(msg)
 end
 if text == "تنظيف المشتركين " and DevSoFi(msg) then 
@@ -3648,7 +3646,7 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil)
 end
 end
-if text == 'جلب النسخه' and DevSoFi(msg) then 
+if text == 'جلب النسخه الاحتياطيه' and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -13183,7 +13181,7 @@ local Teext =[[
   💘الغاء العام
   💘قائمه العام
   💘مسح قائمه العام
-  💘جلب النسخه
+  💘جلب النسخه الاحتياطيه
   💘رفع النسخه
   💘 جلب المشتركين
   💘 رفع المشتركين
@@ -13399,7 +13397,7 @@ local Teext =[[
   💘 الغاء العام
   💘 قائمه العام
   💘 مسح قائمه العام
-  💘 جلب النسخه
+  💘 جلب النسخه الاحتياطيه
   💘 رفع النسخه
 ⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚
   💘 اذاعه خاص
