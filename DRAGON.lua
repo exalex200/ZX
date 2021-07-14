@@ -956,7 +956,7 @@ local keyboard = {
 {'قائمه الكتم العام'},
 
 
-{'تنظيف الجروبات '},
+{'تنظيف الجروبات'},
 
 {'الجروبات ','الردود العامه'},
 
@@ -978,8 +978,6 @@ local keyboard = {
 
 {'جلب المشتركين','جلب المطورين'},
 
-
-{'تنظيف الجروبات '},
 
 {'جلب النسخه'},
 
@@ -12018,6 +12016,7 @@ end,nil)
 end
 return false
 end
+
 if text == "تنظيف الجروبات" and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -12060,20 +12059,21 @@ local sendok = #group - DRAGON
 if q == 0 then
 DRAGON = ''
 else
-DRAGON = '\n- تم ازالة » { '..q..' } جروبات من البوت'
+DRAGON = '\n- تم ازالة  ⇇↝ '..q..' ↜ جروبات من البوت'
 end
 if w == 0 then
 DRAGONk = ''
 else
-DRAGONk = '\n- تم ازالة » {'..w..'} جروب لان البوت عضو'
+DRAGONk = '\n- تم ازالة  ⇇↝ '..w..' ↜ كروب لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,' ◉ عدد الجروبات الان » { '..#group..' }'..DRAGONk..''..DRAGON..'\n*- الان عدد الجروبات الحقيقي » { '..sendok..' } جروبات\n')   
+send(msg.chat_id_, msg.id_,' ◉ عدد الجروبات الان  ⇇↝ '..#group..' ↜'..DRAGONk..''..DRAGON..'\n*- الان عدد الجروبات الحقيقي  ⇇↝ '..sendok..' ↜ جروبات\n')   
 end
 end
 end,nil)
 end
 return false
 end
+
 
 if text and text:match("^(gpinfo)$") or text and text:match("^معلومات الجروب$") then
 function gpinfo(arg,data)
