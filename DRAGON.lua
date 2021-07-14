@@ -238,6 +238,15 @@ else
 return false 
 end 
 end
+function mahmoudr(chat_id, reply_to_message_id, audio, caption, markdown) 
+send_api = "https://api.telegram.org/bot"..token 
+local url = send_api.."/sendAudio?chat_id=" .. chat_id .. "&audio=" .. audio .."&caption=" .. URL.escape(caption) 
+if reply_to_message_id ~= 0 then 
+reply_to_message_id_ = reply_to_message_id
+url = url .. "&reply_to_message_id=" .. reply_to_message_id_ .."&parse_mode=Markdown" 
+end 
+return s_api(url) 
+end
 function Constructor(msg)
 local hash = database:sismember(bot_id..'Constructor'..msg.chat_id_, msg.sender_user_id_) 
 if hash or SudoBot(msg) or DevSoFi(msg) or Sudo(msg) or BasicConstructor(msg) or CoSu(msg) or Bot(msg)  then       
@@ -10485,6 +10494,12 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR/279/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+if text == 'صوت' then
+audio = 'هنا تحط رابط الاغنيه'
+caption = 'هنا تكتب النص اللي هيظهر مع الاغنيه'
+mahmoudr(msg.chat_id_, msg.id_/2097152/0.5,audio,caption)
 end
 
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
