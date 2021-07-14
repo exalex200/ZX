@@ -1006,35 +1006,42 @@ else
 keyboard = {
 	
 	
+{'/start'},
+
+{'تويت بالصوره ◉'},
+
+{'ضحكني◉','استوري◉'},
+
+{'لو خيروك بالصوره ◉'},
 	
 	
-{'ضحكني','استوري'},
+{'ثيم ◉'},
 
 {'⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚'},
 
 
-{'اغاني','افلام'},
+{'اغاني◉','افلام◉'},
 
 
 
-{'غنيلي','نكت'},
+{'غنيلي◉','نكت◉'},
 
 
-{'تويت','صراحه'},
+{'تويت◉','صراحه◉'},
 
 
-{'بوت تواصل'},
+{'بوت تواصل◉'},
 
 
-{'بوستات','باد'},
+{'بوستات◉','باد◉'},
 
-{'اسئله محرجه','غنيلي'},
+{'اسئله محرجه◉','غنيلي◉'},
 
 
 {'⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚'},
 
 
-{'مطور','انا مين'},
+{'مطور◉','انا مين◉'},
 
 
 }
@@ -1257,10 +1264,10 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/Q250K"},
+{text = '💘  مبرمج ومطور السورس  💘 ', url = "https://t.me/Q250K"},
 },
 {
-{text = '۞ بوت تواصل السورس ۞', url = "https://t.me/TWLANGBOT"},
+{text = '💘 بوت تواصل السورس 💘', url = "https://t.me/TWLANGBOT"},
 },
 
 }
@@ -1276,10 +1283,10 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/Q250K"},
+{text = '💘  مبرمج ومطور السورس  💘 ', url = "https://t.me/Q250K"},
 },
 {
-{text = '۞ بوت تواصل السورس ۞', url = "https://t.me/TWLANGBOT"},
+{text = '💘 بوت تواصل السورس 💘', url = "https://t.me/TWLANGBOT"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -1294,10 +1301,10 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/Q250K"},
+{text = '💘  مبرمج ومطور السورس  💘 ', url = "https://t.me/Q250K"},
 },
 {
-{text = '۞ قنات سورس متميزه  ۞ ', url = "https://t.me/B_TRR"}
+{text = '💘 قنات سورس متميزه  💘 ', url = "https://t.me/B_TRR"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2850,7 +2857,7 @@ if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'بوت
 local Text =[[
 
 
-۞- [اهلا بك في سورس نايت الجمدان لو عايز بوت بأسعار منسبه وبوت مميز كلمني ](t.me/B_TRR) ۞
+💘- [اهلا بك في سورس نايت الجمدان لو عايز بوت بأسعار منسبه وبوت مميز كلمني ](t.me/B_TRR) 💘
 
 
 ]]
@@ -2858,28 +2865,32 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '۞ مبرمج ومطور السورس  ۞ ', url = "https://t.me/Q250K"},
+{text = '💘 مبرمج ومطور السورس  💘 ', url = "https://t.me/Q250K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'سورس' or text == ' السورس' then  
-local Text = [[  
-╭────────╮
 
- [◉ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧 ◉](t.me/B_TRR)
-             
-╰────────╯
-]]  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text = '◉ 𝗗𝗘𝗩 𝗦𝗢𝗨𝗥𝗖𝗘 ◉',url="t.me/MA_DOA"}},  
-{{text = '◉ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗡𝗜𝗚𝗛𝗧 ◉',url="t.me/B_TRR"}},  
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == '"' then
+local Text =[[
+💘[Sꪮꪊ𝘳ᥴꫀ Aꪶꫀ᥊⁦⁦ ](t.me/B_TRR)💘
+
+💘[⟦𝓽ꫝꫀ ᥇ꫀ𝘴𝓽  𝘴ꪮꪊ𝘳ᥴꫀ ⟧](t.me/B_TRR)💘
+  
+ 💘[Sꪮꪊ𝘳ᥴꫀ Aꪶꫀ᥊⁦⁦ ](t.me/B_TRR)💘 
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+	
+{{text = ' 💘 Aꪶꫀ᥊⁦⁦ 💘 ', url = "https://t.me/Q250K"}},
+
+{{text = '💘 𝘴ꪮꪊ𝘳ᥴꫀ 💘', url = "https://t.me/B_TRR"}},
+
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
@@ -2889,7 +2900,7 @@ ght = math.random(2,22);
 local Text ='تم اختيار فديو استوري  لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '◉  هكر التليجرام  ◉',url="t.me/Q250K"}},  
+{{text = '💘 Aꪶꫀ᥊⁦⁦ 💘',url="t.me/Q250K"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/koko12300/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2925,31 +2936,18 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 
 
-if text == 'خواجه' or text == 'خوخه' then  
-local Text = [[ 
-مالك السورس 
-]]  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text = 'خواجه بيه يقمر' ,url="t.me/ELkhawajah"}},  
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ELkhawajah&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-
 
 
 
 if text == 'مبرمج السورس' or text == 'مبرمج السورس' or text == 'عظمه' or text == '"' then
 local Text =[[
-۞- [مبرمج سورس نايت](t.me/B_TRR) ۞
+💘- [مبرمج سورس نايت](t.me/B_TRR) 💘
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = '۞  مبرمج ومطور السورس  ۞ ', url = "https://t.me/Q250K"},
+{text = '💘  مبرمج ومطور السورس  💘 ', url = "https://t.me/Q250K"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -10510,6 +10508,41 @@ https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. ms
 end
 end
 end
+
+if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,24); 
+local Text ='مرحبا اليك لو خيروك بالصوره🌚💘' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '💘 Aꪶꫀ᥊⁦⁦ 💘', url="t.me/B_TRR"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kbbnv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,28); 
+local Text ='مرحبا إليك تويت بالصوره🌚💘' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '💘 Aꪶꫀ᥊⁦⁦ 💘', url="t.me/B_TRR"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+if text == "ثيم" then  
+ght = math.random(1,33);  
+local Text ='الستخدم ثيم اخر اكتب ثيم'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '💘 Aꪶꫀ᥊⁦⁦ 💘', url="t.me/B_TRR"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+
 if text == "كلمني" then
 rpl = {"ها هلاو","انطق","كول"};
 sender = rpl[math.random(#rpl)]
