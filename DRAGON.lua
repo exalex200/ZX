@@ -883,7 +883,6 @@ database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id
 return false
 end
 --------------------------------------------------------------------------------------------------------------
-
 if text == "/start" then 
 if not DevSoFi(msg) then 
 local Namebot = (database:get(bot_id..'Name:Bot') or 'اليكس')  
@@ -897,7 +896,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {}  
 keyboard.inline_keyboard = { 
 { 
-{text = 'الـمـطـور', url="http://t.me/"..ght}, 
+{text = 'مطوري الغالي 🌚💘', url="http://t.me/"..ght}, 
 }, 
 } 
 local function getpro(extra, result, success)  
@@ -910,7 +909,6 @@ end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)  
 end 
 end
-
 if Chat_Type == 'UserBot' then
 if text == '/start' then  
 if AddChannel(msg.sender_user_id_) == false then
@@ -926,7 +924,7 @@ if DevSoFi(msg) then
 local bl = ' ◉ اهلا عزيزي آلمـطـور\n ◉ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ◉ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ◉ من خلاال الكيبورت خاص بك\n ◉ قناة سورس البوت [اضغط هنا](t.me/B_TRR)'
 local keyboard = {
 
-{'⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚'},
+{'اليكس'},
 
 {'اضف رد عام','مسح رد عام'},
 
@@ -1013,7 +1011,7 @@ keyboard = {
 
 	
 	
-{'ثيم ◉'},
+{'ثيم '},
 
 {'⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚'},
 
@@ -1126,33 +1124,6 @@ end,nil)
 end,nil)
 end,nil)
 end 
-if text == "/start" then
-if not DevSoFi(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'رامبو') 
-local DRAGON_Msg = { 
-' 🛡°اهـــلا انا بـوت اسمــي '..Namebot..' ⛓│آختـصاصـي حمايـه آلمجـموعـات ..🥺\n🛡│ مـن آلسـبآم وآلتوجيه وآلتكرآر وآلخ..\n🚸╽ لتفعيل آلبوت آتبــع الشـروط 😈❕\n↫ ❬اضف البوت الى المجموعه❭\n↫ ❬ارفع البوت ادمن في المجموعه❭\n↫ ❬وارسل تفعيل وسيتم تفعيل البوت ورفع مشرفي الكروب تلقائين ❭',
-} 
-Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
-local msg_id = msg.id_/2097152/0.5  
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = 'اضف البوت الي مجموعتك 🌚💘' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end
-end
 if text == 'تفعيل التواصل ' and DevSoFi(msg) then  
 if database:get(bot_id..'Tuasl:Bots') then
 database:del(bot_id..'Tuasl:Bots') 
