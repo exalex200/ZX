@@ -940,6 +940,8 @@ local keyboard = {
 
 {'الاحصائيات'},
 
+{'معلومات الكيبورد'},
+
 {'اضف رد عام','مسح رد عام'},
 
 {'اضف رد متعدد','حذف رد متعدد'},
@@ -977,6 +979,8 @@ local keyboard = {
 {'⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚'},
 
 {'جلب المشتركين','جلب المطورين'},
+
+{'جلب الاساسين'},
 
 
 {'جلب النسخه'},
@@ -1416,6 +1420,71 @@ local File = io.open('./users.json', "w")
 File:write(t) 
 File:close() 
 sendDocument(msg.chat_id_, msg.id_,0, 1, nil, './users.json', ' عدد المشتركين { '..#list..'}') 
+end
+
+if text == 'جلب الاساسين' and DevSoFi(msg) then  
+local list = database:smembers(bot_id..'Dev:SoFi:2') 
+local t = '{"users":['   
+for k,v in pairs(list) do 
+if k == 1 then 
+t =  t..'"'..v..'"' 
+else 
+t =  t..',"'..v..'"' 
+end 
+end 
+t = t..']}' 
+local File = io.open('./sudos4.json', "w") 
+File:write(t) 
+File:close() 
+sendDocument(msg.chat_id_, msg.id_,0, 1, nil, './sudos3.json', ' عدد الاساسين { '..#list..'}') 
+end 
+if text == 'رفع الاساسين' or text == 'رفع س' and DevSoFi(msg) then  
+function by_reply(extra, result, success)    
+if result.content_.document_ then  
+local ID_FILE = result.content_.document_.document_.persistent_id_  
+local File_Name = result.content_.document_.file_name_ 
+local File = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..ID_FILE) )  
+download_to_file('https://api.telegram.org/file/bot'..token..'/'..File.result.file_path, ''..File_Name)  
+local info_file = io.open('./sudos3.json', "r"):read('*a') 
+local users = JSON.decode(info_file) 
+for k,v in pairs(users.users) do 
+database:sadd(bot_id..'Dev:SoFi:2',v)  
+end 
+send(msg.chat_id_,msg.id_,'تم رفع الاساسين ') 
+end    
+end 
+tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
+end
+
+if text == 'معلومات الكيبورد' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[CH](t.me/B_TRR)مرحبا بك مطوري سأشرح لك كل شئ في لوحه الاوامر بالتفصيل
+1• الاحصائيات { لعرض عدد المجموعات، والمشتركين في البوت
+ 2• تفعيل التواصل{ لتفعيل التواصل عبر البوت خاص بك} 
+ 3• تعطيل التواصل{ لتعطيل التواصل عبر البوت خاص بك } 
+ 4• قائمه العام { لعرض المحظورين عام في البوت }
+ 5• المطورين { لعرض المطورين في بوتك }
+8• اذاعه { ارسال رساله لجميع الجروبات في بوتك }
+9• اذاعه خاص { ارسال رساله لجميع مشتركين بوتك!} 
+10• تعطيل الاشتراك الاجباري { لتعطيل الاشتراك جباري خاص بوتك}
+11• تفعيل الاشتراك الاجباري { لتفعيل الاشتراك الاجباري بوتك }
+12•اذاعه بالتوجيه { ارسال رساله بالتوجيه الي جميع المجموعات }
+13• اذاعه بالتوجيه خاص { ارسال رساله بالتوجيه الي جميع المشتركين }
+14• تفعيل البوت الخدمي { يمكن هاذا امر ان منشئ الكروب يفعل البوت م̷ـــِْن دون حتياجه لمطور البوت
+15• تعطيل البوت الخدمي { يمك هل خاصيه ان تفعيل البوت اله مطورين البوت فقط }
+16• تنظيف المشتركين { يمكنك ازاله المشتركين الوهمين عبر هل امر }
+17• تنظيف الجروبات { يمكن ازاله المجموعات الوهميه عبر عل امر }
+18• جلب نسخه احتياطيه { لعرض ملف المجموعات بوتك }
+19• تحديث السورس { لتحديث السورس خاص بوتك 
+20• الغاء { للغاء الامر الذي طلبته }
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'قناه السورس', url="t.me/B_TRR"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'رفع المشتركين' and DevSoFi(msg) then 
@@ -1865,6 +1934,28 @@ send(msg.chat_id_, msg.id_,'['..t..']')
 end,nil) 
 end 
 end 
+
+if msg.content_.ID == "MessageChatAddMembers" then 
+if msg.content_.members_[0].id_ == tonumber(bot_id) then 
+print("it is Bot")
+N = (database:get(bot_id.."Name:Bot") or "اليكس")
+tdcli_function ({ID = "GetUser",user_id_ = bot_id,},function(arg,data) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = bot_id,offset_ = 0,limit_ = 1},function(extra,result,success) 
+if result.photos_[0] then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+local Texti = "٭ مرحبا انا بوت "..N.." \n↞ اختصاصي ادارة المجموعات من السبام والخ..\n↞ للتفعيل ارفعني مشرف وارسل تفعيل في المجموعه ."
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Texti)..'&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+end,nil)
+end,nil)
+end
+end
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.photo_ then  
 if database:get(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_) then 
@@ -2487,7 +2578,7 @@ end,nil)
 end,nil) 
 end,nil)
 end
-if text == 'تعطيل' and Sudo(msg) then
+if text == 'قفل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -5052,8 +5143,8 @@ return false
 end
 end
 
-if text and text:match("^(تعطيل) (.*)(.lua)$") and DevSoFi(msg) then
-local name_t = {string.match(text, "^(تعطيل) (.*)(.lua)$")}
+if text and text:match("^(قفل) (.*)(.lua)$") and DevSoFi(msg) then
+local name_t = {string.match(text, "^(قفل) (.*)(.lua)$")}
 local file = name_t[2]..'.lua'
 local file_bot = io.open("File_Bot/"..file,"r")
 if file_bot then
@@ -13062,7 +13153,7 @@ local Teext =[[
 ❲المطور الاساسي+ المطور الثانوي❳
 ⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚
   💘فتح
-  💘تعطيل
+  💘قفل
   💘مسح الاساسين
   💘المنشئين الاساسين
   💘رفع/تنزيل منشئ اساسي
@@ -13142,7 +13233,7 @@ local Teext =[[
   💘  جهاتي 
   💘  صلاحياتي
   💘  قول +الكلمه
-  💘  فتح  تعطيل+ اطردني   
+  💘  فتح  قفل+ اطردني   
   💘   سورس ⇔ المطور
   💘   الرابط ⇔ ايدي
   💘   رتبتي ⇔ كشف
@@ -13279,7 +13370,7 @@ local Teext =[[
   💘 اوامر مطور الاساسي 👨🏼‍✈️
 ⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚
   💘 فتح
-  💘 تعطيل
+  💘 قفل
   💘 مسح الاساسين
   💘 المنشئين الاساسين
   💘 رفع/تنزيل منشئ اساسي
@@ -13479,7 +13570,7 @@ local Teext =[[
   💘  جهاتي 
   💘  صلاحياتي
   💘  قول +الكلمه
-  💘  فتح  تعطيل+ اطردني   
+  💘  فتح  قفل+ اطردني   
   💘   سورس ⇔ المطور
   💘   الرابط ⇔ ايدي
   💘   رتبتي ⇔ كشف
