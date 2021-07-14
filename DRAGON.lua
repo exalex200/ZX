@@ -1008,11 +1008,9 @@ keyboard = {
 	
 {'/start'},
 
-{'تويت بالصوره ◉'},
 
-{'ضحكني◉','استوري◉'},
+{'ضحكني','استوري'},
 
-{'لو خيروك بالصوره ◉'},
 	
 	
 {'ثيم ◉'},
@@ -1020,28 +1018,23 @@ keyboard = {
 {'⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚'},
 
 
-{'اغاني◉','افلام◉'},
+
+{'غنيلي','نكت'},
 
 
-
-{'غنيلي◉','نكت◉'},
-
-
-{'تويت◉','صراحه◉'},
+{'تويت','صراحه'},
 
 
-{'بوت تواصل◉'},
+{'بوت تواصل'},
 
 
-{'بوستات◉','باد◉'},
-
-{'اسئله محرجه◉','غنيلي◉'},
+{'بوستات','باد'},
 
 
 {'⚚━━━━━⚚💘 Aꪶꫀ᥊⁦⁦ 💘⚚━━━━━⚚'},
 
 
-{'مطور◉','انا مين◉'},
+{'مطور','انا مين'},
 
 
 }
@@ -2917,7 +2910,7 @@ keyboard.inline_keyboard = {
 {{text = '💘 Aꪶꫀ᥊⁦⁦ 💘',url="t.me/Q250K"}},  
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q250K&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR/279&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
@@ -10517,7 +10510,7 @@ keyboard.inline_keyboard = {
 {{text = '💘 Aꪶꫀ᥊⁦⁦ 💘', url="t.me/B_TRR"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kbbnv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR/279/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
@@ -10528,7 +10521,7 @@ keyboard.inline_keyboard = {
 {{text = '💘 Aꪶꫀ᥊⁦⁦ 💘', url="t.me/B_TRR"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR/279/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "ثيم" then  
