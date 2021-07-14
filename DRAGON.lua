@@ -1403,6 +1403,84 @@ end
 if text == 'جلب النسخه' and DevSoFi(msg) then 
 GetFile_Bot(msg)
 end
+if text == 'جلب المشتركين' and DevSoFi(msg) then 
+local list = database:smembers(bot_id..'User_Bot') 
+local t = '{"users":['   
+for k,v in pairs(list) do 
+if k == 1 then 
+t =  t..'"'..v..'"' 
+else 
+t =  t..',"'..v..'"' 
+end 
+end 
+t = t..']}' 
+local File = io.open('./users.json', "w") 
+File:write(t) 
+File:close() 
+sendDocument(msg.chat_id_, msg.id_,0, 1, nil, './users.json', ' عدد المشتركين { '..#list..'}') 
+end
+
+if text == 'رفع المشتركين' and DevSoFi(msg) then 
+function by_reply(extra, result, success)    
+if result.content_.document_ then  
+local ID_FILE = result.content_.document_.document_.persistent_id_  
+local File_Name = result.content_.document_.file_name_ 
+local File = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..ID_FILE) )  
+download_to_file('https://api.telegram.org/file/bot'..token..'/'..File.result.file_path, ''..File_Name)  
+local info_file = io.open('./users.json', "r"):read('*a') 
+local users = JSON.decode(info_file) 
+for k,v in pairs(users.users) do 
+database:sadd(bot_id..'User_Bot',v)  
+end 
+send(msg.chat_id_,msg.id_,'تم رفع المشتركين ') 
+end    
+end 
+tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
+end
+if text == '/start' and DevSoFi(msg) then 
+local Text = '💬انت الان المطور الاساسي في البوت \n 💬سورس اليكس\n 💬يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/B_TRR)'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
+{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == 'جلب المطورين' and DevSoFi(msg) then  
+local list = database:smembers(bot_id..'Sudo:User') 
+local t = '{"users":['   
+for k,v in pairs(list) do 
+if k == 1 then 
+t =  t..'"'..v..'"' 
+else 
+t =  t..',"'..v..'"' 
+end 
+end 
+t = t..']}' 
+local File = io.open('./sudos3.json', "w") 
+File:write(t) 
+File:close() 
+sendDocument(msg.chat_id_, msg.id_,0, 1, nil, './sudos3.json', ' عدد المطورين { '..#list..'}') 
+end 
+if text == 'رفع المطورين' and DevSoFi(msg) then 
+function by_reply(extra, result, success)    
+if result.content_.document_ then  
+local ID_FILE = result.content_.document_.document_.persistent_id_  
+local File_Name = result.content_.document_.file_name_ 
+local File = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..ID_FILE) )  
+download_to_file('https://api.telegram.org/file/bot'..token..'/'..File.result.file_path, ''..File_Name)  
+local info_file = io.open('./sudos3.json', "r"):read('*a') 
+local users = JSON.decode(info_file) 
+for k,v in pairs(users.users) do 
+database:sadd(bot_id..'Sudo:User',v)  
+end 
+send(msg.chat_id_,msg.id_,'تم رفع المطورين ') 
+end    
+end 
+tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
+end
+
 if text == "تنظيف المشتركين " and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -9931,6 +10009,7 @@ end
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
+
 
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 if database:get(bot_id..'Bc:Bots') and not DevSoFi(msg) then 
