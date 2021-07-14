@@ -10127,9 +10127,11 @@ Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
-},
+	
+{{text = ' 💘 Aꪶꫀ᥊⁦⁦ 💘 ', url = "https://t.me/Q250K"}},
+
+{{text = '💘 𝘴ꪮꪊ𝘳ᥴꫀ 💘', url = "https://t.me/B_TRR"}},
+
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -10140,6 +10142,9 @@ end
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
+
+
+
 
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 if database:get(bot_id..'Bc:Bots') and not DevSoFi(msg) then 
