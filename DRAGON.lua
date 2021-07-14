@@ -1134,6 +1134,7 @@ local Text = ' ◉ المستخدم » '..Name..'\n ◉ تم ارسال الرس
 sendText(SUDO,Text,msg.id_/2097152/0.5,'md')
 return false
 end    
+
 if msg.content_.ID == 'MessageSticker' then    
 sendSticker(id_user, msg.id_, 0, 1, nil, msg.content_.sticker_.sticker_.persistent_id_)   
 local Name = '['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..id_user..')'
@@ -1141,6 +1142,7 @@ local Text = ' ◉ المستخدم » '..Name..'\n ◉ تم ارسال الرس
 sendText(SUDO,Text,msg.id_/2097152/0.5,'md')
 return false
 end      
+
 if msg.content_.ID == 'MessagePhoto' then    
 sendPhoto(id_user, msg.id_, 0, 1, nil,msg.content_.photo_.sizes_[0].photo_.persistent_id_,(msg.content_.caption_ or ''))    
 local Name = '['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..id_user..')'
@@ -1155,18 +1157,7 @@ local Text = ' ◉ المستخدم » '..Name..'\n ◉ تم ارسال الرس
 sendText(SUDO,Text,msg.id_/2097152/0.5,'md')
 return false
 end     
-if msg.content_.ID == 'MessageVoice' then    
-sendVoice(id_user, msg.id_, 0, 1, nil, msg.content_.voice_.voice_.persistent_id_)    
-local Name = '['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..id_user..')'
-local Text = ' ◉ المستخدم » '..Name..'\n ◉ تم ارسال الرساله اليه'
-sendText(SUDO,Text,msg.id_/2097152/0.5,'md')
-return false
-end     
-end,nil)
-end,nil)
-end,nil)
-end,nil)
-end 
+
 if text == 'فتح التواصل ' and DevSoFi(msg) then  
 if database:get(bot_id..'Tuasl:Bots') then
 database:del(bot_id..'Tuasl:Bots') 
