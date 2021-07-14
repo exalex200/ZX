@@ -10485,17 +10485,18 @@ end
 end
 end
 
+
 if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,24); 
-local Text ='مرحبا اليك لو خيروك بالصوره🌚💘' 
+local Text ='مرحبا اليك لو خيروك بالصوره◉' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '💘 Aꪶꫀ᥊⁦⁦ 💘', url="t.me/B_TRR"}}, 
+{{text = 'Sꪮꪊ𝘳ᥴꫀ Aꪶꫀ᥊⁦⁦ 💘 ', url="t.me/B_TRR"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR/279/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kbbnv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
+ 
 if text == 'صوت' then
 audio = 'هنا تحط رابط الاغنيه'
 caption = 'هنا تكتب النص اللي هيظهر مع الاغنيه'
@@ -10504,14 +10505,15 @@ end
 
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,28); 
-local Text ='مرحبا إليك تويت بالصوره🌚💘' 
+local Text ='مرحبا إليك تويت بالصوره' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '💘 Aꪶꫀ᥊⁦⁦ 💘', url="t.me/B_TRR"}}, 
+{{text = 'Sꪮꪊ𝘳ᥴꫀ Aꪶꫀ᥊⁦⁦ 💘 ', url="t.me/B_TRR"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/B_TRR/279/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 
 if text == "ثيم" then  
 ght = math.random(1,33);  
