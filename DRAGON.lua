@@ -2996,12 +2996,15 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250Q"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/DV_ALSAHEL"}},
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ', url="t.me/MR_AAS"}},
+	
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250Q"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250Q"}},
+
 {{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/SOURCE_LUCIFER"}},
+
 { {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+
 }
-https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/siiirriiaa/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/ME_NO15/860&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -10992,11 +10995,9 @@ Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
-},
+	
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -13056,7 +13057,7 @@ local Teext =[[
 ◉ رفع + تنزيل ← مزه
 ◉ تاك للمزز
 ◉ مسح المزز
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈??𝐄𝐑 ⚚━━━━━⚚
 ◉ رفع + تنزيل ← وتكه
 ◉ تاك للوتكات
 ◉ مسح الوتكات
