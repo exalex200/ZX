@@ -160,7 +160,7 @@ print([[
          \/____/                  \/____/          \/____/                 ~~              
                                                                                            
 
-~> DEVELOPER › @Q250Q
+~> DEVELOPER › @Z_IB_Y
 ]])
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -929,12 +929,9 @@ Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚', url="t.me/SOURCE_LUCIFER"},
-}, 
+	
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
+
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -1009,7 +1006,7 @@ local keyboard = {
 {'ضع اسم للبوت','معلومات الكيبورد'},
 {'المطور','الاحصائيات'},
 {'• ━━━━━━❪الاقسام❫━━━━━━ •'},
-{'قـسم الـسورس','قـسم مـسح&اضـف'},
+{'قـسم مـسح&اضـف'},
 {'قـسم تـفعيل&تـعطيل','قـسم الـحمايه'},
 {'قـسم الاذاعـه'},
 {'• ━━━━━━❪الركن الاخير❫━━━━━━ •'},
@@ -2997,11 +2994,10 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 	
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250Q"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Q250Q"}},
+{{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Z_IB_Y"}},
 
 {{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/SOURCE_LUCIFER"}},
 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 
 }
 https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/ME_NO15/860&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9891,41 +9887,6 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'لوسيفر').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'لوسيفر')
-local DRAGON_Msg = {
-'ننعم يروحي 😻♥️',
-'نعم يا قلب  '..Namebot..'',
-'عاوز اي من '..Namebot..'',
-'دوختو  '..Namebot..'',
-'بتشقط وجي ويت 🤪',
-'ايوا جاي 🙈',
-'يعم هتسحر واجي 😾',
-'طب متصلي على النبي كدا 🙂💜',
-'تع اشرب شاي 🥺💙',
-'دوس على الخوخه 🍑',
-'متيجي 😉',
-'ياض خش نام 😂',
-} 
-Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
-local msg_id = msg.id_/2097152/0.5  
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
-},
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end
-
 
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 if database:get(bot_id..'Bc:Bots') and not DevSoFi(msg) then 
@@ -12241,8 +12202,6 @@ keyboard.inline_keyboard = {
 {
 {text = '𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ', url="t.me/SOURCE_LUCIFER"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -12422,7 +12381,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\nاضغط علي الاسم ليتم نسخه\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉ ❲[𝙰𝙻𝙴 ☽‘](t.me/Q250Q)❳ ◉ ')
+send(msg.chat_id_, msg.id_, t..'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\nاضغط علي الاسم ليتم نسخه\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉ ❲[𝙰𝙻𝙴 ☽‘](t.me/Z_IB_Y)❳ ◉ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '◉︙ تم تعطيل الابراج')
@@ -12737,8 +12696,6 @@ keyboard.inline_keyboard = {
 {
 {text = '☊.رجوع.☊', callback_data="/help90"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -14370,10 +14327,10 @@ keyboard.inline_keyboard = {
 {{text = 'بوت تيك توك 🏴‍☠️',url="t.me/K0XBOT"}},
 {{text = 'بوت انستقرام 🎌',url="t.me/J33Bot"}},
 {{text = 'بوت قران 🏳️',url="t.me/quran_lbot"}},
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q250Q/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Z_IB_Y/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
@@ -14385,8 +14342,8 @@ ght = math.random(2,22);
 local Text ='تـم اخـتـيـآر  استـوري ممـيز لـك ❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Q250Q"}}, 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Z_IB_Y"}}, 
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/koko12300/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14399,8 +14356,8 @@ ght = math.random(1,33);
 local Text ='الستخدم ثيم اخر اكتب ثيم'  
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Q250Q"}}, 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Z_IB_Y"}}, 
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14413,8 +14370,8 @@ ght = math.random(1,60);
 local Text ='اتفضل يحرنكش 🌚❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Q250Q"}}, 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Z_IB_Y"}}, 
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/s_rogen/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14426,8 +14383,8 @@ ght = math.random(1,28);
 local Text ='اتفضل يحرنكش 🌚❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Q250Q"}}, 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Z_IB_Y"}}, 
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/KHALFEAT_RO/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14438,8 +14395,8 @@ ght = math.random(1,28);
 local Text ='اتفضل يحرنكش 🌚❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Q250Q"}}, 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Z_IB_Y"}}, 
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/KHALFEAT_RO/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14452,8 +14409,8 @@ ght = math.random(1,14);
 local Text ='اتفضل يحرنكش 🌚❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Q250Q"}}, 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Z_IB_Y"}}, 
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ka_rogan/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14467,8 +14424,8 @@ ght = math.random(1,16);
 local Text ='اتفضل يحرنكش 🌚❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Q250Q"}}, 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '𓌹 ᯓ المبرمج اليكس ★ 𓌺',url="t.me/Z_IB_Y"}}, 
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/lo_rogen/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14494,7 +14451,7 @@ local Text = [[
 ◉ ثيم ← لعرض الميزه
 ◉ م11← مـيزه خاصه  للبـوتات المدفوعـه تشـرح مميزات البـوت 
 ⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𓌹 ᯓ المبرمج اليكس ★ 𓌺](t.me/Q250Q) 
+◉ 𝘾𝙃 - [𓌹 ᯓ المبرمج اليكس ★ 𓌺](t.me/Z_IB_Y) 
 ⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
 ]]
 keyboard = {}  
@@ -14502,7 +14459,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'المبرمج اليكس',url="t.me/Q250K"}
 },  
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SIRIA199&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -14519,7 +14476,7 @@ keyboard = {}
 keyboard.inline_keyboard = {  
 {{text = '◉𝒉𝒂𝒔𝒏𝒂𝒂 𝒎𝒐𝒉𝒂𝒎𝒆𝒅◉',url="t.me/HASNAA828"}},  
 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/HASNAA828&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14537,14 +14494,11 @@ keyboard.inline_keyboard = {
 {
 {text = 'المبرمج اليكس',url="t.me/Q250K"}
 },  
-{
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑', url="t.me/SOURCE_LUCIFER"},
-},
 
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '00:00', url="t.me/SOURCE_LUCIFER"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q250Q&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ASZXDE12/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'العاب لوسيفر ' or text == 'الالعاب المتطوره' or text == 'العاب متطوره' then  
@@ -14579,7 +14533,7 @@ keyboard.inline_keyboard = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '◉قنـآة السـورس ◉', url="https://t.me/SOURCE_LUCIFER"},{text = '◉مــبـرمج السورس ◉', url="https://t.me/Q250Q"}}, 
+{{text = '◉قنـآة السـورس ◉', url="https://t.me/SOURCE_LUCIFER"},{text = '◉مــبـرمج السورس ◉', url="https://t.me/Z_IB_Y"}}, 
 { {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }  
 local msg_id = msg.id_/2097152/0.5  
