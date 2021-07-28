@@ -21,29 +21,29 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\na⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\na⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
-print('\27[0;31m⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n التوكن غير صحيح تاكد منه ثم ارسله')
+print('\27[0;31m⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \na⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \na⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n27[0;39;49m')
 database:set(id_server..":token",token)
 end 
 else
-print('\27[0;35m⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
+print('\27[0;35m⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\na⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\na⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
-io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n27[0;39;49m')
+io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n27[0;39;49m')
 database:set(id_server..":SUDO:ID",SUDOID)
 else
-print('\27[0;31m⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚ ┉ ┉\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
+print('\27[0;31m⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚ ┉ ┉\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
 os.execute('lua DRAGON.lua')
 end
@@ -715,7 +715,7 @@ end
 function Addmp3(msg,chat,kkl,ffrr)
 local eer = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..kkl)) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..eer.result.file_path,ffrr) 
-sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼┇𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪.")  
+sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼┇𓆩 𝙑𝙄𝙋𓏴   𓆪.")  
 os.execute('rm -rf ./'..ffrr) 
 end
 function Addsticker(msg,chat,Sd,rre)
@@ -946,14 +946,16 @@ end
 if text == 'قـسم الالـعـاب' then
 local Text = 'مرحب بيك في قسم الالعاب'
 local Key = {
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'مطور','انا مين'},
 {'اليكس'},
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'انصحنى','كتبات'},
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
+{'تويت بالصور','لوخيروك بالصور'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'صراحه','تويت'},
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'حروف','لو خيروك','نكته'},
 {'العوده✨'},
 }
@@ -962,15 +964,15 @@ end
 if text == 'قـسم ممـيزات php' then
 local Text = 'مميزات خاصه بي الي متفل في بوتو اغاني فقط'
 local Key = {
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'اغاني','مميزات'},
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'افلام','العاب'},
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'قران'},
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'لوسيفر'},
-{'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚'},
+{'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚'},
 {'ثيم','رتبتي'},
 {'العوده✨'},
 }
@@ -1173,11 +1175,11 @@ HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 uptime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
 echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
-echo '⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉「 الذاكره العشوائيه 」  ↚\n* '"$memUsedPrc"'*'
-echo '⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉「 وحـده الـتـخـزيـن 」  ↚\n* '"$HardDisk"'*'
-echo '⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉「 الـمــعــالــج 」  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
-echo '⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉「 الــدخــول 」  ↚\n* '`whoami`'*'
-echo '⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉「 مـده تـشغيـل الـسـيـرفـر 」 ↚\n* '"$uptime"'*'
+echo '⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n ◉「 الذاكره العشوائيه 」  ↚\n* '"$memUsedPrc"'*'
+echo '⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n ◉「 وحـده الـتـخـزيـن 」  ↚\n* '"$HardDisk"'*'
+echo '⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n ◉「 الـمــعــالــج 」  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n ◉「 الــدخــول 」  ↚\n* '`whoami`'*'
+echo '⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n ◉「 مـده تـشغيـل الـسـيـرفـر 」 ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
@@ -1421,7 +1423,7 @@ return false
 end
 if text == ("الثانوين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."Dev:SoFi:2")
-t = "\n ◉ قائمة مطورين الثانويين للبوت \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة مطورين الثانويين للبوت \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1460,7 +1462,7 @@ return false
 end
 if text == ("المطورين") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
-t = "\n ◉ قائمة المطورين \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة المطورين \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1476,7 +1478,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("قائمه العام") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GBan:User')
-t = "\n ◉ قائمه المحظورين عام \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمه المحظورين عام \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1493,7 +1495,7 @@ return false
 end
 if text == ("قائمه الكتم العام") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Gmute:User')
-t = "\n ◉ قائمة المكتومين عام \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة المكتومين عام \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -2789,7 +2791,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == "الاسماء المكتومه" and Constructor(msg) and database:get(bot_id.."block:name:stats"..msg.chat_id_) == "open" then
 local All_name = database:smembers(bot_id.."DRAGON:blocname"..msg.chat_id_)
-t = "\n◉︙ قائمة الاسماء المكتومه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚ \n"
+t = "\n◉︙ قائمة الاسماء المكتومه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚ \n"
 for k,v in pairs(All_name) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -2986,21 +2988,25 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
-◍ ᴛʜᴇ ʙᴇѕᴛ ᴇɢ ʟụᴀ ѕᴏụʀᴄᴇ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ
-🌖
-◍ ᴘᴍ ᴍᴇ ᴛᴏ ᴍᴀᴋᴇ ʏᴏụʀ ᴏᴡɴ ᴏɴᴇ 🐾
-...
+
+❍[Sꪮꪊ𝘳ᥴꫀ ᏉＩꝔ ](t.me/UUK88)
+
+❍[⟦𝓽ꫝꫀ ᥇ꫀ𝘴𝓽  𝘴ꪮꪊ𝘳ᥴꫀ ⟧](t.me/UUK88)
+  
+❍[Sꪮꪊ𝘳ᥴꫀ ᏉＩꝔ ](t.me/UUK88)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 	
 {{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/Z_IB_Y"}},
 
+{{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/V_I_P_K"}},
+
 {{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/UUK88"}},
 
 
 }
-https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/ME_NO15/860&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/gdhdhstzush90/126&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -3039,7 +3045,7 @@ GetFile_Bot(msg)
 end
 if text == 'الاوامر المضافه' and Constructor(msg) then
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_..'')
-t = "◉ قائمه الاوامر المضافه  \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "◉ قائمه الاوامر المضافه  \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
@@ -3915,7 +3921,7 @@ return false
 end
 if text == ("قائمه العام") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GBan:User')
-t = "\n◉ قائمة المحظورين عام \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة المحظورين عام \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4262,7 +4268,7 @@ send(msg.chat_id_, msg.id_, "\n◉ تم مسح قائمة المطورين  ")
 end
 if text == ("المطورين") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
-t = "\n◉ قائمة مطورين البوت \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة مطورين البوت \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4313,7 +4319,7 @@ end
 end
 
 if text == 'الملفات' and DevSoFi(msg) then
-t = '◉ ملفات السورس سلوسيفر ↓\n ⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚ \n'
+t = '◉ ملفات السورس سلوسيفر ↓\n ⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -4330,8 +4336,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n◉ اهلا بك في متجر ملفات سلوسيفر\n◉ ملفات السورس ↓\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n\n"
-local TextE = "\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n◉ علامة تعني { ✔️ } ملف مفعل\n◉ علامة تعني { ✖ } ملف معطل\n◉ قناة سورس سلوسيفر ↓\n".."◉ [اضغط هنا لدخول](t.me/UUK88) \n"
+local TextS = "\n◉ اهلا بك في متجر ملفات سلوسيفر\n◉ ملفات السورس ↓\n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n\n"
+local TextE = "\n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n◉ علامة تعني { ✔️ } ملف مفعل\n◉ علامة تعني { ✖ } ملف معطل\n◉ قناة سورس سلوسيفر ↓\n".."◉ [اضغط هنا لدخول](t.me/UUK88) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -4553,7 +4559,7 @@ end
 
 if text == 'قائمه المالك' and Sudo(msg) then
 local list = database:smembers(bot_id..'CoSu'..msg.chat_id_)
-t = "\n◉ قائمه المالك \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمه المالك \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4570,7 +4576,7 @@ return false
 end
 if text == ("صيح للمالك") or text == ("تاك للمالك") then
 local list = database:smembers(bot_id..'CoSu'..msg.chat_id_)
-t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4737,7 +4743,7 @@ st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..tok
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = "◉︙ المنشئين الاساسين تعالو مخرب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "◉︙ المنشئين الاساسين تعالو مخرب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4759,7 +4765,7 @@ Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..t
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = "◉︙ المنشئين الاساسين تعالو مخرب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "◉︙ المنشئين الاساسين تعالو مخرب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4846,7 +4852,7 @@ return false
 end
 if text == 'المنشئين الاساسين' and CoSu(msg) then
 local list = database:smembers(bot_id..'Basic:Constructor'..msg.chat_id_)
-t = "\n◉ قائمة المنشئين الاساسين \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة المنشئين الاساسين \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4863,7 +4869,7 @@ return false
 end
 if text == ("تاك للمنشئين الاساسين") or text == ("صيح المنشئين الاساسين") then
 local list = database:smembers(bot_id..'Basic:Constructor'..msg.chat_id_)
-t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5031,7 +5037,7 @@ end
 
 if text == ("المنشئين") and BasicConstructor(msg) then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n◉ قائمة المنشئين \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة المنشئين \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5047,7 +5053,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمنشئين") or text == ("صيح المنشئين") then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5228,7 +5234,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == ("المدراء") and Constructor(msg) then
 local list = database:smembers(bot_id..'Manager'..msg.chat_id_)
-t = "\n◉ قائمة المدراء \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة المدراء \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5244,7 +5250,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمدراء") or text == ("صيح المدراء") then
 local list = database:smembers(bot_id..'Manager'..msg.chat_id_)
-t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5464,7 +5470,7 @@ return false
 end
 if text == ("الثانويين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."Dev:SoFi:2")
-t = "\n◉︙ قائمة مطورين الثانويين للبوت \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉︙ قائمة مطورين الثانويين للبوت \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5515,7 +5521,7 @@ send(msg.chat_id_, msg.id_, '◉ تم مسح الادمنيه')
 end
 if text == ("الادمنيه") and Manager(msg) then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
-t = "\n◉ قائمة الادمنيه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة الادمنيه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5531,7 +5537,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للادمنيه") or text == ("صيح الادمنيه") then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
-t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5707,7 +5713,7 @@ send(msg.chat_id_, msg.id_, '◉ تم مسح المنظفين')
 end
 if text == ("المنظفين") and BasicConstructor(msg) then
 local list = database:smembers(bot_id..'S00F4:MN:TF'..msg.chat_id_)
-t = "\n◉ قائمة المنظفين \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة المنظفين \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5723,7 +5729,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمنظفين") or text == ("صيح المنظفين") then
 local list = database:smembers(bot_id..'S00F4:MN:TF'..msg.chat_id_)
-t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6043,7 +6049,7 @@ send(msg.chat_id_, msg.id_, '◉ تم مسح المميزين')
 end
 if text == ("المميزين") and Mod(msg) then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n◉ قائمة مميزين المجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة مميزين المجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6059,7 +6065,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمميزين") or text == ("صيح المميزين") then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ وينكم تعالو يريدوكم بالمجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6238,7 +6244,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم مسح جميع المتوحدين')
 end
 if text == ("تاك للمتوحدين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
-t = "\n ◉ قائمة متوحدين الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة متوحدين الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6307,7 +6313,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم مسح جميع الزوجات')
 end
 if text == ("تاك للزوجات") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n ◉ قائمه زوجات الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمه زوجات الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6424,7 +6430,7 @@ send(msg.chat_id_, msg.id_, ' ◉تم تنزيل جميع بناتك')
 end
 if text == ("تاك لبناتي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ◉ قائمة بناتي الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة بناتي الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6540,7 +6546,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم مسح كل النسوان بالجروب
 end
 if text == ("تاك للنسوان") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n ◉ قائمة نسوان الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة نسوان الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6608,7 +6614,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم مسح جميع المتزوجين')
 end
 if text == ("تاك للمتزوجين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n ◉ قائمه ازواج الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمه ازواج الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6629,7 +6635,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للخاينين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ◉ قائمة الخاينين الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة الخاينين الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6698,7 +6704,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم مسح جميع الكلاب')
 end
 if text == ("تاك للكلاب") and Mod(msg) then
 local list = database:smembers(bot_id..'Modde:User'..msg.chat_id_)
-t = "\n ◉ قائمه كلاب الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمه كلاب الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6767,7 +6773,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع حمير من الج�
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ◉ قائمة حمير الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة حمير الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6837,7 +6843,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع وتكات الجرو
 end
 if text == ("تاك للوتكات") and Mod(msg) then
 local list = database:smembers(bot_id..'Motte:User'..msg.chat_id_)
-t = "\n ◉ قائمة وتكات الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة وتكات الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6975,7 +6981,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع الارامل بال
 end
 if text == ("تاك للارامل") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
-t = "\n ◉ قائمة ارامل الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة ارامل الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7044,7 +7050,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع الخولات بال
 end
 if text == ("تاك للخولات") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n ◉ قائمة خولات الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة خولات الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7113,7 +7119,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل الازببه من الجرو
 end
 if text == ("تاك الازببه") and Mod(msg) then
 local list = database:smembers(bot_id..'Bakra:User'..msg.chat_id_)
-t = "\n ◉ قائمة البقرات الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة البقرات الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7182,7 +7188,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع المزز بالجر
 end
 if text == ("تاك للمزز") and Mod(msg) then
 local list = database:smembers(bot_id..'Tele:User'..msg.chat_id_)
-t = "\n ◉ قائمة مزز الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة مزز الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7251,7 +7257,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للاكساس") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ◉ قائمة كساس الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉ قائمة كساس الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7320,7 +7326,7 @@ send(msg.chat_id_, msg.id_, ' ⦁ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للميتين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ⦁ قائمة الميتنين \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ⦁ قائمة الميتنين \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7388,7 +7394,7 @@ send(msg.chat_id_, msg.id_, '\n ⦁ تم مسح المحظورين')
 end
 if text == ("المحظورين") then
 local list = database:smembers(bot_id..'Ban:User'..msg.chat_id_)
-t = "\n ⦁ قائمة محظورين الجروب \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ⦁ قائمة محظورين الجروب \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7408,7 +7414,7 @@ send(msg.chat_id_, msg.id_, '\n◉ تم مسح المحظورين')
 end
 if text == ("المحظورين") then
 local list = database:smembers(bot_id..'Ban:User'..msg.chat_id_)
-t = "\n◉ قائمة محظورين المجموعه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة محظورين المجموعه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7648,7 +7654,7 @@ send(msg.chat_id_, msg.id_, '◉ تم مسح المكتومين')
 end
 if text == ("المكتومين") and Mod(msg) then
 local list = database:smembers(bot_id..'Muted:User'..msg.chat_id_)
-t = "\n◉ قائمة المكتومين \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة المكتومين \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8780,10 +8786,10 @@ local text =
 '\n⚙️┇𝙶𝚁𝙾𝚄𝙿 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂'..
 '\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ '..
 '\n𖤛︙ اعدادات الكروب كتالي √↓'..
-'\nءٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
+'\nءٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
 '\n𖤛︙  علامة ال {🔓} تعني مفعل'..
 '\n𖤛︙  علامة ال {🔐} تعني معطل'..
-'\nءٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
+'\nءٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
 '\n𖤛︙  الروابط » { '..lock_links..
 ' }\n'..'𖤛︙  المعرفات » { '..lock_user..
 ' }\n'..'𖤛︙  التاك » { '..lock_hash..
@@ -8794,7 +8800,7 @@ local text =
 ' }\n'..'𖤛︙  الماركدون » { '..lock_mark..
 ' }\n'..'𖤛︙  التعديل » { '..lock_edit..
 ' }\n'..'𖤛︙  تعديل الميديا » { '..lock_edit_med..
-' }\nءٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
+' }\nءٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
 '\n'..'𖤛︙  الكلايش » { '..lock_spam..
 ' }\n'..'𖤛︙  الكيبورد » { '..lock_inlin..
 ' }\n'..'𖤛︙  الاغاني » { '..lock_vico..
@@ -8803,7 +8809,7 @@ local text =
 ' }\n'..'𖤛︙  الدردشه » { '..lock_text..
 ' }\n'..'𖤛︙   الفيديو » { '..lock_ved..
 ' }\n'..'𖤛︙   الصور » { '..lock_photo..
-' }\nءٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
+' }\nءٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
 '\n'..'𖤛︙   الصوت » { '..lock_muse..
 ' }\n'..'𖤛︙  الملصقات » { '..lock_ste..
 ' }\n'..'𖤛︙  الجهات » { '..lock_phon..
@@ -8814,10 +8820,10 @@ local text =
 ' }\n'..'𖤛︙  التكرار » { '..flood..
 ' }\n'..'𖤛︙  الترحيب » { '..welcome..
 ' }\n'..'𖤛︙  عدد التكرار » { '..NUM_MSG_MAX..
-' }\nءٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
+' }\nءٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋𓏴   𓆪ـــــــــــــــــــــ≫ٴ'..
 '\n𖤛︙  علامة ال {🔓} تعني مفعل'..
 '\n𖤛︙  علامة ال {🔐} تعني معطل'..
-'\nءٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ??   𓆪ـــــــــــــــــــــ≫ٴ'..
+'\nءٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋??   𓆪ـــــــــــــــــــــ≫ٴ'..
 '\n'..'𖤛︙  امر صيح » { '..kickme..
 ' }\n'..'𖤛︙  امر اطردني » { '..sehuser..
 ' }\n'..'𖤛︙  امر مين ضافني » { '..addme..
@@ -8826,7 +8832,7 @@ local text =
 ' }\n'..'𖤛︙  الايدي » { '..idgp..
 ' }\n'..'𖤛︙  الايدي بالصوره » { '..idph..
 ' }\n'..'𖤛︙  الرفع » { '..setadd..
-' }\n'..'𖤛︙  الحظر » { '..banm..' }\n\nٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪ـــــــــــــــــــــ≫ٴ\n𖤛︙ قناة سورس الوون ↓\n [ ❍ ┇𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 𓏴   𓆪.](t.me/SOURCE_SYRIA) \n'
+' }\n'..'𖤛︙  الحظر » { '..banm..' }\n\nٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋𓏴   𓆪ـــــــــــــــــــــ≫ٴ\n𖤛︙ قناة سورس الوون ↓\n [ ❍ ┇𓆩 𝙑𝙄𝙋𓏴   𓆪.](t.me/SOURCE_SYRIA) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 
@@ -8967,9 +8973,8 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑  ⤶', url="https://t.me/UUK88"},
+{text = '𝙑𝙄𝙋 ⤶', url="https://t.me/UUK88"},
 },
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -9213,7 +9218,7 @@ end
 
 if text == "قائمه المنع" and Manager(msg) then   
 local list = database:smembers(bot_id.."DRAGON1:List:Filter"..msg.chat_id_)  
-t = "\n◉ قائمة المنع \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة المنع \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do  
 local DRAGON_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..v..msg.chat_id_)   
 t = t..""..k.."- "..v.." » {"..DRAGON_Msg.."}\n"    
@@ -9359,7 +9364,7 @@ return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n◉ قائمة البوتات الموجوده \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+text = "\n◉ قائمة البوتات الموجوده \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -9378,7 +9383,7 @@ send(msg.chat_id_, msg.id_, "◉ لا توجد بوتات في المجموعه"
 return false 
 end
 if #admins == i then 
-local a = '\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n◉ عدد البوتات التي هنا >> {'..n..'} بوت\n'
+local a = '\n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n◉ عدد البوتات التي هنا >> {'..n..'} بوت\n'
 local f = '◉ عدد البوتات التي هي ادمن >> {'..t..'}\n◉ ملاحضه علامة ال (✯) تعني ان البوت ادمن \n'
 send(msg.chat_id_, msg.id_, text..a..f)
 end
@@ -9467,7 +9472,7 @@ if #list == 0 then
 send(msg.chat_id_, msg.id_,'◉ لا توجد صلاحيات مضافه')
 return false
 end
-t = "\n◉ قائمة الصلاحيات المضافه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n◉ قائمة الصلاحيات المضافه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -9995,7 +10000,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,DRAGON)
-local t = "\nツ قائمة الاعضاء \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+local t = "\nツ قائمة الاعضاء \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 x = 0
 local list = DRAGON.members_
 for k, v in pairs(list) do
@@ -10435,7 +10440,7 @@ send(msg.chat_id_, msg.id_,"◉︙تم مسح ردود المدير")
 end
 if text == ("ردود المدير") and Manager(msg) then
 local list = database:smembers(bot_id.."List:Manager"..msg.chat_id_.."")
-text = "◉︙قائمه ردود المدير \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+text = "◉︙قائمه ردود المدير \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = "متحركه 🎭"
@@ -10756,7 +10761,7 @@ PRo = '❴ ✔️ ❵'
 else
 PRo = '❴ ✖ ❵'
 end 
-send(msg.chat_id_, msg.id_,'\n◉صلاحيات البوت هي\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n◉︙  علامة ال {✔️} تعني مفعل\n◉︙  علامة ال {✖} تعني غير مفعل\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n◉︙تغير معلومات المجموعة ↞ '..INf..'\n◉︙حذف الرسائل ↞ '..DEL..'\n◉︙حظر المستخدمين ↞ '..REs..'\n◉︙دعوة المستخدمين ↞ '..INv..'\n◉︙ثتبيت الرسالة ↞ '..Pin..'\n◉︙اضافة مشرفين ↞ '..PRo)   
+send(msg.chat_id_, msg.id_,'\n◉صلاحيات البوت هي\n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n◉︙  علامة ال {✔️} تعني مفعل\n◉︙  علامة ال {✖} تعني غير مفعل\n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n◉︙تغير معلومات المجموعة ↞ '..INf..'\n◉︙حذف الرسائل ↞ '..DEL..'\n◉︙حظر المستخدمين ↞ '..REs..'\n◉︙دعوة المستخدمين ↞ '..INv..'\n◉︙ثتبيت الرسالة ↞ '..Pin..'\n◉︙اضافة مشرفين ↞ '..PRo)   
 end
 end
 if text == "تعطيل الانستا" and Manager(msg) then
@@ -10797,7 +10802,7 @@ User_id = "@"..b.username_
 else
 User_id = msg.sender_user_id_
 end --الكود حصري سورس سلوسيفر يعني لو بكتهن راح اعرفك انت الاخذتهن
-local t = "\n◉︙المستخدم ~ ["..User_id .."] يصيح المشرفين \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+local t = "\n◉︙المستخدم ~ ["..User_id .."] يصيح المشرفين \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 k = 0
 for i,v in pairs(data.members_) do
 if bot_id ~= v.user_id_ then 
@@ -10839,7 +10844,7 @@ end
 return false
 end
 local list = database:smembers(bot_id.."botss:DRAGON:List:Rd:Sudo")
-text = "\nقائمة ردود المتعدده \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+text = "\nقائمة ردود المتعدده \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 db = "رساله "
 text = text..""..k.." => {"..v.."} => {"..db.."}\n"
@@ -12143,11 +12148,11 @@ end
 return false
 end
 local Text =[[
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ قم بأختيار اللغه.. ↑↓
 ◉ Choose language.. ↑↓ 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12182,13 +12187,13 @@ return false
 end
 local Text =[[
 *اهلا انتツفي اضافات البوت*
-*⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚*
+*⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚*
 * يمكنك معرفة حاله تفعيل الاضافات *
 * من خلال ارسال حاله الاضافات *
-*⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚*
+*⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚*
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
-*⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚*
+*⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚*
 [𝐒??𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ☑](t.me/UUK88)
 ]]
 keyboard = {} 
@@ -12200,7 +12205,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ', url="t.me/UUK88"},
+{text = '𝙑𝙄𝙋', url="t.me/UUK88"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12375,13 +12380,13 @@ if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." sofi:zhrf
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n ◉قائمه الزخرفه \n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n"
+t = "\n ◉قائمه الزخرفه \n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\nاضغط علي الاسم ليتم نسخه\n⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚\n ◉ ❲[𝙰𝙻𝙴 ☽‘](t.me/Z_IB_Y)❳ ◉ ')
+send(msg.chat_id_, msg.id_, t..'⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\nاضغط علي الاسم ليتم نسخه\n⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚\n ◉ ❲[𝙰𝙻𝙴 ☽‘](t.me/Z_IB_Y)❳ ◉ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '◉︙ تم تعطيل الابراج')
@@ -12562,8 +12567,8 @@ return false
 end
 local Teext =[[
 ◉ اكتب الامر الذي تريد تنفيذه..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12642,8 +12647,6 @@ keyboard.inline_keyboard = {
 {
 {text = '☊.رجوع.☊', callback_data="/help90"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12655,8 +12658,8 @@ return false
 end
 local Teext =[[
 ◉ اكتب الامر الذي تريد تنفيذه..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12707,7 +12710,7 @@ return false
 end
 local Teext =[[
 ◉ قائمة اوامر الحماية..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ قـفـل او فـتـح + الامــر.
 ◉ قفل او فتح الامر بالتقييد.
 ◉ قفل او فتح الامر بالـطرد.
@@ -12722,7 +12725,7 @@ local Teext =[[
 ◉ المـلفات.
 ◉ الـصـور.
 ◉ الـتـاك.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ المـلصقات.
 ◉ الاشعارات.
 ◉ الـدردشه.
@@ -12732,7 +12735,7 @@ local Teext =[[
 ◉ الاغاني.
 ◉ الصوت.
 ◉ الجهات.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ المـاركداون.
 ◉ الكـلايش.
 ◉ الممنوعه.
@@ -12740,7 +12743,7 @@ local Teext =[[
 ◉ البوتات.
 ◉ التكرار.
 ◉ السب.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑](t.me/UUK88 )
 ]]
 keyboard = {} 
@@ -12748,8 +12751,6 @@ keyboard.inline_keyboard = {
 {
 {text = '☊.رجوع.☊', callback_data="/help90"},
 },
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
-
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12761,7 +12762,7 @@ return false
 end
 local Teext =[[
 ◉ قائمة اوامر الادمنية..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع او تنزيل مميز.
 ◉ عدد الجروب.
 ◉ الغاء تقـييد.
@@ -12779,15 +12780,15 @@ local Teext =[[
 ◉ حـظر.
 ◉ طـرد.
 ◉ مـنع.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ الغاء تثـبيت.
 ◉ تـثـبـيـت.
 ◉ الاعدادات.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ الرابط.
 ◉ القوانين.
 ◉ الترحيب.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ تفعيل او تعطيل الترحيب.↑↓
 ◉ اضف او مسح صلاحيه.↑↓
 ◉ وضع تكرار + العدد.↑↓
@@ -12796,22 +12797,22 @@ local Teext =[[
 ◉ جهـاتي.
 ◉ رسائـلي.
 ◉ سحكاتي.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ وضع + الاوامر الادناه..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ اسـم.
 ◉ رابـط.
 ◉ صـوره.
 ◉ وصـف.
 ◉ قـوانين.
 ◉ ترحـيب.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ مسح + الاوامر الادناه..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ قائمه المـنع.
 ◉ الصـلاحيات.
 ◉ المـحظورين.
@@ -12822,16 +12823,14 @@ local Teext =[[
 ◉ البـوتات.
 ◉ الصـوره.
 ◉ الرابـط.
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.رجوع.☊', callback_data="/help90"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12843,11 +12842,11 @@ return false
 end
 local Teext =[[
 ◉ قائمة اوامر المدراء والمنشئ..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع او تنزيل ادمن
 ◉ رفع او كشف القيود
 ◉ تنزيل الكل
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ تفعيل او تعطيل الايدي بالصوره
 ◉ تفعيل او تعطيل الايدي
 ◉ تفعيل او تعطيل الردود العامه
@@ -12858,32 +12857,32 @@ local Teext =[[
 ◉ تفعيل او تعطيل الحظر
 ◉ تفعيل او تعطيل الرابط
 ◉ تفعيل او تعطيل اوامر التسليه
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ تعين او مسح الايدي..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع الادمنيه
 ◉ اضف او مسح رد
 ◉ الادمنيه
 ◉ الردود
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ مسح + عدد
 ◉ مسح الادمنيه
 ◉ مسح الردود
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ اوامر المنشئين الاساسين..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع او تنزيل منشئ
 ◉ مسح المنشئين
 ◉ المنشئين
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ اوامر المنشئين..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ مسح او مسح الاوامر المضافه
 ◉ اضف مجوهرات + العدد بالرد
 ◉ اضف رسائل + العدد بالرد
@@ -12893,16 +12892,14 @@ local Teext =[[
 ◉ الاوامر المضافه
 ◉ مسح المدراء
 ◉ الـمـدراء
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.رجوع.☊', callback_data="/help90"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -12914,11 +12911,11 @@ return false
 end
 local Teext =[[
 ◉ قائمة اوامر المطورين..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ المـطور الـعـادي..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ اذاعه بالتوجيه للمجموعات
 ◉ اذاعه موجهه بالتـثبيت
 ◉ جلب نسخه احتياطيه
@@ -12931,11 +12928,11 @@ local Teext =[[
 ◉ مسح المالكين
 ◉ اذاعه خـاص
 ◉ الاحصائيات
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ المطور الاساسي..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ جلب او رفع نسخه احتياطيه
 ◉ اذاعه بالتوجيه للمجموعات
 ◉ رفع او تنزيل  مميز عام 
@@ -12955,15 +12952,14 @@ local Teext =[[
 ◉ الاحصائيات
 ◉ المطورين 
 ◉ الغاء العام
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.رجوع.☊', callback_data="/help90"},
 },
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12976,21 +12972,21 @@ return false
 end
 local Teext =[[
 ◉ قائمة اوامر التسليه..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← الامر
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← متوحد 
 ◉ تاك للمتوحدين
 ◉ مسح المتوحدين
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← رقاصه
 ◉ تاك للرقصات
 ◉ مسح الرقصات
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← ابني
 ◉ تاك لولادي
 ◉ مسح ولادي
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← بنتي
 ◉ تاك لبناتي
 ◉ مسح بناتي
@@ -12998,15 +12994,15 @@ local Teext =[[
 ◉ رفع + تنزيل ← زوجتي
 ◉ تاك لمرتاتي
 ◉ مسح مرتاتي
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← شاذ
 ◉ تاك للشواذ
 ◉ مسح الشواذ
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← خطيبتي
 ◉ تاك لخطيبتي
 ◉ مسح خطيبتي
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← علق
 ◉ تاك للعلوق
 ◉ مسح العلوق
@@ -13018,7 +13014,7 @@ local Teext =[[
 ◉ رفع + تنزيل ← وتكه
 ◉ تاك للوتكات
 ◉ مسح الوتكات
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← كلب
 ◉ تاك للكلاب
 ◉ مسح الكلاب
@@ -13027,24 +13023,22 @@ local Teext =[[
 ◉ بقلبي او من قلبي
 ◉ تاك للي بقلبي
 ◉ مسح اللي بقلبي
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← زوجتي
 ◉ تاك للزوجات
 ◉ مسح الزوجات
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ رفع + تنزيل ← ارمله
 ◉ تاك للارامل
 ◉ مسح المطلقات
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.رجوع.☊', callback_data="/help90"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -13057,8 +13051,8 @@ end
 local Teext =[[
 ◉ قم بأختيار اللغه.. ↑↓
 ◉ Choose language.. ↑↓ 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13067,9 +13061,6 @@ keyboard.inline_keyboard = {
 },
 {
 {text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ', url="t.me/UUK88 "},
-},
-{
-{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13083,11 +13074,11 @@ return false
 end
 local Teext =[[
 ◉ اهلا بك في قسم الاوامر ..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ اليك الاوامر الخاص بسورس لوسيفر .
 ◉ اختر الامر الذي تريده من الازرار بلاسفل .
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
-◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ](t.me/UUK88 )
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
+◉ 𝘾𝙃 - [𝙑𝙄𝙋](t.me/UUK88 )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13106,7 +13097,6 @@ keyboard.inline_keyboard = {
 {
 {text = '☊.BACK.☊', callback_data="/help8"},
 },
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -13119,10 +13109,10 @@ return false
 end
 local Teext =[[
 ◉️ ❬ m 1 ❭ Orders Protect Group ⇊
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Lock «Open + it
 ◉ Lock «» Open ❬ All ❭
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Chat
 ◉ Knows
 ◉ Pictures
@@ -13147,23 +13137,21 @@ Mobile moving
 ◉ towers
 ◉ Meanings of names
 ◉ Welcome
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Links
 ◉ Guidance
 ◉ popcorn
 ◉ Bots
 ◉ Prohibited
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑](t.me/UUK88) 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.BACK.☊', callback_data="/add"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -13176,42 +13164,41 @@ end
 local Teext =[[
 ◉ ❬ m 2 ❭ 2 ◉ entertainment orders ⇊
 ◉ Lifting «» Download + it
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ and Take
 ◉ Crown for Soutat
 ◉ Wipe Wattat
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉
 ◉ Crown for drapes
 ◉ Clear Docks
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Jeep
 ◉ Crown for bodies
 ◉ Scanning
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ animal
 ◉ Crown for animals
 ◉ Animals
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ failed
 ◉ Crown for failure
 ◉ Scan of failure
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Dermatology
 ◉ Crown for perforation
 ◉ Scanning
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Catte
 ◉ Crown for cats
 ◉ Cats survey
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑](t.me/UUK88) 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '☊.BACK.☊', callback_data="/add"}},
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
+{{text = '☊.BACK.☊', callback_data="/add"}
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -13224,50 +13211,48 @@ end
 local Teext =[[
 ◉ ❬ m 3 ❭ 3 ◉ Tall orders ⇊
 ◉ Lifting «← Download + it
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ my son
 ◉ Crown for children
 ◉ Survey sons
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Crown for girls
 ◉ Clear the girls
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ Habayeb survey..↑↓
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ my husband
 ◉ Crown for couples
 ◉ Survey of couples
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ My wife
 ◉ Crown for the wives
 ◉ Wipe waves
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Khayen
 ◉ Crown for him
 ◉ Clear the moon
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Crown for the two
 ◉ Khiennine survey
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Abit
 ◉ Crown for the mixture
 ◉ Survey
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Crown for Paradise
 ◉ Storage survey
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑](t.me/UUK88) 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.BACK.☊', callback_data="/add"},
 },
-
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -13279,14 +13264,14 @@ return false
 end
 local Teext =[[
 ◉ ❬ m 4 ❭ Orders of members ⇊
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Age account
 ◉ Picture «←
 ◉ Quran
 ◉ Settings
 ◉ Qatari
 ◉ Delete «← Sell ❬ Qatari
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ My messages «← Delete 
 ◉ Decorating «← Songs
 ◉ Movies «← Cartoon
@@ -13294,7 +13279,7 @@ local Teext =[[
 ◉ YouTube ← Games
 ◉ Weather + area
 ◉ Dark «link
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ My name is 
 ◉ My Juices «← Delete my juices
 ◉ Powers «← Ping
@@ -13303,7 +13288,7 @@ local Teext =[[
 ◉ I am Maine
 ◉ Say + word
 ◉ Qatah «← dog
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Source «Developer
 ◉ link «hands
 ◉ Rank «← Revealed
@@ -13313,16 +13298,15 @@ local Teext =[[
 ◉ Boso «← her pussy
 ◉ Mido «← ←
 ◉ Delete link
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑](t.me/UUK88) 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.BACK.☊', callback_data="/add"},
 },
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13336,25 +13320,25 @@ end
 local Teext =[[
 ◉ ❬ m 5 ❭ Orders of developers ⇊
 ◉ Developer ←⇊
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Lifting «download ❬ owner ❭
 ◉ Change the group link
 ◉ Destination of groups
 ◉ Destination by guidance for groups
 ◉ A radio face
 ◉ Special radio
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ A special guidance
 ◉ Fix the installation
 ◉ bring back copy
 ◉ raise its backup copy
 ◉ Statistics
 ◉ Delete owners
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
         ╔═══════════════╗        
              ◉ Basic Developer..
         ╚═══════════════╝        
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Add "← Delete a general response
 ◉ Lifting «download ❬ special year ❭
 ◉ Featured Survey
@@ -13365,7 +13349,7 @@ local Teext =[[
 ◉ Fix the installation
 ◉ A radio face
 ◉ bring «← raising 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ Statistics
 ◉ Lifting «download ❬ Developer ❭
 ◉ Developers «← Delete developers
@@ -13375,16 +13359,15 @@ local Teext =[[
 ◉ General makers
 ◉ Preventors General
 ◉ Canceling the general
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑](t.me/UUK88) 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '☊.BACK.☊', callback_data="/add"},
 },
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -13392,12 +13375,12 @@ end
 if Text == '/add' then
 local Teext =[[
 ◉ Welcome to the orders section.. ↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ You can use the buttons..↑↓
 ◉ By putting pressure on them..↑↓
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑](t.me/UUK88) 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13413,7 +13396,6 @@ keyboard.inline_keyboard = {
 {
 {text = '☊.BACK.☊', callback_data="/help8"},
 },
-{ {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -14450,9 +14432,9 @@ local Text = [[
 ◉ روايات ← لعرض الميزه
 ◉ ثيم ← لعرض الميزه
 ◉ م11← مـيزه خاصه  للبـوتات المدفوعـه تشـرح مميزات البـوت 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ◉ 𝘾𝙃 - [𓌹 ᯓ المبرمج اليكس ★ 𓌺](t.me/Z_IB_Y) 
-⚚━━━━━⚚ 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝙑𝙄𝙋⚚━━━━━⚚
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -14688,7 +14670,7 @@ end
 if #list == 0 then
 t = "◉ لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\nٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄  𝐋𝐔𝐂𝐈𝐅𝐄𝐑  𓆪ـــــــــــــــــــــ≫ٴ\n◉ تم التعديل على الميديا\n◉ الشخص الي قام بالتعديل\n◉ ايدي الشخص ◂ '..result.sender_user_id_..'\n◉ معرف الشخص»{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\nٴ≪ـــــــــــــــــــــ𓆩 𝙑𝙄𝙋 𓆪ـــــــــــــــــــــ≫ٴ\n◉ تم التعديل على الميديا\n◉ الشخص الي قام بالتعديل\n◉ ايدي الشخص ◂ '..result.sender_user_id_..'\n◉ معرف الشخص»{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
