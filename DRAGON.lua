@@ -959,7 +959,7 @@ local Key = {
 
 {'• ━━━━━━━━━━━ •'},
 
-{'تويت بالصوره','لوخيروك بالصوره'},
+{'تويت بالصوره','لو خيروك بالصوره'},
 
 {'خلفيات','صور'},
 
@@ -1048,7 +1048,7 @@ local keyboard = {
 
 {'• ━━━━━━━━━━━ •'},
 
-{'اوامر التفعيل و القفل','اوامر الحمايه'},
+{'اوامر التفعيل','اوامر الحمايه'},
 
 {'اوامر المسح','اوامر الاذاعه'},
 
@@ -1285,7 +1285,7 @@ local Key = {
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
-if text == 'اوامر التفعيل و القفل ' and DevSoFi(msg) then 
+if text == 'اوامر التفعيل' and DevSoFi(msg) then 
 local Text = 'اليك اوامر تفعيل واوامر القفل 🌚💞'
 local Key = {
 {'تعطيل الاذاعه','تفعيل الاذاعه'},
@@ -1767,7 +1767,7 @@ database:srem(bot_id..'Sudo:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
 usertext = '\n 👾 الـعـضو   ↚ ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
-status  = '\n 👾 تم تنزيله من المطورين'
+status  = '\n ?? تم تنزيله من المطورين'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n 👾 الـعـضو   ↚ '..userid..''
@@ -14556,7 +14556,7 @@ keyboard.inline_keyboard = {
 {{text = '00:00', url="t.me/MKALEXES"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SIRIA199&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ASZXDE12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
