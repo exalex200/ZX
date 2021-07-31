@@ -1330,33 +1330,21 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 
-if text == "المطور" or text == "مطور" then
-local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
-if TEXT_SUDO then 
-send(msg.chat_id_, msg.id_,TEXT_SUDO)
-else
-tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
-local function taha(extra, taha, success)
-if taha.photos_[0] then
-local Name = 'مطور البوت الهكر اهو 🌚💞 -\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+if text == 'المطور' or text == 'مطور' then
+tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
+ 
+ local msg_id = msg.id_/2097152/0.5
+local Text = [[
+ المطور
+]]
 keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
-},
-{
-{text = '00:00', url="t.me/bar_lo0o0o0o0o"},
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-else
-sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
- end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, limit_ = 1 }, taha, nil)
+keyboard.inline_keyboard = {{{text = '   ⁽'..result.first_name_..'₎  ',url="t.me/"..result.username_}},}
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
+
+
 end
-end
+
 
 if text == 'جلب المطورين' and DevSoFi(msg) then  
 local list = database:smembers(bot_id..'Sudo:User') 
@@ -3032,7 +3020,7 @@ local Text = {
   "شكو غيرت صورتك يلصاك",
   "منور طالع حلو ع صوره جديده",
   "ها يول شو غيرت صورتك😍😂",
-  "شكو غيرت صورتك شنو قطيت وحده جديده 😹😹🌚",
+  "شكو غيرت صورتك شنو قطيت وحده جديده ??😹🌚",
   "شو غيرت صورتك شنو تعاركت ويه الحب ؟😹🌞",
   "شكو غيرت الصوره شسالفه ؟؟ 🤔🌞",
 }
@@ -9069,33 +9057,21 @@ send(msg.chat_id_, msg.id_," 🔴︙ تم تعطيل الرابط")
 return false end
 end
 
-if text == "المطور" or text == "مطور" then
-local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
-if TEXT_SUDO then 
-send(msg.chat_id_, msg.id_,TEXT_SUDO)
-else
-tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
-local function taha(extra, taha, success)
-if taha.photos_[0] then
-local Name = 'مطو البوت اهو 💘\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+if text == 'المطور' or text == 'مطور' then
+tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
+ 
+ local msg_id = msg.id_/2097152/0.5
+local Text = [[
+ المطور
+]]
 keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
-},
-{
-{text = '𝑩𝑨𝑹𝑳𝑶  ⤶', url="https://t.me/bar_lo0o0o0o0o"},
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-else
-sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
- end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, limit_ = 1 }, taha, nil)
+keyboard.inline_keyboard = {{{text = '   ⁽'..result.first_name_..'₎  ',url="t.me/"..result.username_}},}
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
+
+
 end
-end
+
 ---------------------
 
 if text == "تفعيل صورتي" or text == 'تفعيل الصوره' then
