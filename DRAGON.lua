@@ -64,7 +64,7 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./Info.lua")   
+create(config, "./kkkklInfo.lua")   
 end 
 create_config_auto()
 token = database:get(id_server..":token")
@@ -86,7 +86,7 @@ exit 1
 fi
 if [ ! $token ]; then
 echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉"
-echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE INFO.LUA \e[0m"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE kkkklInfo.lua \e[0m"
 echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉"
 exit 1
 fi
@@ -123,7 +123,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./Info.lua", "r")  
+local f = io.open("./kkkklInfo.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -131,7 +131,7 @@ f:close()
 database:del(id_server..":token")
 database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./Info.lua")() 
+local config = loadfile("./kkkklInfo.lua")() 
 return config 
 end 
 _redis = load_redis()  
@@ -162,7 +162,7 @@ print([[
 
 ~> DEVELOPER › @M_S_U
 ]])
-sudos = dofile("./Info.lua") 
+sudos = dofile("./kkkklInfo.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
@@ -933,6 +933,9 @@ keyboard = {}
 keyboard.inline_keyboard = {
 	
 {{text = '00:00', url="t.me/MKALEXES"}}, 
+{
+{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+},
 
 }
 local function getpro(extra, result, success) 
@@ -1392,6 +1395,9 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '00:00', url="t.me/MKALEXES"}}, 
+{
+{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MKALEXES/11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3039,6 +3045,10 @@ keyboard.inline_keyboard = {
 {{text = ' ◍ 𝐃𝐀𝐃 𝐇𝐀𝐂𝐊𝐄𝐑  𖣌 ', url = "https://t.me/M_S_U"}},
 
 {{text = ' ◍ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐇𝐀𝐂𝐊𝐄𝐑 𖣌 ', url = "https://t.me/MKALEXES"}},
+
+{
+{text = 'اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+},
 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -7354,7 +7364,7 @@ t = t..""..k.."👾 الكس "..v.."\n"
 end
 end
 if #list == 0 then
-t = " 👾 لا يوجد كس"
+t = " ?? لا يوجد كس"
 end
 send(msg.chat_id_, msg.id_, t)
 end
