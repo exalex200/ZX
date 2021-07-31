@@ -567,7 +567,6 @@ DRAGON_Msg = 'رب التفاعل'
 end 
 return DRAGON_Msg 
 end
-
 function sendin(chat,msgid,user,user_id)
 local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. chat ..'&user_id='.. user_id)
 local Json_Info = JSON.decode(Chek_Info)
@@ -1369,7 +1368,7 @@ local Key = {
 {'اذاعه ','اذاعه خاص '},
 {'اذاعه بالتثبيت '},
 {'اذاعه بالتوجيه ','اذاعه بالتوجيه خاص '},
-{'العوده 🌚💞'},
+{'العوده 🌚??'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -5180,7 +5179,7 @@ end
 
 if text == ("المنشئين") and BasicConstructor(msg) then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n★ قائمة المنشئين \n⚚━━━━━⚚ 𝑩𝑨𝑹𝑳𝑶 ⚚━━━━━⚚\n"
+t = "\n★ قائمة المنشئين \n⚚━━━━━⚚ 𝑩𝑨𝑹𝑳?? ⚚━━━━━⚚\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -14547,6 +14546,16 @@ keyboard.inline_keyboard = {
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/bar_lo0o0&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+
+if text == "تغير المطور الاساسي" and  msg.sender_user_id_ == tonumber(Id_Sudo) then 
+local Text = "🚧 ┇سوف يتم تغير المطور الاساسي\n❗️ ┇هل  انت  متأكد من هذا التغير ؟"
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = 'نعم', callback_data=msg.sender_user_id_.."/yesS"},{text = 'كلا , الغاء', callback_data=msg.sender_user_id_.."/noS"}}}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
 end
 
 
