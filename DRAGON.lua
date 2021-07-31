@@ -567,54 +567,98 @@ DRAGON_Msg = 'رب التفاعل'
 end 
 return DRAGON_Msg 
 end
-function Get_Info(msg,chat,user) 
-local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. chat ..'&user_id='.. user..'')
+
+function sendin(chat,msgid,user,user_id)
+local Chek_Info = https.request('https://api.telegram.org/bot'..token..'/getChatMember?chat_id='.. chat ..'&user_id='.. user_id)
 local Json_Info = JSON.decode(Chek_Info)
-if Json_Info.ok == true then
-if Json_Info.result.status == "creator" then
-Send(msg.chat_id_,msg.id_,'\n★︙ مالك المجموعه')   
-return false  end 
-if Json_Info.result.status == "member" then
-Send(msg.chat_id_,msg.id_,'\n★︙ مجرد عضو هنا ')   
-return false  end
-if Json_Info.result.status == 'left' then
-Send(msg.chat_id_,msg.id_,'\n★︙ الشخص غير موجود هنا ')   
-return false  end
-if Json_Info.result.status == "administrator" then
 if Json_Info.result.can_change_info == true then
-info = '✔️'
-else
-info = '✖'
+info = 'ꪜ' 
+infoo = 'false' 
+else 
+info = '✘' 
+infoo = 'true' 
 end
 if Json_Info.result.can_delete_messages == true then
-delete = '✔️'
-else
-delete = '✖'
+delete = 'ꪜ' 
+deletee = 'false' 
+else 
+delete = '✘' 
+deletee = 'true' 
 end
 if Json_Info.result.can_invite_users == true then
-invite = '✔️'
-else
-invite = '✖'
+invite = 'ꪜ' 
+invitee = 'false' 
+else 
+invite = '✘' 
+invitee = 'true' 
 end
 if Json_Info.result.can_pin_messages == true then
-pin = '✔️'
-else
-pin = '✖'
+pin = 'ꪜ' 
+pinn = 'false' 
+else 
+pin = '✘' 
+pinn = 'true' 
 end
 if Json_Info.result.can_restrict_members == true then
-restrict = '✔️'
-else
-restrict = '✖'
+restrict = 'ꪜ' 
+restrictt = 'false' 
+else 
+restrict = '✘' 
+restrictt = 'true' 
 end
 if Json_Info.result.can_promote_members == true then
-promote = '✔️'
-else
-promote = '✖'
+promote = 'ꪜ' 
+promotee = 'false' 
+else 
+promote = '✘' 
+promotee = 'true' 
+end 
+if Json_Info.result.can_manage_voice_chats == true then
+voice = 'ꪜ' 
+voicee = 'false' 
+else 
+voice = '✘' 
+voicee = 'true' 
 end
-Send(chat,msg.id_,'\n- الرتبة : مشرف  '..'\n- والصلاحيات هي ↓ \nٴ━━━━━━━━━━'..'\n- تغير معلومات المجموعه ↞ ❴ '..info..' ❵'..'\n- حذف الرسائل ↞ ❴ '..delete..' ❵'..'\n- حظر المستخدمين ↞ ❴ '..restrict..' ❵'..'\n- دعوة مستخدمين ↞ ❴ '..invite..' ❵'..'\n- تثبيت الرسائل ↞ ❴ '..pin..' ❵'..'\n- اضافة مشرفين جدد ↞ ❴ '..promote..' ❵')   
+if Json_Info.result.can_manage_chat == true then
+manage = 'ꪜ' 
+managee = 'false' 
+else 
+manage = '✘' 
+managee = 'true' 
 end
+
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'تغيير المعلومات '..info, callback_data='amr@'..user..'/user@'..user_id.."/chenginfo"..infoo},
+},
+{
+{text = 'حذف الرسائل '..delete, callback_data='amr@'..user..'/user@'..user_id.."/delmsgg"..deletee},
+},
+{
+{text = 'حظر المستخدمين '..restrict, callback_data='amr@'..user..'/user@'..user_id.."/banuser"..restrictt},
+},
+{
+{text = 'اضافه مستخدمين '..invite, callback_data='amr@'..user..'/user@'..user_id.."/addlink"..invitee},
+},
+{
+{text = 'تثبيت الرسائل '..pin, callback_data='amr@'..user..'/user@'..user_id.."/pinmsg"..pinn},
+},
+{
+{text = 'اداره المكالمات '..voice, callback_data='amr@'..user..'/user@'..user_id.."/voice"..voicee},
+},
+{
+{text = 'البقاء متخفي '..manage, callback_data='amr@'..user..'/user@'..user_id.."/manage"..managee},
+},
+{
+{text = 'اضافه مشرفين '..promote, callback_data='amr@'..user..'/user@'..user_id.."/addadmin"..promotee},
+},
+}
+local Texti = 'تم تعديل صلاحياته'
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..chat..'&text='..URL.escape(Texti)..'&message_id='..msgid..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
-end
+
 function GetFile_Bot(msg)
 local list = database:smembers(bot_id..'Chek:Groups') 
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
