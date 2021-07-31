@@ -1242,7 +1242,7 @@ echo '⚚━━━━━⚚ 𝑩𝑨𝑹𝑳𝑶 ⚚━━━━━⚚\n ★「 
 end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/exalex200/EX/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/exalex200/ZX/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ★ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -1338,7 +1338,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = 'مطور البوت البارلو اهو 🌚💞 -\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = 'مطور البوت الهكر اهو 🌚💞 -\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -2763,7 +2763,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/exalex200/EX/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/exalex200/ZX/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'★ تم تحديث السورس \n★ لديك اخر اصدار لسورس بارلو\n★ الاصدار » { v 1.6 }')
 dofile('DRAGON.lua')  
 end
@@ -14810,7 +14810,7 @@ end
 if #list == 0 then
 t = "★ لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\nٴ≪ـــــــــــــــــــــ𓆩 𝐒𝐎𝐔𝐑𝐂𝐄 || 𝐄𝐋𝐒??𝐋𝐓𝐀𝐍 𓆪ـــــــــــــــــــــ≫ٴ\n★ تم التعديل على الميديا\n★ الشخص الي قام بالتعديل\n★ ايدي الشخص ◂ '..result.sender_user_id_..'\n★ معرف الشخص»{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\nٴ≪ـــــــــــــــــــــ𓆩 𝑩𝑨𝑹𝑳𝑶𓆪ـــــــــــــــــــــ≫ٴ\n★ تم التعديل على الميديا\n★ الشخص الي قام بالتعديل\n★ ايدي الشخص ◂ '..result.sender_user_id_..'\n★ معرف الشخص»{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
