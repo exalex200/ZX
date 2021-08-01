@@ -1354,7 +1354,7 @@ if text == 'اوامر الحمايه' and DevSoFi(msg) then
 local Text = 'اوامر الحمايه الخاصه بالسورس 🌚💞.'
 local Key = {
 {'قائمه الكتم العام','المطورين','قائمه العام'},
-{'المشتركين','الجروبات ','الردود العامه'},
+{'المشتركين','الجروبات ','ردود المطور'},
 {'الثانوين'},
 {'تنظيف الجروبات ','تنظيف المشتركين'},
 {'تغير رساله الاشتراك ','الاشتراك الاجباري','تغير الاشتراك'},
@@ -1366,28 +1366,43 @@ if text == 'اوامر الاذاعه' and DevSoFi(msg) then
 local Text = 'اليك اوامر الاذاعه 🌚💞'
 local Key = {
 {'اذاعه ','اذاعه خاص '},
-{'اذاعه بالتثبيت '},
+{'اذاعه بالتثبيت'},
 {'اذاعه بالتوجيه ','اذاعه بالتوجيه خاص '},
 {'العوده 🌚??'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 
-if text == 'المطور' or text == 'مطور' then
-tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
- 
- local msg_id = msg.id_/2097152/0.5
-local Text = [[
- المطور
-]]
+if text == "المطور" or text == "مطور" then
+local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_SUDO)
+else
+tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
+local function taha(extra, taha, success)
+if taha.photos_[0] then
+local Name = 'مطور البوت الباور اهو 🌚💞 -\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '   ⁽'..result.first_name_..'₎  ',url="t.me/"..result.username_}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+keyboard.inline_keyboard = {
+{
+{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
+},
+{
+{text = '00:00', url="t.me/MKALEXES"},
+},
+{
+{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+else
+sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
+ end end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, limit_ = 1 }, taha, nil)
 end,nil)
-
-
 end
-
+end
 
 if text == 'جلب المطورين' and DevSoFi(msg) then  
 local list = database:smembers(bot_id..'Sudo:User') 
@@ -1620,7 +1635,7 @@ return false
 end 
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and sudo2(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_," ★ ارسل الان اذاعتك؟ \n ★ للخروج ارسل الغاء ")
+send(msg.chat_id_, msg.id_," 👨‍🎤 ارسل الان اذاعتك؟ \n 👨‍🎤 للخروج ارسل الغاء ")
 return false
 end 
 if text=="اذاعه بالتوجيه " and msg.reply_to_message_id_ == 0  and sudo2(msg) then 
@@ -4003,6 +4018,80 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 send(msg.chat_id_, msg.id_,'\n★┇تم قفل البوتات بالطرد\n★┇تم وضع الايدي بدون صوره\n★┇تم قفل التكرار بالطرد\n★┇تم قفل الروابط\n★┇تم قفل التوجيه\n★┇تم قفل الملصقات\n★┇تم قفل المتحركه\n★┇تم قفل الفيديو\n★┇تم قفل السب\n★┇تم قفل التعديل\n★┇تم قفل الفارسيه\n★┇تم قفل التفليش\n\nتم تفعيل الحمايه بواسطه »>['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'SOPOWERB0T')..')')   
 end,nil) 
 end
+
+if text == 'تعطيل الحمايه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+database:del(bot_id.."lock:inline"..msg.chat_id_)  
+database:del(bot_id.."lock:Lock:Sexy"..msg.chat_id_)  
+database:hdel(bot_id.."flooding:settings:"..msg.chat_id_ ,"flood")  
+database:set(bot_id..'lock_edit_med'..msg.chat_id_,true) 
+database:del(bot_id..'lock:Fshar'..msg.chat_id_) 
+database:del(bot_id.."lock:Bot:kick"..msg.chat_id_)  
+database:del(bot_id.."lock:Photo"..msg.chat_id_)  
+database:del(bot_id.."lock:Video"..msg.chat_id_)  
+database:del(bot_id.."lock:Link"..msg.chat_id_)  
+database:del(bot_id.."lock:Sticker"..msg.chat_id_)  
+database:del(bot_id.."lock:Animation"..msg.chat_id_)  
+database:del(bot_id.."lock:forward"..msg.chat_id_)  
+database:del(bot_id..'Bot:Id'..msg.chat_id_) 
+database:del(bot_id..'Bot:Id:Photo'..msg.chat_id_) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+send(msg.chat_id_, msg.id_,' ⦁ تم تفعيل جلب الصوره ،\n ⦁ تم  فتح البوتات  ،\n ⦁ تم  فتح التكرار ،\n ⦁ تم  فتح الروابط ،\n ⦁ تم  فتح التوجيه ،\n ⦁ تم  فتح الملصقات ،\n ⦁ تم  فتح المتحركه ،\n ⦁ تم  فتح الفيديو ،\n ⦁ تم  فتح الفشار ،\n ⦁ تم  فتح الانلاين ،\n ⦁ تم  فتح تعديل المديا ،\n ⦁ تم وضع التكرار  ،\n ⦁ تم  فتح الفارسيه  ،\n ⦁ تم وضع الايدي بصوره،n \n ⦁ تم تفعيل الحمايه  بواسطه ، [「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」](T.ME/'..(data.username_ or 'textchuser')..')  ')
+end,nil)   
+end
+if text == 'تفعيل الحمايه القصوه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+database:set(bot_id.."lock:text"..msg.chat_id_,true) 
+database:set(bot_id.."lock:AddMempar"..msg.chat_id_,'kick')
+database:set(bot_id.."lock:Join"..msg.chat_id_,'kick')
+database:set(bot_id.."lock:Bot:kick"..msg.chat_id_,'kick')
+database:set(bot_id.."lockpin"..msg.chat_id_, true) 
+database:sadd(bot_id..'lock:pin',msg.chat_id_) 
+database:set(bot_id..'lock:tagservr'..msg.chat_id_,true)  
+database:set(bot_id..'lock:Fars'..msg.chat_id_,true) 
+database:set(bot_id..'lock:Fshar'..msg.chat_id_,true)
+database:set(bot_id..'lock:edit'..msg.chat_id_,true) 
+database:set(bot_id.."lock:inline"..msg.chat_id_,'del')
+database:set(bot_id.."lock:Lock:Sexy"..msg.chat_id_,'del')
+database:del(bot_id.."pp_photo:status"..msg.chat_id_) 
+database:del(bot_id.."my_photo:status"..msg.chat_id_) 
+database:hset(bot_id.."flooding:settings:"..msg.chat_id_ ,"flood",'keed')  
+database:set(bot_id.."lock:Contact"..msg.chat_id_,'ked')  
+database:set(bot_id.."lock:Spam"..msg.chat_id_,'ked')  
+database:set(bot_id.."lock:forward"..msg.chat_id_,'ked')  
+database:set(bot_id.."lock:Keyboard"..msg.chat_id_,'ked')  
+database:set(bot_id..'Bot:Id:Photo'..msg.chat_id_,true) 
+database:set(bot_id..'Bot:Id:Photo'..msg.chat_id_,true) 
+database:set(bot_id.."lock:Photo"..msg.chat_id_,'ked')  
+database:set(bot_id.."lock:geam"..msg.chat_id_,'ked')  
+database:set(bot_id.."lock:Sticker"..msg.chat_id_,'ktm')  
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+send(msg.chat_id_, msg.id_,'تم قفل الحمايه كامله\nتحظير هذا الحمايه تقفل كل حاجه بلتقييد\nتفعيل الحمايه دي بس عند التفليش او التحفيل\nلتعطيل الحمايه القصوه\nاكتب تعطيل الحمايه القوصه\n تم تفعيل الحمايه القصوه من قبل [「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」](T.ME/'..(data.username_ or 'textchuser')..')  ')
+end,nil)   
+end
+if text == 'تعطيل الحمايه القصوه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+database:del(bot_id.."lock:Spam"..msg.chat_id_)  
+database:del(bot_id.."lock:Join"..msg.chat_id_)  
+database:del(bot_id.."lock:text"..msg.chat_id_)  
+database:del(bot_id.."lock:AddMempar"..msg.chat_id_)  
+database:del(bot_id.."lock:Bot:kick"..msg.chat_id_)  
+database:del(bot_id..'lock:edit'..msg.chat_id_)
+database:del(bot_id.."lockpin"..msg.chat_id_)  
+database:del(bot_id..'lock:Fshar'..msg.chat_id_) 
+database:del(bot_id..'lock:Fars'..msg.chat_id_) 
+database:del(bot_id.."lock:Link"..msg.chat_id_)  
+database:del(bot_id..'sing:for:me'..msg.chat_id_)  
+database:del(bot_id.."lock:Photo"..msg.chat_id_)  
+database:del(bot_id.."lock:Video"..msg.chat_id_)  
+database:del(bot_id.."lock:Sticker"..msg.chat_id_)  
+database:del(bot_id.."lock:forward"..msg.chat_id_)  
+database:del(bot_id.."lock:geam"..msg.chat_id_)  
+database:del(bot_id..'Bot:Id:Photo'..msg.chat_id_) 
+database:set(bot_id.."pp_photo:status"..msg.chat_id_,true) 
+database:set(bot_id.."my_photo:status"..msg.chat_id_,true) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+send(msg.chat_id_, msg.id_,'  تم تعطيل الحمايه القصوه من قبل    [「'..Rutba(msg.sender_user_id_,msg.chat_id_)..'」](T.ME/'..(data.username_ or 'textchuser')..')  ')
+end,nil)   
+end
+ 
 ------by-alex---- by--- alex ------byalex-------hacker-----soucer----alex
 if text == 'تحديث' and DevSoFi(msg) then    
 dofile('DRAGON.lua')  
@@ -9008,19 +9097,35 @@ send(msg.chat_id_, msg.id_," 🔴︙ تم تعطيل الرابط")
 return false end
 end
 
-if text == 'المطور' or text == 'مطور' then
-tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
- 
- local msg_id = msg.id_/2097152/0.5
-local Text = [[
- المطور
-]]
+if text == "المطور" or text == "مطور" then
+local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_SUDO)
+else
+tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
+local function taha(extra, taha, success)
+if taha.photos_[0] then
+local Name = 'مطور البوت الباور اهو 🌚💞 -\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '   ⁽'..result.first_name_..'₎  ',url="t.me/"..result.username_}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+keyboard.inline_keyboard = {
+{
+{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
+},
+{
+{text = '00:00', url="t.me/MKALEXES"},
+},
+{
+{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+else
+sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
+ end end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, limit_ = 1 }, taha, nil)
 end,nil)
-
-
+end
 end
 
 ---------------------
@@ -10316,6 +10421,8 @@ return false
 end  
 end
 
+
+
 if text == "اضف رد عام" and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -10681,7 +10788,7 @@ if audios.Info == true then
 local Text ='★︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙎𝙊𝙐𝙍𝘾𝙀  𝙎𝙞𝙧𝙞𝙖.',url="t.me/bar_lo0o0o0o0o"}},
+{{text = '𝑩𝑨𝑹𝑳𝑶.',url="t.me/bar_lo0o0o0o0o"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -11001,6 +11108,9 @@ keyboard = {}
 keyboard.inline_keyboard = {
 	
 {{text = '𝑩𝑨𝑹𝑳𝑶 ', url="t.me/bar_lo0o0o0o0o"}}, 
+{
+{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
+},
 
 }
 local function getpro(extra, result, success) 
@@ -12275,7 +12385,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '𝐒𝐎𝐔??𝐂𝐄 || 𝐇𝐀𝐂𝐊𝐄𝐑 ', url="t.me/bar_lo0o0o0o0o"},
+{text = '𝑩𝑨𝑹𝑳𝑶 ', url="t.me/bar_lo0o0o0o0o"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12743,7 +12853,7 @@ keyboard.inline_keyboard = {
 {text = 'تعطيل الترحيب ★', callback_data=data.sender_user_id_.."/lockwelcome"},{text = 'تفعيل الترحيب ★', callback_data=data.sender_user_id_.."/unlockwelcome"},
 },
 {
-{text = 'تعطيل الردود العامه ★', callback_data=data.sender_user_id_.."/lockrepall"},{text = 'تفعيل الردود العامه ★', callback_data=data.sender_user_id_.."/unlockrepall"},
+{text = 'تعطيل ردود المطور ★', callback_data=data.sender_user_id_.."/lockrepall"},{text = 'تفعيل ردود المطور ★', callback_data=data.sender_user_id_.."/unlockrepall"},
 },
 {
 {text = 'تعطيل الايدي ★', callback_data=data.sender_user_id_.."/lockide"},{text = 'تفعيل الايدي ★', callback_data=data.sender_user_id_.."/unlockide"},
@@ -12919,7 +13029,7 @@ local Teext =[[
 ⚚━━━━━⚚ 𝑩𝑨𝑹𝑳𝑶 ⚚━━━━━⚚
 ★ تفعيل او تعطيل الايدي بالصوره
 ★ تفعيل او تعطيل الايدي
-★ تفعيل او تعطيل الردود العامه
+★ تفعيل او تعطيل ردود المطور
 ★ تفعيل او تعطيل الالعاب
 ★ تفعيل او تعطيل الردود
 ★ تفعيل او تعطيل اطردني
@@ -13011,7 +13121,7 @@ local Teext =[[
 ★ اذاعه بالتوجيه خاص
 ★ تغيير رساله المغادره
 ★ مسح المميزين عام
-★ مسح الردود العامه
+★ مسح ردود المطور
 ★ رفع او تنزيل مطور 
 ★ مسح المطورين
 ★ حظر او كتم عام 
@@ -13419,7 +13529,7 @@ local Teext =[[
 ★ Fix the installation
 ★ A radio face
 ★ bring «← raising 
-⚚━━━━━⚚ 𝑩𝑨𝑹𝑳𝑶 ⚚━━━━━⚚
+⚚━━━━━⚚ 𝑩𝑨??𝑳𝑶 ⚚━━━━━⚚
 ★ Statistics
 ★ Lifting «download ❬ Developer ❭
 ★ Developers «← Delete developers
