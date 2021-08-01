@@ -1388,7 +1388,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = '00:00', url="t.me/MKALEXES"},
+{text = '00:00', url="t.me/bar_lo0o0o0o0o"},
 },
 {
 {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
@@ -3110,6 +3110,8 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𝗕𝗔𝗥𝗟𝗢', url="t.me/bar_lo0o0"}},
 {{text = '𝘾𝙃 𝘽𝘼𝙍𝙇𝙊', url="t.me/bar_lo0o0o0o0o"}},
+
+{ {text = 'اضف البوت لمجموعتك 🌚💞', url="http://t.me/"..sudos.UserName.."?startgroup=new"}, },
 
 }
 https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/Bar_lo0o0o0o0o/2107&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9112,7 +9114,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = '00:00', url="t.me/MKALEXES"},
+{text = '00:00', url="t.me/bar_lo0o0o0o0o"},
 },
 {
 {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
