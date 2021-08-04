@@ -1368,7 +1368,7 @@ local Key = {
 {'اذاعه ','اذاعه خاص '},
 {'اذاعه بالتثبيت'},
 {'اذاعه بالتوجيه ','اذاعه بالتوجيه خاص '},
-{'العوده 🌚??'},
+{'العوده 🌚💞'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -5643,7 +5643,7 @@ end;end,nil)
 return false
 end
 ------------------------------------------------------------------------ adddev2 sudog
-if text == ("رفع بارلو") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+if text == ("رفع مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_DRAGON(extra, result, success)
 database:sadd(bot_id.."Dev:SoFi:2", result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","★︙ تم ترقيته مطور ثانوي في البوت")  
@@ -5651,8 +5651,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^رفع بارلو @(.*)$") and SudoBot(msg) then
-local username = text:match("^رفع بارلو @(.*)$")
+if text and text:match("^رفع مطور ثانوي @(.*)$") and SudoBot(msg) then
+local username = text:match("^رفع مطور ثانوي @(.*)$")
 function Function_DRAGON(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
@@ -5668,8 +5668,8 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^رفع بارلو (%d+)$") and SudoBot(msg) then
-local userid = text:match("^رفع بارلو (%d+)$")
+if text and text:match("^رفع مطور ثانوي (%d+)$") and SudoBot(msg) then
+local userid = text:match("^رفع مطور ثانوي (%d+)$")
 database:sadd(bot_id.."Dev:SoFi:2", userid)
 Reply_Status(msg,userid,"reply","★︙ تم ترقيته مطور ثانوي في البوت")  
 return false 
