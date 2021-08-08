@@ -336,16 +336,12 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1902405856) then  
 var = 'المبرمج اليكس'
-elseif tonumber(user_id) == tonumber(7777777777777777777777) then
-var = 'المطور كساحه'
 elseif tonumber(user_id) == tonumber(000000000000000000) then
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(4444444444444444444) then
-var = 'مطور السورس ®'
 elseif tonumber(user_id) == tonumber(SUDO) then
-var = 'المطور الاساسي'  
+var = 'مالك البوت'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
-var = "المطور الثانوي"  
+var = "المطور الاساسي"  
 elseif tonumber(user_id) == tonumber(bot_id) then  
 var = 'البوت'
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
@@ -1322,11 +1318,11 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامر الـحمايه 🌚💞' and DevSoFi(msg) then 
-local Text = ' قسم الحمايه يوجد في المطورين والثانوين والخ..🌚💞.'
+local Text = ' قسم الحمايه يوجد في المطورين والاساسين والخ..🌚💞.'
 local Key = {
 {'قائمه الكتم العام','المطورين','قائمه العام'},
 {'المشتركين','الجروبات ','الردود العامه'},
-{'الثانوين'},
+{'الاساسين'},
 {'تنظيف الجروبات ','تنظيف المشتركين'},
 {'تغير رساله الاشتراك ','الاشتراك الاجباري','تغير الاشتراك'},
 {'العوده 🌚💞'},
@@ -1483,9 +1479,9 @@ database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true)
 send(msg.chat_id_, msg.id_," ✇ ارسل اليه الاسم الان ")
 return false
 end
-if text == ("الثانوين") and SudoBot(msg) then
+if text == ("الاساسين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."Dev:SoFi:2")
-t = "\n ✇ قائمة مطورين الثانويين للبوت \n☽━━━━━☽ 𝗣𝗢𝗪𝗘𝗥☽━━━━━☽\n"
+t = "\n ✇ قائمة مطورين الاساسي للبوت \n☽━━━━━☽ 𝗣𝗢𝗪𝗘𝗥☽━━━━━☽\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1495,7 +1491,7 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = " ✇ لا يوجد مطورين ثانويين"
+t = " ✇ لا يوجد مطورين اساسي"
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -6832,16 +6828,16 @@ end;end,nil)
 return false
 end
 ------by-alex---- by--- alex ------byalex-------power-----soucer----alex adddev2 sudog
-if text == ("رفع باور") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+if text == ("رفع مطور اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_DRAGON(extra, result, success)
 database:sadd(bot_id.."Dev:SoFi:2", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","✇ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,result.sender_user_id_,"reply","✇ تم ترقيته مطور اساسي في البوت")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^رفع باور @(.*)$") and SudoBot(msg) then
-local username = text:match("^رفع باور @(.*)$")
+if text and text:match("^رفع مطور اساسي @(.*)$") and SudoBot(msg) then
+local username = text:match("^رفع مطور اساسي @(.*)$")
 function Function_DRAGON(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
@@ -6849,7 +6845,7 @@ send(msg.chat_id_,msg.id_,"✇ عذرا عزيزي المستخدم هاذا م�
 return false 
 end      
 database:sadd(bot_id.."Dev:SoFi:2", result.id_)
-Reply_Status(msg,result.id_,"reply","✇ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,result.id_,"reply","✇ تم ترقيته مطور اساسي في البوت")  
 else
 send(msg.chat_id_, msg.id_,"✇ لا يوجد حساب بهاذا المعرف")
 end
@@ -6857,26 +6853,26 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^رفع باور (%d+)$") and SudoBot(msg) then
-local userid = text:match("^رفع باور (%d+)$")
+if text and text:match("^رفع مطور اساسي (%d+)$") and SudoBot(msg) then
+local userid = text:match("^رفع مطور اساسي (%d+)$")
 database:sadd(bot_id.."Dev:SoFi:2", userid)
-Reply_Status(msg,userid,"reply","✇ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,userid,"reply","✇ تم ترقيته مطور اساسي في البوت")  
 return false 
 end
-if text == ("تنزيل مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+if text == ("تنزيل مطور اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_DRAGON(extra, result, success)
 database:srem(bot_id.."Dev:SoFi:2", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","✇ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,result.sender_user_id_,"reply","✇ تم تنزيله من المطور اساسي")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^تنزيل مطور ثانوي @(.*)$") and SudoBot(msg) then
-local username = text:match("^تنزيل مطور ثانوي @(.*)$")
+if text and text:match("^تنزيل مطور اساسي @(.*)$") and SudoBot(msg) then
+local username = text:match("^تنزيل مطور اساسي @(.*)$")
 function Function_DRAGON(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Dev:SoFi:2", result.id_)
-Reply_Status(msg,result.id_,"reply","✇ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,result.id_,"reply","✇ تم تنزيله من المطور اساسي")  
 else
 send(msg.chat_id_, msg.id_,"✇ لا يوجد حساب بهاذا المعرف")
 end
@@ -6884,15 +6880,15 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
 return false
 end  
-if text and text:match("^تنزيل مطور ثانوي (%d+)$") and SudoBot(msg) then
-local userid = text:match("^تنزيل مطور ثانوي (%d+)$")
+if text and text:match("^تنزيل مطور اساسي (%d+)$") and SudoBot(msg) then
+local userid = text:match("^تنزيل مطور اساسي (%d+)$")
 database:srem(bot_id.."Dev:SoFi:2", userid)
-Reply_Status(msg,userid,"reply","✇ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,userid,"reply","✇ تم تنزيله من المطور اساسي")  
 return false 
 end
-if text == ("الثانوين") and SudoBot(msg) then
+if text == ("الاساسين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."Dev:SoFi:2")
-t = "\n ✇  قائمة مطورين الثانويين للبوت \n☽━━━━━☽ 𝗣𝗢𝗪𝗘𝗥☽━━━━━☽\n"
+t = "\n ✇  قائمة مطورين الاساسي للبوت \n☽━━━━━☽ 𝗣𝗢𝗪𝗘𝗥☽━━━━━☽\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6902,13 +6898,13 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = " ✇  لا يوجد مطورين ثانويين"
+t = " ✇  لا يوجد مطورين اساسي"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("مسح الثانوين") and SudoBot(msg) then
+if text == ("مسح الاساسين") and SudoBot(msg) then
 database:del(bot_id.."Dev:SoFi:2")
-send(msg.chat_id_, msg.id_, "\n ✇ تم مسح قائمة المطورين الثانوين  ")
+send(msg.chat_id_, msg.id_, "\n ✇ تم مسح قائمة المطورين الاساسين  ")
 end
 ------by-alex---- by--- alex ------byalex-------power-----soucer----alex
 if text == ("رفع مدير عام") and msg.reply_to_message_id_ and Constructor(msg) then
@@ -15921,7 +15917,7 @@ Msᴀɢ ~ #msgs
 𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏☽
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ☽
-𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
+𓄼🇪🇬 𝑴𝒔??𝒔 : #msgs 𓆊
 𓄼🇪🇬 𝗖𝗛 - ↝@XV_VM↜ ✇
 ]],
 [[
@@ -17278,7 +17274,7 @@ local Teext =[[
  ✇اسم ~ ايدي + بوت غادر 
  ✇اذاعه 
 ☽━━━━━☽ 𝗣𝗢𝗪𝗘𝗥☽━━━━━☽
-❲المطور الاساسي+ المطور الثانوي❳
+❲المطور الاساسي+ مالك البوت❳
 ☽━━━━━☽ 𝗣𝗢𝗪𝗘𝗥☽━━━━━☽
  ✇تفعيل
  ✇تعطيل
