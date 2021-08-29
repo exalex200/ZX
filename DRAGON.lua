@@ -3389,18 +3389,18 @@ end
  
 end,nil)
 end
+
 if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,62); 
-local Text ='أليك الأستوري الخاص بك 🌝❤' 
+ght = math.random(2,22); 
+local Text ='تـم اخـتـيـآر  استـوري ممـيز لـك ❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '❨𝐃𝐄𝐕 " 𝐁𝐀𝐑𝐋𝐎❩',url="t.me/bar_lo0o0"}},
 {{text = '❨●《𝘽𝘼𝙍𝙇𝙊》●❩',url="t.me/bar_lo0o0o0o0o"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/koko12300/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
 
 if text == "صور كرتون" then  
 ght = math.random(1,33);  
@@ -15048,7 +15048,7 @@ local List = {
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: ??𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
-➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
+➞: 𝒎??𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
 ]],
 [[
@@ -15914,7 +15914,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
-◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
+◣: 𝐮??𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢?? 𓂅 #id 𓍯➥♡.
 ◣: 𝗖𝗛 - ↝@bar_lo0o0↜ ⦿
@@ -17354,7 +17354,7 @@ local Teext =[[
  ⦿اوامر مسح / المسح ← امر
 ▒━⦿⟞⟦ ℻ 𝑩𝑨𝑹𝑳𝑶𝑶𝑶 ℻ ⟧⟝⦿━▒
  ⦿مسح + امر 
-▒━⦿⟞⟦ ℻ 𝑩??𝑹𝑳𝑶𝑶𝑶 ℻ ⟧⟝⦿━▒
+▒━⦿⟞⟦ ℻ 𝑩𝑨𝑹𝑳𝑶𝑶𝑶 ℻ ⟧⟝⦿━▒
  ⦿الايدي 
  ⦿المميزين
  ⦿الادمنيه
@@ -17673,7 +17673,7 @@ local Teext =[[
  ⦿رفع  ← علي زبي
  ⦿تنزيل ←من زبي 
  ⦿تاك للمتناكين
-▒━⦿⟞⟦ ℻ 𝑩𝑨𝑹𝑳𝑶𝑶𝑶 ℻ ⟧⟝⦿━▒
+▒━⦿⟞⟦ ℻ 𝑩𝑨𝑹𝑳??𝑶𝑶 ℻ ⟧⟝⦿━▒
 ❲[˹《♡ 𝘽??𝙍𝙇𝙊 ♡》˼ ](t.me/bar_lo0o0)❳ 
 ]]
 keyboard = {} 
