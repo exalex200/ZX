@@ -211,7 +211,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1978999018,1916366858,7777777777777777777777,1001132193}   
+sudo_users = {SUDO,1998164477,1916366858,7777777777777777777777,1001132193}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -309,7 +309,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1978999018) then  
+if tonumber(user_id) == tonumber(1998164477) then  
 var = true 
 elseif tonumber(user_id) == tonumber(7777777777777777777777) then
 var = true  
@@ -349,7 +349,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1978999018) then  
+if tonumber(user_id) == tonumber(1998164477) then  
 var = 'المبرمج اليكس'
 elseif tonumber(user_id) == tonumber(1001132193) then
 var = 'هكر السورس'
@@ -3217,7 +3217,7 @@ local Text = [[
 ★ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙱𝙰𝚁𝙻𝙾𝙾𝙾 ★
 
 
- [ ★ 𝙳𝙴𝚅 𝙰𝙻𝙴𝚇 ★](t.me/Alex_Lua)
+ [ ★ 𝙳𝙴𝚅 𝙰𝙻𝙴𝚇 ★](t.me/NH_OA)
 
  [★ 𝙳𝙴𝚅 𝙱𝙰𝚁𝙻𝙾𝙾 ★](t.me/bar_lo0o0)
  
@@ -3229,7 +3229,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '★ 𝙲𝙷 𝙱𝙰𝚁𝙻𝙾𝙾 ★',url="t.me/bar_lo0o0o0o0o"}},
-{{text = '★ 𝙲𝙷 𝙰𝙻𝙴𝚇 ★ ',url="t.me/CH_HEROOOO"}},
+{{text = '★ 𝙲𝙷 𝙰𝙻𝙴𝚇 ★ ',url="t.me/CH_ALEXXX"}},
 {{text = '🌚💞 • اضف البوت الي مجموعتك ' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3242,14 +3242,14 @@ local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
 else
-tdcli_function ({ID = "GetUser",user_id_ = 1978999018,},function(arg,result) 
+tdcli_function ({ID = "GetUser",user_id_ = 1998164477,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '𓌹 ᯓ المبرج اليكس 𖣴 𓌺\n['..result.first_name_..'](t.me/Alex_Lua)\n'
+local Name = '𓌹 ᯓ المبرج اليكس 𖣴 𓌺\n['..result.first_name_..'](t.me/NH_OA)\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/Alex_Lua"},
+{text = '  ❨ '..result.first_name_..'  ❩ ',url="t.me/NH_OA"},
 },
 {{text = 'اضف البوت الي مجموعتك 🌚💞' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},
 }
@@ -3258,7 +3258,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.
 else
 sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
  end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 1978999018, offset_ = 0, limit_ = 1 }, taha, nil)
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 1998164477, offset_ = 0, limit_ = 1 }, taha, nil)
 end,nil)
 end
 end
@@ -5549,7 +5549,7 @@ if tonumber(result.sender_user_id_) == tonumber(1001132193) then
 send(msg.chat_id_, msg.id_, "⚠️ بس يبابا ⚠️")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1978999018) then  
+if tonumber(result.sender_user_id_) == tonumber(1998164477) then  
 send(msg.chat_id_, msg.id_, "عذرآ لـآ يمكن حظر المبرمج بارلو عام 🚫")
 return false 
 end
@@ -5599,7 +5599,7 @@ if result.id_ == tonumber(1001132193) then
 send(msg.chat_id_, msg.id_, " ⚠️ بس يبابا ⚠️\n")
 return false 
 end
-if result.id_ == tonumber(1978999018) then
+if result.id_ == tonumber(1998164477) then
 send(msg.chat_id_, msg.id_, "عذرآ لـآ يمكن حظر المبرمج بارلو عام 🚫 \n")
 return false 
 end
@@ -5647,7 +5647,7 @@ if tonumber(userid) == tonumber(1001132193) then
 send(msg.chat_id_, msg.id_, "⚠️ بس يبابا ⚠️")
 return false 
 end
-if tonumber(userid) == tonumber(1978999018) then  
+if tonumber(userid) == tonumber(1998164477) then  
 send(msg.chat_id_, msg.id_, "عذرآ لـآ يمكن حظر المبرمج بارلو عام 🚫")
 return false 
 end
@@ -5692,7 +5692,7 @@ if tonumber(result.sender_user_id_) == tonumber(1001132193) then
 send(msg.chat_id_, msg.id_, " ⚠️ بس يبابا ⚠️")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1978999018) then  
+if tonumber(result.sender_user_id_) == tonumber(1998164477) then  
 send(msg.chat_id_, msg.id_, "لا يجوز كتم بارلو عام لانه هكر 🌚😹")
 return false 
 end
@@ -5785,7 +5785,7 @@ if tonumber(userid) == tonumber(1001132193) then
 send(msg.chat_id_, msg.id_, " ⚠️ بس يبابا ⚠️")
 return false 
 end
-if tonumber(userid) == tonumber(1978999018) then  
+if tonumber(userid) == tonumber(1998164477) then  
 send(msg.chat_id_, msg.id_, "لا يجوز كتم اليكس عام لانه هكر 🌚😹")
 return false 
 end
